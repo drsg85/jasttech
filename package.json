@@ -1,0 +1,26 @@
+{
+  "name": "jast.tech",
+  "version": "1.0.0",
+  "description": "Site for Jast Agency",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nigel-riss/jast.tech.git"
+  },
+  "author": "Yuriy Kurenkov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nigel-riss/jast.tech/issues"
+  },
+  "homepage": "https://github.com/nigel-riss/jast.tech#readme",
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "gulp": "^3.9.1",
+    "gulp-pug": "^4.0.1"
+  }
+}
