@@ -1,20 +1,24 @@
 import gulp from 'gulp';
 import pug from 'gulp-pug';
-import notify from 'gulp-notify';
+import { onError } from 'gulp-notify';
 
+const dirs = {
+    pug: './src/pug/**/*.pug',
+    dest: './dist'
+}
 
 gulp.task('pugRender', function() {
-    gulp.src('./src/pug/**/*.pug')
+    gulp.src(dirs.pug)
         .pipe(pug())
-        .on('error', notify.onError((error) => {
+        .on('error', onError((error) => {
             return {
                 title: 'Pug',
                 message: error.message
-            }
+            };
         }))
         .on('error', (error) => {
             console.log(error.toString());
             this.emit('end');
         })
-        .pipe(gulp.dest('./dist'));
+        .pipe(gulp.dest(dirs.dest));
 });
