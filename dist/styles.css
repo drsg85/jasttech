@@ -300,3 +300,64 @@ template {
  */
 [hidden] {
   display: none; }
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif; }
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit; }
+
+.hero {
+  height: 100vh;
+  height: calc(100vh - 80px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 40px;
+  color: #ffffff;
+  background-color: #111339; }
+
+.logo__text {
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+.main-nav {
+  display: none; }
+
+.main-title {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: center; }
+
+.main-title em {
+  color: #4cb8ea;
+  font-style: normal;
+  font-weight: 700; }
+
+.cta-button {
+  display: block;
+  margin: 0 auto;
+  max-width: 240px;
+  color: #ffffff;
+  font-size: 0.85rem;
+  font-weight: 700;
+  line-height: 40px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #4cb8ea;
+  border-radius: 20px; }

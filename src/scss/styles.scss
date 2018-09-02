@@ -1,1 +1,16 @@
+@charset 'utf-8';
+
+// base
 @import 'normalize.css';
+@import 'base/vars';
+@import 'base/mixins';
+@import 'base/globals';
+
+// fonts
+
+// modules
+@import 'modules/hero';
+@import 'modules/logo';
+@import 'modules/main-nav';
+@import 'modules/main-title';
+@import 'modules/cta-button';
