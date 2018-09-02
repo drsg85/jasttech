@@ -1,13 +1,18 @@
 .logo {
-
+    // box model
+    display: flex;
+    align-items: center;
 }
 
 .logo__image {
-
+    // box model
+    height: 30px;
+    margin-right: 10px;
 }
 
 .logo__image img {
-
+    // box model
+    height: 100%;
 }
 
 .logo__text {
