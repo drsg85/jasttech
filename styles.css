@@ -328,7 +328,26 @@ html {
   justify-content: space-between;
   padding: 40px;
   color: #ffffff;
-  background-color: #111339; }
+  background-color: #111339;
+  background-image: url("./img/bgs/connectors-s.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; }
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.logo__image {
+  height: 30px;
+  margin-right: 10px; }
+
+.logo__image img {
+  height: 100%; }
 
 .logo__text {
   font-size: 1rem;
@@ -360,4 +379,5 @@ html {
   text-decoration: none;
   text-transform: uppercase;
   background-color: #4cb8ea;
-  border-radius: 20px; }
+  border-radius: 20px;
+  background-image: linear-gradient(60deg, #8dced2, #4cb8ea); }
