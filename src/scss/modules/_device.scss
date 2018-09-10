@@ -1,5 +1,6 @@
 .device {
-
+    // box model
+    margin-bottom: 40px;
 }
 
 .device__image {
@@ -7,7 +8,8 @@
 }
 
 .device__image img {
-
+    // box model
+    width: 100%;
 }
 
 .device__header-n-content {
@@ -19,11 +21,19 @@
 }
 
 .device__title {
-
+    // typography
+    color: $blue;
+    font-size: 1.5rem;
+    text-align: center;
 }
 
 .device__subtitle {
-
+    // typography
+    color: #acacac;
+    font-weight: 700;
+    line-height: 1.25;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 .device__content {
@@ -31,5 +41,6 @@
 }
 
 .device__content p {
-    
+    // typography
+    line-height: 1.5;
 }

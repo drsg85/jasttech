@@ -1,9 +1,14 @@
 .devices {
-
+    // box model
+    padding: 40px;
 }
 
 .devices__header {
-
+    // box model
+    margin: 0 -20px;
+    
+    // typography
+    text-align: center;
 }
 
 .devices__content {
