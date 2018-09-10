@@ -381,3 +381,32 @@ html {
   background-color: #4cb8ea;
   border-radius: 20px;
   background-image: linear-gradient(60deg, #8dced2, #4cb8ea); }
+
+.about {
+  padding: 40px; }
+
+.about__header {
+  text-align: center; }
+
+.about__text {
+  color: #111339;
+  line-height: 1.5; }
+
+.section-title {
+  padding-bottom: 1em;
+  color: #111339; }
+
+.ghost-button {
+  display: inline-block;
+  padding: 0 20px;
+  max-width: 240px;
+  color: #4cb8ea;
+  font-size: 0.85rem;
+  font-weight: 700;
+  line-height: 40px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 2px solid #4cb8ea;
+  border-color: #4cb8ea;
+  border-radius: 24px; }
