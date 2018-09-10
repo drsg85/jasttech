@@ -1,13 +1,20 @@
 .u-get {
+    // box model
+    padding: 40px;
+    padding-right: 20px;
 
+    // visual
+    background-color: $darkBlue;
 }
 
 .u-get__header {
-
+    // typography
+    text-align: center;
 }
 
 .u-get__content {
-
+    // box model
+    padding-bottom: 20px;
 }
 
 .u-get__buttons {

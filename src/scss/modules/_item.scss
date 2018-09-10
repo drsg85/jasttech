@@ -1,11 +1,29 @@
 .item {
-
+    // box model
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
 }
 
 .item__icon {
+    // box model
+    flex-basis: 55px;
+    width: 55px;
+    margin-right: 20px;
+}
 
+.item__icon img {
+    // box model
+    width: 100%;
 }
 
 .item__title {
-    
+    // box model
+    flex-basis: calc(100% - 80px);
+    margin: 0;
+
+    // typography
+    color: $light;
+    font-size: 1rem;
+    line-height: 1.25;
 }
