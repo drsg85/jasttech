@@ -1,9 +1,11 @@
 .about {
-
+    // box model
+    padding: 40px;
 }
 
 .about__header {
-
+    // typography
+    text-align: center;
 }
 
 .about__content {
@@ -11,5 +13,7 @@
 }
 
 .about__text {
-    
+    // typography
+    color: $darkBlue;
+    line-height: 1.5;
 }
