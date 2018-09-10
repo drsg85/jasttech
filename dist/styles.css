@@ -400,7 +400,9 @@ html {
 
 .ghost-button {
   display: inline-block;
+  margin-bottom: 20px;
   padding: 0 20px;
+  min-width: 200px;
   max-width: 240px;
   color: #4cb8ea;
   font-size: 0.85rem;
@@ -409,6 +411,7 @@ html {
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+  background-color: #ffffff;
   border: 2px solid #4cb8ea;
   border-color: #4cb8ea;
   border-radius: 25px; }
@@ -485,6 +488,67 @@ html {
   font-size: 1rem;
   font-weight: 700;
   line-height: 1.25; }
+
+.packages {
+  padding: 40px;
+  background-color: #f1f1f1; }
+
+.packages__header {
+  text-align: center; }
+
+.package-selector__prev {
+  display: none; }
+
+.package-selector__next {
+  display: none; }
+
+.package-selector__list {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.package-selector__item {
+  text-transform: uppercase; }
+
+.package {
+  margin-bottom: 40px; }
+
+.package__image {
+  display: none; }
+
+.package__image img {
+  width: 100%; }
+
+.package__title {
+  color: #111339;
+  font-size: 1.85rem;
+  text-align: center; }
+
+.package__title strong {
+  color: #4cb8ea; }
+
+.package__income {
+  display: none; }
+
+.package__content p {
+  line-height: 1.5; }
+
+.package__footer {
+  text-align: center; }
+
+.package__price {
+  margin: 0;
+  margin-bottom: 20px;
+  color: #111339;
+  font-size: 2.5rem;
+  text-align: center; }
+
+.package__buttons {
+  text-align: center; }
+
+.package__more {
+  text-decoration: none;
+  text-transform: uppercase; }
 
 .u-get {
   padding: 40px;

@@ -3,18 +3,28 @@
 }
 
 .package-selector__prev {
-
+    // box model
+    display: none;
 }
 
 .package-selector__next {
-
+    // box model
+    display: none;
 }
 
 .package-selector__list {
+    // box model
+    margin: 0;
+    padding: 0;
 
+    // list
+    list-style: none;
 }
 
 .package-selector__item {
+    // typography
+    text-transform: uppercase;
+
     &--current {
         
     }
