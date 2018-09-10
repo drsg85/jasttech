@@ -550,6 +550,34 @@ html {
   text-decoration: none;
   text-transform: uppercase; }
 
+.devices {
+  padding: 40px; }
+
+.devices__header {
+  margin: 0 -20px;
+  text-align: center; }
+
+.device {
+  margin-bottom: 40px; }
+
+.device__image img {
+  width: 100%; }
+
+.device__title {
+  color: #4cb8ea;
+  font-size: 1.5rem;
+  text-align: center; }
+
+.device__subtitle {
+  color: #acacac;
+  font-weight: 700;
+  line-height: 1.25;
+  text-align: center;
+  text-transform: uppercase; }
+
+.device__content p {
+  line-height: 1.5; }
+
 .u-get {
   padding: 40px;
   padding-right: 20px;
