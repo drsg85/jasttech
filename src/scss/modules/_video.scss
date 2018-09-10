@@ -1,9 +1,17 @@
 .video {
+    // box model
+    padding: 40px 0;
 
+    // visual
+    background-color: #f1f1f1;
 }
 
 .video__header {
+    // box model
+    padding: 0 20px;
 
+    // typography
+    text-align: center;
 }
 
 .video__content {

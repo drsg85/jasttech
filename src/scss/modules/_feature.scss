@@ -1,11 +1,29 @@
 .feature {
+    // box model
+    margin: 0 auto;
+    padding-bottom: 20px;
+    max-width: 260px;
 
+    // typography
+    text-align: center;
 }
 
 .feature__icon {
+    // box model
+    display: inline-block;
+    vertical-align: top;
+    width: 70px;
+}
 
+.feature__icon img {
+    // box model
+    width: 100%;
 }
 
 .feature__title {
-    
+    // typography
+    color: $light;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.25;
 }

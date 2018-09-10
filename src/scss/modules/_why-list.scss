@@ -1,7 +1,43 @@
 .why-list {
+    // box model
+    margin: 0;
+    padding: 0;
 
+    // list
+    list-style: none;
+    counter-reset: item;
 }
 
 .why-list__item {
-    
+    // positioning
+    position: relative;
+
+    // box model
+    margin: 0;
+    padding: 0;
+    padding-left: 80px;
+    padding-bottom: 30px;
+
+    // typography
+    color: $darkBlue;
+    font-weight: 700;
+    line-height: 1.5;
+
+    // list
+    counter-increment: item;
+}
+
+.why-list__item::before {
+    content: counter(item);
+
+    // positioning
+    position: absolute;
+    top: 0;
+    left: 20px;
+
+    // typography
+    color: $blue;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1;
 }

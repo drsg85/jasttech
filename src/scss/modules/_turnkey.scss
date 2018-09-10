@@ -1,11 +1,18 @@
 .turnkey {
+    // box model
+    padding: 40px 20px;
 
+    // visual
+    background-color: $blue;
+    background-image: linear-gradient(to bottom, $blue, $lightBlue);
 }
 
 .turnkey__header {
-
+    // typography
+    text-align: center;
 }
 
 .turnkey__content {
-    
+    // box model
+    padding: 0 20px;
 }
