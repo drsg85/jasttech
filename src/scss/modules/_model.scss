@@ -1,15 +1,35 @@
 .model {
+    // box model
+    margin-bottom: 40px;
 
+    // typography
+    text-align: center;
 }
 
 .model__icon {
+    // box model
+    margin: 0 auto;
+    width: 75px;
+}
 
+.model__icon img {
+    width: 100%;
 }
 
 .model__title {
+    // box model
+    margin: 0.5em 0;
 
+    // typography
+    color: $blue;
+    font-size: 1.5rem;
 }
 
 .model__text {
-    
+    // box model
+    margin: 0;
+
+    // typography
+    color: $darkBlue;
+    line-height: 1.5;
 }

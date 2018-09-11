@@ -1,9 +1,14 @@
 .models {
+    // box model
+    padding: 40px;
 
+    // visual
+    background-color: #f1f1f1;
 }
 
 .models__header {
-
+    // typography
+    text-align: center;
 }
 
 .models__content {
@@ -15,5 +20,9 @@
 }
 
 .models__title {
-    
+    // typography
+    color: $darkBlue;
+    font-size: 1rem;
+    font-weight: 900;
+    text-align: center;
 }
