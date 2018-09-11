@@ -513,9 +513,6 @@ html {
 .package {
   margin-bottom: 40px; }
 
-.package__image {
-  display: none; }
-
 .package__image img {
   width: 100%; }
 
@@ -547,8 +544,22 @@ html {
   text-align: center; }
 
 .package__more {
+  vertical-align: middle;
+  color: #bfbfbf;
+  font-size: 0.85rem;
+  font-weight: 700;
   text-decoration: none;
   text-transform: uppercase; }
+
+.package__more::before {
+  content: "i";
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  width: 20px;
+  line-height: 18px;
+  border: 1px solid #bfbfbf;
+  border-radius: 50%; }
 
 .devices {
   padding: 40px; }
