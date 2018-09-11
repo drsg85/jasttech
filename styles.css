@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -333,6 +334,18 @@ html {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover; }
+  .hero--inner {
+    height: auto;
+    padding-bottom: 150px;
+    margin-bottom: -150px;
+    color: #111339;
+    background-color: transparent;
+    background-image: url("./img/bgs/connector-1.svg");
+    background-position: bottom right;
+    background-size: 320px; }
+  .hero--business {
+    background-image: url("./img/bgs/connectors-s.svg"), -webkit-gradient(linear, left top, left bottom, from(#4cb8ea), to(#8dced2));
+    background-image: url("./img/bgs/connectors-s.svg"), linear-gradient(to bottom, #4cb8ea, #8dced2); }
 
 .logo {
   display: -webkit-box;
@@ -365,7 +378,11 @@ html {
 .main-title em {
   color: #4cb8ea;
   font-style: normal;
-  font-weight: 700; }
+  font-weight: 700;
+  line-height: 1.75; }
+
+.main-title--dark {
+  color: #111339; }
 
 .cta-button {
   display: block;
@@ -384,6 +401,9 @@ html {
   border-radius: 25px;
   background-image: linear-gradient(60deg, #8dced2, #4cb8ea);
   outline: none; }
+  .cta-button--dark {
+    background-color: #111339;
+    background-image: none; }
 
 .about {
   padding: 40px; }
@@ -391,9 +411,25 @@ html {
 .about__header {
   text-align: center; }
 
-.about__text {
+.about__content p {
   color: #111339;
   line-height: 1.5; }
+
+.about__content ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.about__content li {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 1em;
+  line-height: 1.5; }
+  .about__content li::before {
+    content: '• ';
+    vertical-align: bottom;
+    font-size: 1.5rem;
+    line-height: 1; }
 
 .section-title {
   padding-bottom: 1em;
@@ -402,6 +438,10 @@ html {
   line-height: 1.25; }
   .section-title--inv {
     color: #ffffff; }
+
+.section-title em {
+  color: #4cb8ea;
+  font-style: normal; }
 
 .ghost-button {
   display: inline-block;
