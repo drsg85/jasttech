@@ -370,6 +370,7 @@ html {
 .cta-button {
   display: block;
   margin: 0 auto;
+  min-width: 200px;
   max-width: 240px;
   color: #ffffff;
   font-size: 0.85rem;
@@ -379,8 +380,10 @@ html {
   text-decoration: none;
   text-transform: uppercase;
   background-color: #4cb8ea;
+  border: none;
   border-radius: 25px;
-  background-image: linear-gradient(60deg, #8dced2, #4cb8ea); }
+  background-image: linear-gradient(60deg, #8dced2, #4cb8ea);
+  outline: none; }
 
 .about {
   padding: 40px; }
@@ -394,7 +397,9 @@ html {
 
 .section-title {
   padding-bottom: 1em;
-  color: #111339; }
+  color: #111339;
+  font-weight: 400;
+  line-height: 1.25; }
   .section-title--inv {
     color: #ffffff; }
 
@@ -659,3 +664,103 @@ html {
   margin: 0;
   color: #111339;
   line-height: 1.5; }
+
+.clients__left {
+  padding: 40px 60px; }
+
+.clients__right {
+  padding: 40px;
+  background-color: #4cb8ea;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#4cb8ea), to(#8dced2));
+  background-image: linear-gradient(to bottom, #4cb8ea, #8dced2); }
+
+.clients__header {
+  text-align: center; }
+
+.clients__subheader {
+  text-align: center; }
+
+.clients__image {
+  margin-bottom: 40px;
+  text-align: center; }
+
+.clients__image img {
+  max-width: 100%; }
+
+.footer {
+  padding: 40px;
+  color: #ffffff;
+  text-align: center;
+  background-color: #111339; }
+
+.footer__title {
+  margin-bottom: 40px;
+  font-weight: 400; }
+
+.footer__address {
+  margin-bottom: 40px;
+  font-size: 0.85rem;
+  font-weight: 400;
+  line-height: 1.5; }
+
+.footer__subtitle {
+  font-size: 1.125rem; }
+
+.footer__contacts {
+  margin-bottom: 20px; }
+
+.footer__phone {
+  color: #ffffff;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  text-decoration: none; }
+
+.footer__mail {
+  color: #ffffff;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  text-decoration: none; }
+
+.footer__social {
+  margin-bottom: 40px; }
+
+.footer__legals a {
+  color: #435988;
+  font-size: 0.85rem;
+  text-decoration: none; }
+
+.social {
+  display: inline-block;
+  vertical-align: top;
+  height: 36px;
+  width: 36px;
+  margin: 0 7px;
+  font-size: 0; }
+
+.social--vk {
+  background-image: url("./img/icons/vk.svg"); }
+
+.social--inst {
+  background-image: url("./img/icons/instagram.svg"); }
+
+.form {
+  width: 100%; }
+
+.form__title {
+  margin-bottom: 20px;
+  font-size: 1.125rem; }
+
+.form__input {
+  display: block;
+  margin-bottom: 20px;
+  padding: 0 30px;
+  width: 100%;
+  color: #ffffff;
+  line-height: 46px;
+  border: 2px solid #435988;
+  border-radius: 25px;
+  background-color: transparent;
+  outline: none; }
+
+.form__input:focus {
+  border: 2px solid #4cb8ea; }

@@ -339,7 +339,7 @@ html(lang="en")
                     article.model
                         .model__icon: img(src="./img/icons/resale.svg", alt="Перепродажа")
                         h4.model__title от 150&nbsp;000 рублей
-                        p.model__text На перепродаже зарядного оборудования. Доход при реализации проектов франшизы варьируется <strong>от 150&nbsp;000 до 600&nbsp;000 рублей
+                        p.model__text На перепродаже зарядного оборудования. Доход при реализации проектов франшизы варьируется <strong>от 150&nbsp;000 до 600&nbsp;000 рублей</strong>
 
         section.clients
             .clients__left
@@ -355,14 +355,15 @@ html(lang="en")
                     .clients__image: img(src="./img/clients/the-office.png", alt="")
 
             .clients__right
-                h3.section-title Нам доверяют <strong>крупнейшие порталы</strong> франшиз
+                .clients__subheader
+                    h3.section-title.section-title--inv Нам доверяют <strong>крупнейшие порталы</strong> франшиз
 
                 .clients__content
                     .clients__image: img(src="./img/clients/businesmens.png", alt="Бизнесменс")
                     .clients__image: img(src="./img/clients/topfranchise.png", alt="TopFranchise.ru")
                     .clients__image: img(src="./img/clients/beboss.png", alt="БиБосс")
 
-        section.testimonials
+        //- section.testimonials
             header.testimonials__header
                 h2.section-title Отзывы
 
@@ -393,9 +394,10 @@ html(lang="en")
 
             .footer__form
                 form.form(action="")
+                    h3.form__title Заполните форму и мы свяжемся с вами как можно скорее:
                     input#name.form__input(type="text", name="name" placeholder="Ваше имя")
                     input#email.form__input(type="email", name="email" placeholder="Ваш e-mail")
-                    input#phone.form__input(type="text", name="phone" placeholder="Ваше телефон")
+                    input#phone.form__input(type="text", name="phone" placeholder="Ваш телефон")
                     input#city.form__input(type="text", name="city" placeholder="Ваш город")
                     input.cta-button(type="submit", value="Отправить")
 

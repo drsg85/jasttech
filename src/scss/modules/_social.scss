@@ -1,0 +1,21 @@
+.social {
+    // box model
+    display: inline-block;
+    vertical-align: top;
+    height: 36px;
+    width: 36px;
+    margin: 0 7px;
+
+    // typography
+    font-size: 0;
+}
+
+.social--vk {
+    // visual
+    background-image: url("./img/icons/vk.svg");
+}
+
+.social--inst {
+    // visual
+    background-image: url("./img/icons/instagram.svg");
+}

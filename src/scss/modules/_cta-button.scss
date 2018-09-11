@@ -2,6 +2,7 @@
     // box model
     display: block;
     margin: 0 auto;
+    min-width: 200px;
     max-width: 240px;
 
     // typography
@@ -15,6 +16,8 @@
 
     // visual
     background-color: $blue;
+    border: none;
     border-radius: 25px;
     background-image: linear-gradient(60deg, $lightBlue, $blue);
+    outline: none;
 }

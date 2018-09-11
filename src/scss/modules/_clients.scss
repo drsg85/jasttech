@@ -3,15 +3,27 @@
 }
 
 .clients__left {
-
+    // box model
+    padding: 40px 60px;
 }
 
 .clients__right {
+    // box model
+    padding: 40px;
 
+    // visual
+    background-color: $blue;
+    background-image: linear-gradient(to bottom, $blue, $lightBlue);
 }
 
 .clients__header {
+    // typography
+    text-align: center;
+}
 
+.clients__subheader {
+    // typography
+    text-align: center;
 }
 
 .clients__content {
@@ -19,9 +31,14 @@
 }
 
 .clients__image {
+    // box model
+    margin-bottom: 40px;
 
+    // typography
+    text-align: center;
 }
 
 .clients__image img {
-    
+    // box model
+    max-width: 100%;
 }

@@ -1,5 +1,13 @@
 .footer {
+    // box model
+    padding: 40px;
 
+    // typography
+    color: $light;
+    text-align: center;
+
+    // visual
+    background-color: $darkBlue;
 }
 
 .footer__header {
@@ -7,31 +15,52 @@
 }
 
 .footer__title {
-
+    // box model
+    margin-bottom: 40px;
+    
+    // typography
+    font-weight: 400;
 }
 
 .footer__address {
+    // box model
+    margin-bottom: 40px;
 
+    // typography
+    font-size: 0.85rem;
+    font-weight: 400;
+    line-height: 1.5;
 }
 
 .footer__subtitle {
-
+    // typography
+    font-size: 1.125rem;
 }
 
 .footer__contacts {
-
+    // box model
+    margin-bottom: 20px;
 }
 
 .footer__phone {
-
+    // typography
+    color: $light;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    text-decoration: none;
 }
 
 .footer__mail {
-
+    // typography
+    color: $light;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    text-decoration: none;
 }
 
 .footer__social {
-
+    // box model
+    margin-bottom: 40px;
 }
 
 .footer__form {
@@ -43,5 +72,8 @@
 }
 
 .footer__legals a {
-    
+    // typography
+    color: #435988;
+    font-size: 0.85rem;
+    text-decoration: none;
 }
