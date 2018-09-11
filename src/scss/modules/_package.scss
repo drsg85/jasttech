@@ -5,7 +5,7 @@
 
 .package__image {
     // box model
-    display: none;
+    // display: none;
 }
 
 .package__image img {
@@ -69,7 +69,30 @@
 }
 
 .package__more {
+    // box model
+    vertical-align: middle;
+
     // typography
+    color: #bfbfbf;
+    font-size: 0.85rem;
+    font-weight: 700;
     text-decoration: none;
     text-transform: uppercase;
+}
+
+.package__more::before {
+    content: "i";
+
+    // box model
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    width: 20px;
+
+    // typography
+    line-height: 18px;
+
+    // visual
+    border: 1px solid #bfbfbf;
+    border-radius: 50%;
 }
