@@ -625,3 +625,37 @@ html {
   color: #ffffff;
   font-size: 1rem;
   line-height: 1.25; }
+
+.models {
+  padding: 40px;
+  background-color: #f1f1f1; }
+
+.models__header {
+  text-align: center; }
+
+.models__title {
+  color: #111339;
+  font-size: 1rem;
+  font-weight: 900;
+  text-align: center; }
+
+.model {
+  margin-bottom: 40px;
+  text-align: center; }
+
+.model__icon {
+  margin: 0 auto;
+  width: 75px; }
+
+.model__icon img {
+  width: 100%; }
+
+.model__title {
+  margin: 0.5em 0;
+  color: #4cb8ea;
+  font-size: 1.5rem; }
+
+.model__text {
+  margin: 0;
+  color: #111339;
+  line-height: 1.5; }
