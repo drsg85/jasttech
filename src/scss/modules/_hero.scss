@@ -16,4 +16,27 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+    
+    &--inner {
+        // box model
+        height: auto;
+        padding-bottom: 150px;
+        margin-bottom: -150px;
+        
+        // typography
+        color: $darkBlue;
+        
+        // visual
+        background-color: transparent;
+        background-image: url('./img/bgs/connector-1.svg');
+        background-position: bottom right;
+        // background-size: 100%;
+        background-size: 320px;
+    }
+    
+    &--business {
+        // visual
+        background-image: url('./img/bgs/connectors-s.svg'),
+                          linear-gradient(to bottom, $blue, $lightBlue);
+    }
 }

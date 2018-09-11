@@ -12,8 +12,39 @@
 
 }
 
-.about__text {
+.about__content p {
     // typography
     color: $darkBlue;
     line-height: 1.5;
+}
+
+.about__content ul {
+    // box model
+    margin: 0;
+    padding: 0;
+
+    // list
+    list-style: none;
+}
+
+.about__content li {
+    // box model
+    margin: 0;
+    padding: 0;
+    padding-bottom: 1em;
+
+    // typography
+    line-height: 1.5;
+    // text-indent: 1em;
+
+    &::before {
+        content: '• ';
+
+        // box model
+        vertical-align: bottom;
+
+        // typography
+        font-size: 1.5rem;
+        line-height: 1;
+    }
 }
