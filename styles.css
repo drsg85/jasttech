@@ -902,6 +902,9 @@ html {
   color: #ffffff;
   text-align: center;
   background-color: #111339; }
+  @media (min-width: 480px) {
+    .footer {
+      padding: 50px; } }
 
 .footer__header {
   margin-bottom: 80px; }
