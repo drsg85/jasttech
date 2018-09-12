@@ -810,3 +810,89 @@ html {
 
 .form__input:focus {
   border: 2px solid #4cb8ea; }
+
+.u-want {
+  padding: 40px; }
+
+.u-want__header {
+  text-align: center; }
+
+.wish {
+  margin-bottom: 40px;
+  text-align: center; }
+
+.wish__icon {
+  display: inline-block;
+  vertical-align: top;
+  width: 65px; }
+
+.wish__icon img {
+  width: 100%; }
+
+.wish__title {
+  color: #111339;
+  font-size: 1.125rem;
+  line-height: 1.25; }
+
+.profits {
+  padding: 40px;
+  background-color: #111339; }
+
+.profits__header {
+  text-align: center; }
+
+.profit {
+  margin-bottom: 60px;
+  text-align: center; }
+
+.profit__icon {
+  display: inline-block;
+  vertical-align: top;
+  width: 90px; }
+
+.profit__icon img {
+  width: 100%; }
+
+.profit__title {
+  color: #ffffff; }
+
+.profit__text {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.85rem;
+  line-height: 1.5; }
+
+.faq {
+  padding: 40px;
+  background-color: #4cb8ea;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#4cb8ea), to(#8dced2));
+  background-image: linear-gradient(to bottom, #4cb8ea, #8dced2); }
+
+.faq__header {
+  margin-bottom: 40px;
+  text-align: center; }
+
+.faq__subtitle {
+  color: #ffffff;
+  font-size: 0.85rem;
+  font-weight: 700;
+  line-height: 1.5;
+  text-transform: uppercase; }
+
+.question {
+  padding: 20px;
+  margin-bottom: 40px;
+  background-color: #ffffff;
+  border-radius: 25px; }
+
+.question__definition {
+  margin-bottom: 20px;
+  color: #4cb8ea;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  text-align: center;
+  text-transform: uppercase; }
+
+.question__answer {
+  color: #111339;
+  font-size: 0.85rem;
+  line-height: 1.5; }
