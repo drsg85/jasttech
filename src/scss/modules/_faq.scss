@@ -1,11 +1,30 @@
 .faq {
+    // box model
+    padding: 40px;
 
+    // visual
+    background-color: $blue;
+    background-image: linear-gradient(to bottom, $blue, $lightBlue);
 }
 
 .faq__header {
+    // box model
+    margin-bottom: 40px;
 
+    // typography
+    text-align: center;
+}
+
+.faq__subtitle {
+    // typography
+    color: $light;
+    font-size: 0.85rem;
+    font-weight: 700;
+    line-height: 1.5;
+    // letter-spacing: 0.1em;
+    text-transform: uppercase;
 }
 
 .faq__content {
-    
+
 }

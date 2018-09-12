@@ -1,9 +1,14 @@
 .profits {
+    // box model
+    padding: 40px;
 
+    // visual
+    background-color: $darkBlue;
 }
 
 .profits__header {
-
+    // typography
+    text-align: center;
 }
 
 .profits__content {

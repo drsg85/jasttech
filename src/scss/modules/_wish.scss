@@ -1,3 +1,25 @@
 .wish {
-    
+    // box model
+    margin-bottom: 40px;
+
+    // typography
+    text-align: center;
+}
+
+.wish__icon {
+    // box model
+    display: inline-block;
+    vertical-align: top;
+    width: 65px;
+}
+
+.wish__icon img {
+    width: 100%;
+}
+
+.wish__title {
+    // typography
+    color: $darkBlue;
+    font-size: 1.125rem;
+    line-height: 1.25;
 }

@@ -1,3 +1,31 @@
 .profit {
-    
+    // box model
+    margin-bottom: 60px;
+
+    // typography
+    text-align: center;
+}
+
+.profit__icon {
+    // box model
+    display: inline-block;
+    vertical-align: top;
+    width: 90px;
+}
+
+.profit__icon img {
+    // box model
+    width: 100%;
+}
+
+.profit__title {
+    // typography
+    color: $light;
+}
+
+.profit__text {
+    // typography
+    color: rgba($light, 0.5);
+    font-size: 0.85rem;
+    line-height: 1.5;
 }

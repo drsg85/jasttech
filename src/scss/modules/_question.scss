@@ -1,0 +1,28 @@
+.question {
+    // box model
+    padding: 20px;
+    margin-bottom: 40px;
+
+    // visual
+    background-color: $light;
+    border-radius: 25px;
+}
+
+.question__definition {
+    // box model
+    margin-bottom: 20px;
+    
+    // typography
+    color: $blue;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.question__answer {
+    // typography
+    color: $darkBlue;
+    font-size: 0.85rem;
+    line-height: 1.5;
+}
