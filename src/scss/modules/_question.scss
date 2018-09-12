@@ -5,13 +5,14 @@
 
     // visual
     background-color: $light;
+    border: 2px solid $blue;
     border-radius: 25px;
 }
 
 .question__definition {
     // box model
     margin-bottom: 20px;
-    
+
     // typography
     color: $blue;
     font-size: 0.85rem;

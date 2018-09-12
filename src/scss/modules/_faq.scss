@@ -5,6 +5,11 @@
     // visual
     background-color: $blue;
     background-image: linear-gradient(to bottom, $blue, $lightBlue);
+
+    &--inner {
+        background-color: transparent;
+        background-image: none;
+    }
 }
 
 .faq__header {
