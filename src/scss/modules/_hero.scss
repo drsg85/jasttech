@@ -36,6 +36,17 @@
         background-image: url('./img/bgs/connectors-t.svg');
     }
     
+    @include atDesktop {
+        // box model
+        padding: 80px calc((100% - 1040px) / 2);
+        padding-bottom: 120px;
+        
+        // visual
+        background-image: url('./img/bgs/connectors-d.svg');
+        background-size: contain;
+        background-position: center right;
+    }
+    
     &--inner {
         // box model
         height: auto;

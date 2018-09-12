@@ -17,6 +17,14 @@
         font-size: 2.5rem;
         text-align: left;
     }
+
+    @include atDesktop {
+        // box model
+        width: 500px;
+        
+        // typography
+        font-size: 2.75rem;
+    }
 }
 
 .main-title em {

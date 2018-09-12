@@ -25,7 +25,18 @@
     margin-bottom: 40px;
     
     // typography
+    font-size: 1.5rem;
     font-weight: 400;
+
+    @include atMobileL {
+        // typography
+        font-size: 2rem;
+    }
+
+    @include atTablet {
+        // typography
+        font-size: 2.5em;
+    }
 }
 
 .footer__address {
@@ -36,11 +47,21 @@
     font-size: 0.85rem;
     font-weight: 400;
     line-height: 1.5;
+
+    @include atMobileL {
+        // typography
+        font-size: 1rem;
+    }
 }
 
 .footer__subtitle {
     // typography
     font-size: 1.125rem;
+
+    @include atMobileL {
+        // typography
+        font-size: 1.5rem;
+    }
 }
 
 .footer__contacts {
@@ -54,6 +75,11 @@
     font-size: 0.85rem;
     line-height: 1.5;
     text-decoration: none;
+
+    @include atMobileL {
+        // typography
+        font-size: 1rem;
+    }
 }
 
 .footer__mail {
@@ -62,6 +88,11 @@
     font-size: 0.85rem;
     line-height: 1.5;
     text-decoration: none;
+
+    @include atMobileL {
+        // typography
+        font-size: 1rem;
+    }
 }
 
 .footer__social {
@@ -79,6 +110,11 @@
     color: rgba($light, 0.5);
     font-size: 0.85rem;
     line-height: 1.5;
+
+    @include atMobileL {
+        // typography
+        font-size: 1rem;
+    }
 }
 
 .footer__legals a {

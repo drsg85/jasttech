@@ -24,18 +24,20 @@
 }
 
 .about__content {
-    // box model
-    margin-bottom: 40px;
-
-    @include atMobileL {
-        // box model
-        margin-bottom: 60px;
-    }
+    
 }
 
 .about__buttons {
+    // box model
+    margin-top: 40px;
+    
     // typography
     text-align: center;
+
+    @include atMobileL {
+        // box model
+        margin-top: 60px;
+    }
 
     @include atTablet {
         // typography
