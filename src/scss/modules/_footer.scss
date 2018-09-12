@@ -8,6 +8,11 @@
 
     // visual
     background-color: $darkBlue;
+
+    @include atMobileL {
+        // box model
+        padding: 50px;
+    }
 }
 
 .footer__header {
