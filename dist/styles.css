@@ -411,6 +411,12 @@ html {
 .about__header {
   text-align: center; }
 
+.about__content {
+  margin-bottom: 40px; }
+
+.about__buttons {
+  text-align: center; }
+
 .about__content p {
   color: #111339;
   line-height: 1.5; }

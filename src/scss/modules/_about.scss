@@ -9,7 +9,13 @@
 }
 
 .about__content {
+    // box model
+    margin-bottom: 40px;
+}
 
+.about__buttons {
+    // typography
+    text-align: center;
 }
 
 .about__content p {
