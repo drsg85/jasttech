@@ -883,6 +883,9 @@ html {
   background-color: #4cb8ea;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#4cb8ea), to(#8dced2));
   background-image: linear-gradient(to bottom, #4cb8ea, #8dced2); }
+  .faq--inner {
+    background-color: transparent;
+    background-image: none; }
 
 .faq__header {
   margin-bottom: 40px;
@@ -899,6 +902,7 @@ html {
   padding: 20px;
   margin-bottom: 40px;
   background-color: #ffffff;
+  border: 2px solid #4cb8ea;
   border-radius: 25px; }
 
 .question__definition {
