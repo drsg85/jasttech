@@ -9,6 +9,11 @@
         // box model
         padding: 50px 0;
     }
+
+    @include atTablet {
+        // box model
+        padding: 70px;
+    }
 }
 
 .video__header {
@@ -17,6 +22,14 @@
 
     // typography
     text-align: center;
+
+    @include atTablet {
+        // box model
+        padding: 0;
+        
+        // typography
+        text-align: left;
+    }
 }
 
 .video__content {

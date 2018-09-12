@@ -6,6 +6,18 @@
     // list
     list-style: none;
     counter-reset: item;
+
+    @include atTablet {
+        // box model
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        // flex-direction: row;
+        // flex-wrap: nowrap;
+        // height: 100vh;
+    }
 }
 
 .why-list__item {
@@ -31,6 +43,17 @@
         // typography
         font-size: 1.125rem;
     }
+
+    @include atTablet {
+        // box model
+        flex-basis: 48%;
+        margin-bottom: 40px;
+        min-height: 110px;
+        min-height: 7em;
+
+        // typography
+        font-size: 1.125rem;
+    }
 }
 
 .why-list__item::before {
@@ -50,5 +73,10 @@
     @include atMobileL {
         // typography
         font-size: 3rem;
+    }
+
+    @include atTablet {
+        // typography
+        font-size: 4rem;
     }
 }

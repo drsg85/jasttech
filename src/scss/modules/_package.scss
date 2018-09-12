@@ -6,11 +6,19 @@
         // box model
         margin-bottom: 60px;
     }
+
+    @include atTablet {
+        // box model
+        margin-bottom: 100px;
+    }
 }
 
 .package__image {
-    // box model
-    // display: none;
+    @include atTablet {
+        // box model
+        margin: 0 auto;
+        width: 400px;
+    }
 }
 
 .package__image img {
@@ -27,6 +35,17 @@
     color: $darkBlue;
     font-size: 1.85rem;
     text-align: center;
+
+    @include atMobileL {
+        // typography
+        font-size: 2rem;
+    }
+
+    @include atTablet {
+        // typography
+        font-size: 3rem;
+        text-align: left;
+    }
 }
 
 .package__title strong {
@@ -46,18 +65,32 @@
 .package__content {
     @include atMobileL {
         // box model
-        margin-bottom: 30px;
+        margin-bottom: 40px;
     }
 }
 
 .package__content p {
     // typography
+    font-size: 1rem;
     line-height: 1.5;
+
+    @include atTablet {
+        // typography
+        font-size: 1.125rem;
+    }
 }
 
 .package__footer {
+    // positioning
+    position: relative;
+
     // typography
     text-align: center;
+
+    @include atTablet {
+        // typography
+        text-align: left;
+    }
 }
 
 .package__price {
@@ -74,6 +107,13 @@
         // box model
         margin-bottom: 30px;
     }
+
+    @include atTablet {
+        // typography
+        font-size: 3rem;
+        font-weight: 400;
+        text-align: left;
+    }
 }
 
 .package__buttons {
@@ -83,6 +123,16 @@
     @include atMobileL {
         // box model
         margin-bottom: 20px;
+    }
+
+    @include atTablet {
+        // positioning
+        position: absolute;
+        right: 0;
+        top: 0;
+
+        // box model
+        width: 50%;
     }
 }
 
@@ -96,6 +146,12 @@
     font-weight: 700;
     text-decoration: none;
     text-transform: uppercase;
+
+    @include atTablet {
+        // typography
+        font-size: 1rem;
+        text-align: center;
+    }
 }
 
 .package__more::before {
@@ -109,8 +165,18 @@
 
     // typography
     line-height: 18px;
+    text-transform: none;
 
     // visual
     border: 1px solid #bfbfbf;
     border-radius: 50%;
+
+    @include atTablet {
+        // box model
+        width: 26px;
+
+        // typography
+        font-size: 1.125rem;
+        line-height: 24px;
+    }
 }

@@ -9,8 +9,12 @@
     @include atMobileL {
         // box model
         padding: 50px;
-
         padding-bottom: 1px;
+    }
+
+    @include atTablet {
+        // box model
+        padding: 70px;
     }
 }
 
@@ -20,15 +24,26 @@
 }
 
 .models__content {
-
+    @include atTablet {
+        // box model
+        display: flex;
+    }
 }
 
 .models__set {
     // box model
     margin-bottom: 100px;
+
+    @include atTablet {
+        // box model
+        margin-bottom: 40px;
+    }
 }
 
 .models__title {
+    // box model
+    margin-bottom: 1em;
+
     // typography
     color: $darkBlue;
     font-size: 1rem;
@@ -38,5 +53,10 @@
     @include atMobileL {
         // typography
         font-size: 1.25rem;
+    }
+
+    @include atTablet {
+        // typography
+        font-size: 1.75rem;
     }
 }

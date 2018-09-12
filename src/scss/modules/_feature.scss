@@ -11,6 +11,13 @@
         // box model
         max-width: 300px;
     }
+
+    @include atTablet {
+        // box model
+        max-width: inherit;
+        flex-basis: 45%;
+        margin-bottom: 20px;
+    }
 }
 
 .feature__icon {
@@ -22,6 +29,11 @@
     @include atMobileL {
         // box model
         width: 90px;
+    }
+
+    @include atTablet {
+        // box model
+        width: 100px;
     }
 }
 

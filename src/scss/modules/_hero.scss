@@ -27,6 +27,15 @@
         background-image: url('./img/bgs/connectors-m.svg');
     }
     
+    @include atTablet {
+        // box model
+        padding: 70px;
+        padding-bottom: 90px;
+
+        // visual
+        background-image: url('./img/bgs/connectors-t.svg');
+    }
+    
     &--inner {
         // box model
         height: auto;
@@ -56,5 +65,15 @@
 
         // visual
         background-image: none;
+    }
+}
+
+.hero__cta {
+    // typography
+    text-align: center;
+
+    @include atTablet {
+        // typography
+        text-align: left;
     }
 }

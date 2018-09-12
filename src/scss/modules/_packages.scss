@@ -6,7 +6,13 @@
     background-color: #f1f1f1;
 
     @include atMobileL {
+        // box model
         padding: 50px;
+    }
+
+    @include atTablet {
+        // box model
+        padding: 70px;
     }
 }
 

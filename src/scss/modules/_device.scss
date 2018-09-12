@@ -6,6 +6,11 @@
         // box model
         margin-bottom: 60px;
     }
+
+    @include atTablet {
+        // box model
+        margin-bottom: 100px;
+    }
 }
 
 .device__image {
@@ -30,6 +35,9 @@
 }
 
 .device__title {
+    // box model
+    margin-bottom: 0.5em;
+
     // typography
     color: $blue;
     font-size: 1.5rem;
@@ -39,23 +47,45 @@
         // typography
         font-size: 2rem;
     }
+
+    @include atTablet {
+        // typography
+        font-size: 2.5rem;
+    }
 }
 
 .device__subtitle {
     // typography
     color: #acacac;
+    font-size: 1rem;
     font-weight: 700;
     line-height: 1.25;
     text-align: center;
     text-transform: uppercase;
+
+    @include atTablet {
+        // box model
+        width: 460px;
+        margin: 0 auto;
+
+        // typography
+        // font-size: 1.125rem;
+        line-height: 1.5;
+    }
 }
 
 .device__content {
-
+    // 
 }
 
 .device__content p {
     // typography
     color: $darkBlue;
+    font-size: 1rem;
     line-height: 1.5;
+
+    @include atTablet {
+        // typography
+        font-size: 1.125rem;
+    }
 }

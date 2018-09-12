@@ -8,6 +8,15 @@
         // typography
         font-size: 2rem;
     }
+
+    @include atTablet {
+        // box model
+        width: 450px;
+        
+        // typography
+        font-size: 2.5rem;
+        text-align: left;
+    }
 }
 
 .main-title em {

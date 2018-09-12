@@ -13,6 +13,14 @@
         padding: 10px;
         margin-bottom: 40px;
     }
+
+    @include atTablet {
+        // box model
+        flex-basis: 33%;
+        justify-content: flex-start;
+        margin-bottom: 30px;
+        padding: 10px 20px;
+    }
 }
 
 .item__icon {

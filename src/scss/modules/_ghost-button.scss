@@ -4,7 +4,7 @@
     margin-bottom: 20px;
     padding: 0 20px;
     min-width: 200px;
-    max-width: 240px;
+    max-width: 260px;
 
     // typography
     color: $blue;
@@ -20,4 +20,10 @@
     border: 2px solid $blue;
     border-color: $blue;
     border-radius: 25px;
+
+    @include atTablet {
+        // box model
+        width: 280px;
+        max-width: inherit;
+    }
 }

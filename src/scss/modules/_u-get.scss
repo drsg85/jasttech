@@ -10,6 +10,11 @@
         // box model
         padding: 50px 30px;
     }
+
+    @include atTablet {
+        // box model
+        padding: 70px;
+    }
 }
 
 .u-get__header {
@@ -35,5 +40,8 @@
 }
 
 .u-get__buttons {
-    
+    @include atTablet {
+        // typography
+        text-align: center;
+    }
 }

@@ -6,11 +6,21 @@
         // box model
         padding: 50px;
     }
+
+    @include atTablet {
+        // box model
+        padding: 70px;
+    }
 }
 
 .about__header {
     // typography
     text-align: center;
+
+    @include atTablet {
+        // typography
+        text-align: left;
+    }
 }
 
 .about__content {
@@ -26,12 +36,23 @@
 .about__buttons {
     // typography
     text-align: center;
+
+    @include atTablet {
+        // typography
+        text-align: left;
+    }
 }
 
 .about__content p {
     // typography
     color: $darkBlue;
+    font-size: 1rem;
     line-height: 1.5;
+
+    @include atTablet {
+        // typography
+        font-size: 1.125rem;
+    }
 }
 
 .about__content ul {

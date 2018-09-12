@@ -10,14 +10,32 @@
         // box model
         padding: 50px;
     }
+
+    @include atTablet {
+        // box model
+        padding: 70px;
+    }
 }
 
 .turnkey__header {
     // typography
     text-align: center;
+
+    @include atTablet {
+        // typography
+        text-align: left;
+    }
 }
 
 .turnkey__content {
     // box model
     padding: 0 20px;
+
+    @include atTablet {
+        // box model
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
 }

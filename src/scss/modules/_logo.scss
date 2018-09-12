@@ -13,6 +13,11 @@
         // box model
         height: 40px;
     }
+
+    @include atTablet {
+        // box model
+        height: 55px;
+    }
 }
 
 .logo__image img {
@@ -30,5 +35,10 @@
         // typography
         font-size: 1.25rem;
         font-weight: 400;
+    }
+
+    @include atTablet {
+        // typography
+        font-size: 1.5rem;
     }
 }

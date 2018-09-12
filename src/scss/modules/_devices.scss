@@ -6,6 +6,11 @@
         // box model
         padding: 50px;
     }
+
+    @include atTablet {
+        // box model
+        padding: 70px;
+    }
 }
 
 .devices__header {

@@ -6,13 +6,26 @@
         // box model
         padding: 50px;
     }
+
+    @include atTablet {
+        // box model
+        padding: 70px;
+    }
 }
 
 .why__header {
     // typography
     text-align: center;
+
+    @include atTablet {
+        // box model
+        width: 400px;
+        
+        // typography
+        text-align: left;
+    }
 }
 
 .why__content {
-    
+     
 }

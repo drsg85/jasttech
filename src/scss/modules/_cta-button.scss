@@ -1,9 +1,10 @@
 .cta-button {
     // box model
-    display: block;
+    display: inline-block;
+    vertical-align: top;
     margin: 0 auto;
     min-width: 200px;
-    max-width: 240px;
+    max-width: 260px;
 
     // typography
     color: $light;
@@ -20,6 +21,12 @@
     border-radius: 25px;
     background-image: linear-gradient(60deg, $lightBlue, $blue);
     outline: none;
+
+    @include atTablet {
+        // box model
+        width: 280px;
+        max-width: inherit;
+    }
 
     &--dark {
         // visual
