@@ -1,11 +1,12 @@
 .hero {
     // box model
     height: 100vh;
-    height: calc(100vh - 80px);
+    height: calc(100vh - 40px);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 40px;
+    padding-bottom: 60px;
 
     // typography
     color: $light;
@@ -38,5 +39,13 @@
         // visual
         background-image: url('./img/bgs/connectors-s.svg'),
                           linear-gradient(to bottom, $blue, $lightBlue);
+    }
+
+    &--contacts {
+        // box model
+        height: auto;
+
+        // visual
+        background-image: none;
     }
 }

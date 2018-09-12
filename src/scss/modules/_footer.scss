@@ -11,7 +11,8 @@
 }
 
 .footer__header {
-
+    // box model
+    margin-bottom: 80px;
 }
 
 .footer__title {
@@ -64,16 +65,24 @@
 }
 
 .footer__form {
-
+    // box model
+    margin-bottom: 40px;
 }
 
 .footer__legals {
-
+    // typography
+    color: rgba($light, 0.5);
+    font-size: 0.85rem;
+    line-height: 1.5;
 }
 
 .footer__legals a {
+    // box model
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 20px;
+
     // typography
-    color: #435988;
-    font-size: 0.85rem;
+    color: rgba($light, 0.5);
     text-decoration: none;
 }
