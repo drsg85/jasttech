@@ -345,6 +345,13 @@ html {
       padding: 70px;
       padding-bottom: 90px;
       background-image: url("./img/bgs/connectors-t.svg"); } }
+  @media (min-width: 1200px) {
+    .hero {
+      padding: 80px calc((100% - 1040px) / 2);
+      padding-bottom: 120px;
+      background-image: url("./img/bgs/connectors-d.svg");
+      background-size: contain;
+      background-position: center right; } }
   .hero--inner {
     height: auto;
     padding-bottom: 150px;
@@ -436,6 +443,9 @@ html {
   @media (min-width: 768px) {
     .logo__image {
       height: 55px; } }
+  @media (min-width: 1200px) {
+    .logo__image {
+      height: 40px; } }
 
 .logo__image img {
   height: 100%; }
@@ -451,6 +461,9 @@ html {
   @media (min-width: 768px) {
     .logo__text {
       font-size: 1.5rem; } }
+  @media (min-width: 1200px) {
+    .logo__text {
+      font-size: 1.25rem; } }
 
 .main-nav {
   display: none; }
@@ -467,6 +480,10 @@ html {
       width: 450px;
       font-size: 2.5rem;
       text-align: left; } }
+  @media (min-width: 1200px) {
+    .main-title {
+      width: 500px;
+      font-size: 2.75rem; } }
 
 .main-title em {
   color: #4cb8ea;
@@ -518,14 +535,12 @@ html {
     .about__header {
       text-align: left; } }
 
-.about__content {
-  margin-bottom: 40px; }
-  @media (min-width: 480px) {
-    .about__content {
-      margin-bottom: 60px; } }
-
 .about__buttons {
+  margin-top: 40px;
   text-align: center; }
+  @media (min-width: 480px) {
+    .about__buttons {
+      margin-top: 60px; } }
   @media (min-width: 768px) {
     .about__buttons {
       text-align: left; } }
@@ -1179,16 +1194,29 @@ html {
 
 .footer__title {
   margin-bottom: 40px;
+  font-size: 1.5rem;
   font-weight: 400; }
+  @media (min-width: 480px) {
+    .footer__title {
+      font-size: 2rem; } }
+  @media (min-width: 768px) {
+    .footer__title {
+      font-size: 2.5em; } }
 
 .footer__address {
   margin-bottom: 40px;
   font-size: 0.85rem;
   font-weight: 400;
   line-height: 1.5; }
+  @media (min-width: 480px) {
+    .footer__address {
+      font-size: 1rem; } }
 
 .footer__subtitle {
   font-size: 1.125rem; }
+  @media (min-width: 480px) {
+    .footer__subtitle {
+      font-size: 1.5rem; } }
 
 .footer__contacts {
   margin-bottom: 20px; }
@@ -1198,12 +1226,18 @@ html {
   font-size: 0.85rem;
   line-height: 1.5;
   text-decoration: none; }
+  @media (min-width: 480px) {
+    .footer__phone {
+      font-size: 1rem; } }
 
 .footer__mail {
   color: #ffffff;
   font-size: 0.85rem;
   line-height: 1.5;
   text-decoration: none; }
+  @media (min-width: 480px) {
+    .footer__mail {
+      font-size: 1rem; } }
 
 .footer__social {
   margin-bottom: 40px; }
@@ -1215,6 +1249,9 @@ html {
   color: rgba(255, 255, 255, 0.5);
   font-size: 0.85rem;
   line-height: 1.5; }
+  @media (min-width: 480px) {
+    .footer__legals {
+      font-size: 1rem; } }
 
 .footer__legals a {
   display: inline-block;
