@@ -1,0 +1,85 @@
+// vars
+$posR: 30px;
+$posT: 30px;
+$buttonSize: 48px;
+$buttonColor: $blue;
+$barHeight: 4px;
+$barWidth: 28px;
+$barLeft: 10px;
+$barTop: 14px;
+$barMargin: 4px;
+
+.menu-button {
+    // positioning
+    position: fixed;
+    right: $posR;
+    top: $posT;
+    z-index: 9999;
+
+    // box model
+    height: $buttonSize;
+    width: $buttonSize;
+
+    // typography
+    font-size: 0;
+
+    // visual
+    background-color: $buttonColor;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+}
+
+.menu-button::before {
+    content: "";
+
+    // positioning
+    position: absolute;
+    left: $barLeft;
+    top: $barTop;
+    transform-origin: 0 50%;
+    
+    // box model
+    height: $barHeight;
+    width: $barWidth;
+    
+    // visual
+    background-color: $light;
+    border-radius: $barHeight / 2;
+    transition: all 0.3s ease-out;
+}
+
+.menu-button__middle {
+    // positioning
+    position: absolute;
+    left: $barLeft;
+    top: $barTop + $barHeight + $barMargin;
+    
+    // box model
+    height: $barHeight;
+    width: $barWidth;
+    
+    // visual
+    background-color: $light;
+    border-radius: $barHeight / 2;
+    transition: all 0.3s ease-out;
+}
+
+.menu-button::after {
+    content: "";
+    
+    // positioning
+    position: absolute;
+    left: $barLeft;
+    top: $barTop + (($barHeight + $barMargin) * 2);
+    transform-origin: 0 50%;
+
+    // box model
+    height: $barHeight;
+    width: $barWidth;
+
+    // visual
+    background-color: $light;
+    border-radius: $barHeight / 2;
+    transition: all 0.3s ease-out;
+}
