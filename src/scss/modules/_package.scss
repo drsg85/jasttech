@@ -1,6 +1,11 @@
 .package {
     // box model
     margin-bottom: 40px;
+
+    @include atMobileL {
+        // box model
+        margin-bottom: 60px;
+    }
 }
 
 .package__image {
@@ -39,7 +44,10 @@
 }
 
 .package__content {
-
+    @include atMobileL {
+        // box model
+        margin-bottom: 30px;
+    }
 }
 
 .package__content p {
@@ -61,11 +69,21 @@
     color: $darkBlue;
     font-size: 2.5rem;
     text-align: center;
+
+    @include atMobileL {
+        // box model
+        margin-bottom: 30px;
+    }
 }
 
 .package__buttons {
     // typography
     text-align: center;
+
+    @include atMobileL {
+        // box model
+        margin-bottom: 20px;
+    }
 }
 
 .package__more {

@@ -1,9 +1,17 @@
 .models {
     // box model
     padding: 40px;
-
+    padding-bottom: 1px;
+    
     // visual
     background-color: #f1f1f1;
+    
+    @include atMobileL {
+        // box model
+        padding: 50px;
+
+        padding-bottom: 1px;
+    }
 }
 
 .models__header {
@@ -16,7 +24,8 @@
 }
 
 .models__set {
-
+    // box model
+    margin-bottom: 100px;
 }
 
 .models__title {
@@ -25,4 +34,9 @@
     font-size: 1rem;
     font-weight: 900;
     text-align: center;
+
+    @include atMobileL {
+        // typography
+        font-size: 1.25rem;
+    }
 }

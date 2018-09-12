@@ -4,6 +4,11 @@
 
     // visual
     background-color: #f1f1f1;
+
+    @include atMobileL {
+        // box model
+        padding: 50px 0;
+    }
 }
 
 .video__header {

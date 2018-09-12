@@ -18,6 +18,15 @@
     background-position: center center;
     background-size: cover;
     
+    @include atMobileL {
+        // box model
+        padding: 50px;
+        padding-bottom: 70px;
+        
+        // visual
+        background-image: url('./img/bgs/connectors-m.svg');
+    }
+    
     &--inner {
         // box model
         height: auto;

@@ -6,6 +6,11 @@
 
     // typography
     text-align: center;
+
+    @include atMobileL {
+        // box model
+        max-width: 300px;
+    }
 }
 
 .feature__icon {
@@ -13,6 +18,11 @@
     display: inline-block;
     vertical-align: top;
     width: 75px;
+
+    @include atMobileL {
+        // box model
+        width: 90px;
+    }
 }
 
 .feature__icon img {
@@ -26,4 +36,9 @@
     font-size: 1rem;
     font-weight: 700;
     line-height: 1.25;
+
+    @include atMobileL {
+        // typography
+        font-size: 1.5rem;
+    }
 }

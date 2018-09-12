@@ -5,6 +5,11 @@
     // visual
     background-color: $blue;
     background-image: linear-gradient(to bottom, $blue, $lightBlue);
+
+    @include atMobileL {
+        // box model
+        padding: 50px;
+    }
 }
 
 .turnkey__header {

@@ -8,6 +8,11 @@
     // box model
     height: 30px;
     margin-right: 10px;
+
+    @include atMobileL {
+        // box model
+        height: 40px;
+    }
 }
 
 .logo__image img {
@@ -20,4 +25,10 @@
     font-size: 1rem;
     font-weight: 700;
     text-transform: uppercase;
+
+    @include atMobileL {
+        // typography
+        font-size: 1.25rem;
+        font-weight: 400;
+    }
 }

@@ -4,6 +4,10 @@
 
     // visual
     background-color: #f1f1f1;
+
+    @include atMobileL {
+        padding: 50px;
+    }
 }
 
 .packages__header {
@@ -12,7 +16,7 @@
 }
 
 .packages__content {
-
+    
 }
 
 .packages__all {

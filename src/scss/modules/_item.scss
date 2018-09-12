@@ -3,6 +3,16 @@
     display: flex;
     align-items: center;
     margin-bottom: 30px;
+
+    @include atMobileL {
+        // box model
+        flex-direction: column;
+        justify-content: center;
+        flex-basis: 50%;
+        width: 50%;
+        padding: 10px;
+        margin-bottom: 40px;
+    }
 }
 
 .item__icon {
@@ -10,6 +20,14 @@
     flex-basis: 55px;
     width: 55px;
     margin-right: 20px;
+
+    @include atMobileL {
+        // box model
+        flex-basis: 90px;
+        width: 90px;
+        margin-right: 0;
+        margin-bottom: 25px;
+    }
 }
 
 .item__icon img {
@@ -26,4 +44,9 @@
     color: $light;
     font-size: 1rem;
     line-height: 1.25;
+
+    @include atMobileL {
+        // typography
+        text-align: center;
+    }
 }

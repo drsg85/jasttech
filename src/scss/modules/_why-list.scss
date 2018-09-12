@@ -20,11 +20,17 @@
 
     // typography
     color: $darkBlue;
+    font-size: 1rem;
     font-weight: 700;
     line-height: 1.5;
 
     // list
     counter-increment: item;
+
+    @include atMobileL {
+        // typography
+        font-size: 1.125rem;
+    }
 }
 
 .why-list__item::before {
@@ -40,4 +46,9 @@
     font-size: 2.5rem;
     font-weight: 700;
     line-height: 1;
+
+    @include atMobileL {
+        // typography
+        font-size: 3rem;
+    }
 }

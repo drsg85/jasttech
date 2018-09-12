@@ -1,6 +1,11 @@
 .why {
     // box model
     padding: 40px;
+
+    @include atMobileL {
+        // box model
+        padding: 50px;
+    }
 }
 
 .why__header {

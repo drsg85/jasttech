@@ -1,6 +1,11 @@
 .about {
     // box model
     padding: 40px;
+
+    @include atMobileL {
+        // box model
+        padding: 50px;
+    }
 }
 
 .about__header {
@@ -11,6 +16,11 @@
 .about__content {
     // box model
     margin-bottom: 40px;
+
+    @include atMobileL {
+        // box model
+        margin-bottom: 60px;
+    }
 }
 
 .about__buttons {

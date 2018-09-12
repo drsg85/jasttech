@@ -14,6 +14,11 @@
     // visual
     background-color: $blue;
     background-image: linear-gradient(to bottom, $blue, $lightBlue);
+
+    @include atMobileL {
+        // box model
+        padding: 50px;
+    }
 }
 
 .clients__header {
@@ -26,8 +31,21 @@
     text-align: center;
 }
 
-.clients__content {
+.clients__left-content {
+    @include atMobileL {
+        // box model
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
 
+.clients__right-content {
+    @include atMobileL {
+        // box model
+        padding: 0 30px;
+    }
 }
 
 .clients__image {
@@ -36,6 +54,17 @@
 
     // typography
     text-align: center;
+
+    @include atMobileL {
+        // box model
+        flex-basis: 45%;
+        margin-bottom: 20px;
+    }
+
+    &--mb40 {
+        // box model
+        margin-bottom: 40px;
+    }
 }
 
 .clients__image img {

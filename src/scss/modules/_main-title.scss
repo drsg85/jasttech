@@ -3,6 +3,11 @@
     font-size: 1.5rem;
     font-weight: 400;
     text-align: center;
+
+    @include atMobileL {
+        // typography
+        font-size: 2rem;
+    }
 }
 
 .main-title em {

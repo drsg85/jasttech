@@ -5,16 +5,33 @@
 
     // visual
     background-color: $darkBlue;
+
+    @include atMobileL {
+        // box model
+        padding: 50px 30px;
+    }
 }
 
 .u-get__header {
     // typography
     text-align: center;
+
+    @include atMobileL {
+        // box model
+        padding: 0 20px;
+    }
 }
 
 .u-get__content {
     // box model
     padding-bottom: 20px;
+
+    @include atMobileL {
+        // box model
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
 
 .u-get__buttons {
