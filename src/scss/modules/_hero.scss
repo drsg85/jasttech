@@ -80,11 +80,19 @@
     }
 }
 
+.hero__top {
+    @include atDesktop {
+        // box model
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
 .hero__nav {
     // positioning
     position: fixed;
     bottom: 0;
-    left: 110%;
+    right: -110%;
     top: 0;
     z-index: 9;
 
@@ -93,11 +101,28 @@
 
     // visual
     transition: all 0.3s ease-out;
+
+    @include atTablet {
+        // box model
+        width: 400px;
+    }
+
+    @include atDesktop {
+        // positioning
+        position: relative;
+        top: auto;
+        right: auto;
+        bottom: auto;
+        left: auto;
+
+        // box model
+        width: auto;
+    }
 }
 
 .hero__nav--shown {
     // positioning
-    left: 0;
+    right: 0;
 }
 
 .hero__cta {

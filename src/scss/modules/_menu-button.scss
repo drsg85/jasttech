@@ -28,6 +28,11 @@ $barMargin: 4px;
     border: none;
     border-radius: 50%;
     outline: none;
+
+    @include atDesktop {
+        // box model
+        display: none;
+    }
 }
 
 .menu-button::before {
