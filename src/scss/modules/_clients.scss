@@ -1,23 +1,39 @@
 .clients {
-
+    @include atDesktop {
+        // box model
+        display: flex;
+        height: 100vh;
+    }
 }
 
 .clients__left {
     // box model
     padding: 40px 60px;
+
+    @include atDesktop {
+        // box model
+        flex-basis: 50%;
+        padding-left: calc((100% - 1040px) / 2);
+    }
 }
 
 .clients__right {
     // box model
     padding: 40px;
-
+    
     // visual
     background-color: $blue;
     background-image: linear-gradient(to bottom, $blue, $lightBlue);
-
+    
     @include atMobileL {
         // box model
         padding: 50px;
+    }
+    
+    @include atDesktop {
+        // box model
+        flex-basis: 50%;
+        padding-right: calc((100% - 1040px) / 2);
     }
 }
 

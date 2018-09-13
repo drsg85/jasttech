@@ -24,7 +24,10 @@
 
     @include atDesktop {
         // box model
-        flex-basis: 200px;
+        // display: block; fixx
+        // flex-basis: 200px;
+        flex-basis: 20%;
+        width: 200px;
     }
 }
 
