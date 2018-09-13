@@ -369,6 +369,19 @@ html {
     height: auto;
     background-image: none; }
 
+.hero__nav {
+  position: fixed;
+  bottom: 0;
+  left: 110%;
+  top: 0;
+  z-index: 9;
+  width: 100%;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out; }
+
+.hero__nav--shown {
+  left: 0; }
+
 .hero__cta {
   text-align: center; }
   @media (min-width: 768px) {
@@ -427,6 +440,24 @@ html {
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out; }
 
+.menu-button--close::before {
+  top: 23px;
+  -webkit-transform-origin: center center;
+  transform-origin: center center;
+  -webkit-transform: rotate(-135deg);
+  transform: rotate(-135deg); }
+
+.menu-button--close .menu-button__middle {
+  width: 0;
+  opacity: 0; }
+
+.menu-button--close::after {
+  top: 23px;
+  -webkit-transform-origin: center center;
+  transform-origin: center center;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg); }
+
 .logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -467,7 +498,40 @@ html {
       font-size: 1.25rem; } }
 
 .main-nav {
-  display: none; }
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #ffffff; }
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.main-nav__item {
+  margin: 10px 0;
+  padding: 0;
+  text-align: center; }
+
+.main-nav__link {
+  display: inline-block;
+  vertical-align: top;
+  padding: 15px 20px;
+  color: #435988;
+  font-size: 1.125rem;
+  text-decoration: none; }
 
 .main-title {
   font-size: 1.5rem;
@@ -1231,8 +1295,7 @@ html {
   .clients {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
-    height: 100vh; } }
+    display: flex; } }
 
 .clients__left {
   padding: 40px 60px; }
