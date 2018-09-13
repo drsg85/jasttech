@@ -54,6 +54,11 @@
         // typography
         font-size: 1.125rem;
     }
+
+    @include atDesktop {
+        // box model
+        margin-bottom: 20px;
+    }
 }
 
 .why-list__item::before {

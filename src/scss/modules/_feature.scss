@@ -18,6 +18,15 @@
         flex-basis: 45%;
         margin-bottom: 20px;
     }
+
+    @include atDesktop {
+        // box model
+        margin: 0;
+        margin-bottom: 20px;
+        width: 400px;
+        display: flex;
+        flex-basis: fill;
+    }
 }
 
 .feature__icon {
@@ -35,6 +44,13 @@
         // box model
         width: 100px;
     }
+
+    @include atDesktop {
+        // box model
+        flex-basis: 65px;
+        width: 65px;
+        margin-right: 40px;
+    }
 }
 
 .feature__icon img {
@@ -46,11 +62,22 @@
     // typography
     color: $light;
     font-size: 1rem;
-    font-weight: 700;
+    font-weight: 400;
     line-height: 1.25;
 
     @include atMobileL {
         // typography
         font-size: 1.5rem;
+    }
+
+    @include atDesktop {
+        // box model
+        flex-basis: calc(100% - 105px);
+        margin: 0;
+        margin-top: -5px;
+
+        // typography
+        font-size: 1.5rem;
+        text-align: left;
     }
 }

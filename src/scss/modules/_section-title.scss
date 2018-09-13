@@ -18,6 +18,10 @@
         font-size: 2.5rem;
     }
 
+    @include atDesktop {
+        // box model
+    }
+
     &--inv {
         // typography
         color: $light;

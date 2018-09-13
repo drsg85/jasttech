@@ -15,6 +15,13 @@
         // box model
         padding: 70px;
     }
+
+    @include atDesktop {
+        // box model
+        // height: 100vh;
+        display: flex;
+        padding: 120px calc((100% - 1040px) / 2);
+    }
 }
 
 .turnkey__header {
@@ -24,6 +31,11 @@
     @include atTablet {
         // typography
         text-align: left;
+    }
+
+    @include atDesktop {
+        // box model
+        flex-basis: 50%;
     }
 }
 
@@ -37,5 +49,14 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+    }
+
+    @include atDesktop {
+        // box model
+        flex-basis: 50%;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        padding-left: 60px;
     }
 }

@@ -11,6 +11,13 @@
         // box model
         padding: 70px;
     }
+
+    @include atDesktop {
+        // box model
+        // height: 100vh;
+        display: flex;
+        padding: 120px calc((100% - 1040px) / 2);
+    }
 }
 
 .about__header {
@@ -21,10 +28,18 @@
         // typography
         text-align: left;
     }
+
+    @include atDesktop {
+        // box model
+        flex-basis: 50%;
+    }
 }
 
 .about__content {
-    
+    @include atDesktop {
+        // box model
+        flex-basis: 50%;
+    }
 }
 
 .about__buttons {

@@ -14,6 +14,11 @@
         // box model
         padding: 70px;
     }
+
+    @include atDesktop {
+        // box model
+        height: 100vh;
+    }
 }
 
 .video__header {
