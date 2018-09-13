@@ -15,6 +15,12 @@
         // box model
         padding: 70px;
     }
+
+    @include atDesktop {
+        // box model
+        // height: 100vh;
+        padding: 80px calc((100% - 1040px) / 2);
+    }
 }
 
 .u-get__header {

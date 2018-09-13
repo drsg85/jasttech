@@ -1066,6 +1066,9 @@ html {
   @media (min-width: 768px) {
     .u-get {
       padding: 70px; } }
+  @media (min-width: 1200px) {
+    .u-get {
+      padding: 80px calc((100% - 1040px) / 2); } }
 
 .u-get__header {
   text-align: center; }
@@ -1121,6 +1124,10 @@ html {
       justify-content: flex-start;
       margin-bottom: 30px;
       padding: 10px 20px; } }
+  @media (min-width: 1200px) {
+    .item {
+      -ms-flex-preferred-size: 200px;
+      flex-basis: 200px; } }
 
 .item__icon {
   -ms-flex-preferred-size: 55px;

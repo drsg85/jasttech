@@ -21,6 +21,11 @@
         margin-bottom: 30px;
         padding: 10px 20px;
     }
+
+    @include atDesktop {
+        // box model
+        flex-basis: 200px;
+    }
 }
 
 .item__icon {
