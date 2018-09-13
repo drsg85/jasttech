@@ -83,3 +83,25 @@ $barMargin: 4px;
     border-radius: $barHeight / 2;
     transition: all 0.3s ease-out;
 }
+
+.menu-button--close::before {
+    // positioning
+    top: 23px;
+    transform-origin: center center;
+    transform: rotate(-135deg);
+}
+
+.menu-button--close .menu-button__middle {
+    // box model
+    width: 0;
+
+    // visual
+    opacity: 0;
+}
+
+.menu-button--close::after {
+    // positioning
+    top: 23px;
+    transform-origin: center center;
+    transform: rotate(-45deg);
+}

@@ -1,4 +1,42 @@
 .main-nav {
     // box model
-    display: none;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    // visual
+    background-color: $light;
+}
+
+.main-nav__list {
+    // box model
+    margin: 0;
+    padding: 0;
+
+    // list
+    list-style: none;
+}
+
+.main-nav__item {
+    // box model
+    margin: 10px 0;
+    padding: 0;
+
+    // typography
+    text-align: center;
+}
+
+.main-nav__link {
+    // box model
+    display: inline-block;
+    vertical-align: top;
+    padding: 15px 20px;
+
+    // typography
+    color: $violet;
+    font-size: 1.125rem;
+    text-decoration: none;
 }

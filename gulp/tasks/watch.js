@@ -4,6 +4,7 @@ import browserSync from 'browser-sync';
 const dirs = {
     pug: './src/pug/**/*.pug',
     scss: './src/scss/**/*.scss',
+    js: './src/js/**/*.js',
     css: './dist/styles.css',
     dest: './dist'
 }
@@ -24,7 +25,10 @@ gulp.task('watch', function() {
     gulp.watch(dirs.pug, ['pugChanged']);
 
     // styles
-    gulp.watch(dirs.scss, ['stylesChanged'])
+    gulp.watch(dirs.scss, ['stylesChanged']);
+
+    // scripts
+    gulp.watch(dirs.js, ['jsChanged']);
 });
 
 // pug
@@ -36,4 +40,9 @@ gulp.task('pugChanged', ['pugRender'], () => {
 gulp.task('stylesChanged', ['styles'], () => {
     gulp.src(dirs.css)
         .pipe(browserSync.stream());
+});
+
+// scripts
+gulp.task('jsChanged', ['scripts'], () => {
+    browserSync.reload();
 });

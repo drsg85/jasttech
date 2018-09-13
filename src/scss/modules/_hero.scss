@@ -80,6 +80,26 @@
     }
 }
 
+.hero__nav {
+    // positioning
+    position: fixed;
+    bottom: 0;
+    left: 110%;
+    top: 0;
+    z-index: 9;
+
+    // box model
+    width: 100%;
+
+    // visual
+    transition: all 0.3s ease-out;
+}
+
+.hero__nav--shown {
+    // positioning
+    left: 0;
+}
+
 .hero__cta {
     // typography
     text-align: center;
