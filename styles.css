@@ -1185,8 +1185,7 @@ html {
       margin-bottom: 40px; } }
   @media (min-width: 1200px) {
     .models__set {
-      padding: 80px calc((100% - 1040px) / 2);
-      padding-bottom: 40px; } }
+      padding: 0 calc((100% - 1040px) / 2); } }
 
 .models__title {
   margin-bottom: 1em;
