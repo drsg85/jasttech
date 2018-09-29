@@ -63,21 +63,38 @@
 }
 
 .package__content {
-    @include atMobileL {
-        // box model
-        margin-bottom: 40px;
-    }
-}
+    // box model
+    margin-bottom: 30px;
 
-.package__content p {
     // typography
     font-size: 1rem;
     line-height: 1.5;
 
+    @include atMobileL {
+        // box model
+        margin-bottom: 40px;
+    }
+    
     @include atTablet {
         // typography
         font-size: 1.125rem;
     }
+}
+
+.package__content p {
+
+}
+
+.package__content ul {
+    // box model
+    margin: 0;
+    padding: 0;
+    padding-left: 1em;
+}
+
+.package__content li {
+    // box model
+    margin-bottom: 0.5em;
 }
 
 .package__footer {
@@ -96,7 +113,7 @@
 .package__price {
     // box model
     margin: 0;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 
     // typography
     color: $darkBlue;
