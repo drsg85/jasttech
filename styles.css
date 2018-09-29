@@ -1021,16 +1021,24 @@ html {
 .package__income {
   display: none; }
 
-@media (min-width: 480px) {
-  .package__content {
-    margin-bottom: 40px; } }
-
-.package__content p {
+.package__content {
+  margin-bottom: 30px;
   font-size: 1rem;
   line-height: 1.5; }
+  @media (min-width: 480px) {
+    .package__content {
+      margin-bottom: 40px; } }
   @media (min-width: 768px) {
-    .package__content p {
+    .package__content {
       font-size: 1.125rem; } }
+
+.package__content ul {
+  margin: 0;
+  padding: 0;
+  padding-left: 1em; }
+
+.package__content li {
+  margin-bottom: 0.5em; }
 
 .package__footer {
   position: relative;
@@ -1041,7 +1049,7 @@ html {
 
 .package__price {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   color: #111339;
   font-size: 2.5rem;
   text-align: center; }
