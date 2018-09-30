@@ -14,6 +14,14 @@
         // box model
         padding: 70px;
     }
+
+    @include atDesktop {
+        // box model
+        // padding: 0;
+
+        // visual
+        // background-color: transparent;
+    }
 }
 
 .packages__header {

@@ -11,6 +11,30 @@
         // box model
         margin-bottom: 100px;
     }
+
+    @include atDesktop {
+        // box model
+        display: flex;
+        margin-bottom: 0;
+    }
+}
+
+.package:nth-of-type(2n) {
+    @include atDesktop {
+        .package__image {
+            // box model
+            order: 2;
+            padding-right: calc((100% - 1040px) / 2);
+            padding-left: 0;
+        }
+
+        .package__container {
+            // box model
+            order: 1;
+            padding-left: calc((100% - 1040px) / 2);
+            padding-right: 70px;
+        }
+    }
 }
 
 .package__image {
@@ -18,6 +42,25 @@
         // box model
         margin: 0 auto;
         width: 400px;
+    }
+
+    @include atDesktop {
+        // box model
+        flex-basis: 40%;
+        padding-top: 120px;
+        padding-left: calc((100% - 1040px) / 2);
+    }
+}
+
+.package__container {
+    @include atDesktop {
+        // box model
+        flex-basis: 60%;
+        padding: 70px;
+        padding-right: calc((100% - 1040px) / 2);
+
+        // visual
+        // background-color: #f1f1f1;
     }
 }
 

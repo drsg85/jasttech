@@ -348,6 +348,7 @@ html {
   @media (min-width: 1200px) {
     .hero {
       height: 100vh;
+      max-height: 940px;
       padding: 80px calc((100% - 1040px) / 2);
       padding-bottom: 120px;
       background-image: url("./img/bgs/connectors-d.svg");
@@ -736,9 +737,6 @@ html {
   @media (min-width: 768px) {
     .video {
       padding: 70px; } }
-  @media (min-width: 1200px) {
-    .video {
-      height: 100vh; } }
 
 .video__header {
   padding: 0 20px;
@@ -994,11 +992,45 @@ html {
   @media (min-width: 768px) {
     .package {
       margin-bottom: 100px; } }
+  @media (min-width: 1200px) {
+    .package {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      margin-bottom: 0; } }
+
+@media (min-width: 1200px) {
+  .package:nth-of-type(2n) .package__image {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+    padding-right: calc((100% - 1040px) / 2);
+    padding-left: 0; }
+  .package:nth-of-type(2n) .package__container {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+    padding-left: calc((100% - 1040px) / 2);
+    padding-right: 70px; } }
 
 @media (min-width: 768px) {
   .package__image {
     margin: 0 auto;
     width: 400px; } }
+
+@media (min-width: 1200px) {
+  .package__image {
+    -ms-flex-preferred-size: 40%;
+    flex-basis: 40%;
+    padding-top: 120px;
+    padding-left: calc((100% - 1040px) / 2); } }
+
+@media (min-width: 1200px) {
+  .package__container {
+    -ms-flex-preferred-size: 60%;
+    flex-basis: 60%;
+    padding: 70px;
+    padding-right: calc((100% - 1040px) / 2); } }
 
 .package__image img {
   width: 100%; }
