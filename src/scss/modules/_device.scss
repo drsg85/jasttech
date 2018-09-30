@@ -11,6 +11,11 @@
         // box model
         margin-bottom: 100px;
     }
+
+    @include atDesktop {
+        // box model
+        display: flex;
+    }
 }
 
 .device__image {
@@ -18,6 +23,13 @@
         // box model
         width: 260px;
         margin: 0 auto;
+    }
+
+    @include atDesktop {
+        // box model
+        order: 2;
+        flex-basis: 40%;
+        padding-left: 100px;
     }
 }
 
@@ -27,11 +39,21 @@
 }
 
 .device__header-n-content {
-
+    @include atDesktop {
+        // box model
+        order: 1;
+        flex-basis: 60%;
+    }
 }
 
 .device__header {
+    // typography
+    text-align: center;
 
+    @include atDesktop {
+        // typography
+        text-align: left;
+    }
 }
 
 .device__title {
@@ -41,7 +63,6 @@
     // typography
     color: $blue;
     font-size: 1.5rem;
-    text-align: center;
 
     @include atMobileL {
         // typography
@@ -60,7 +81,6 @@
     font-size: 1rem;
     font-weight: 700;
     line-height: 1.25;
-    text-align: center;
     text-transform: uppercase;
 
     @include atTablet {
@@ -71,6 +91,11 @@
         // typography
         // font-size: 1.125rem;
         line-height: 1.5;
+    }
+    
+    @include atDesktop {
+        // box model
+        margin: 0;
     }
 }
 
