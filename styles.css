@@ -1142,6 +1142,9 @@ html {
   @media (min-width: 768px) {
     .devices {
       padding: 70px; } }
+  @media (min-width: 1200px) {
+    .devices {
+      padding: 120px calc((100% - 1040px) / 2); } }
 
 .devices__header {
   margin: 0 -20px;
