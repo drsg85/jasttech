@@ -20,10 +20,19 @@
     border: 2px solid $blue;
     border-color: $blue;
     border-radius: 25px;
+    transition: all 0.3s ease-out;
 
     @include atTablet {
         // box model
         width: 280px;
         max-width: inherit;
     }
+}
+
+.ghost-button:hover {
+    // typography
+    color: $light;
+
+    // visual
+    background-color: $blue;
 }

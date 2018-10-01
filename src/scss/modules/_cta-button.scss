@@ -21,6 +21,7 @@
     border-radius: 25px;
     background-image: linear-gradient(60deg, $lightBlue, $blue);
     outline: none;
+    transition: all 0.3s ease-out;
 
     @include atTablet {
         // box model
@@ -33,4 +34,13 @@
         background-color: $darkBlue;
         background-image: none;
     }
+}
+
+.cta-button:hover {
+    // typography
+    color: $darkBlue;
+
+    // visual
+    background-color: $light;
+    background-image: linear-gradient(transparent, transparent);
 }
