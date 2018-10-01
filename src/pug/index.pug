@@ -13,7 +13,7 @@ html(lang="en")
         header.hero
             button.menu-button: .menu-button__middle
 
-            .hero__top
+            .hero__top.hero__top--fixed
                 .logo
                     .logo__image: img(src="./img/logo.svg", alt="")
                     .logo__text Jast Charger
@@ -33,6 +33,9 @@ html(lang="en")
                             //-     a.main-nav__link(href="#") Новости
                             li.main-nav__item
                                 a.main-nav__link(href="#") Контакты
+            
+            //- Needed for properly work of flex
+            .hero__dummy
 
             h1.main-title Постройте бизнес на потребности 21&nbsp;века! Заработок от <em>80000</em> рублей в&nbsp;месяц!
 

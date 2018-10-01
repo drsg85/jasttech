@@ -40,8 +40,7 @@
         // box model
         height: 100vh;
         max-height: 940px;
-        padding: 80px calc((100% - 1040px) / 2);
-        padding-bottom: 120px;
+        padding: 120px calc((100% - 1040px) / 2);
         
         // visual
         background-image: url('./img/bgs/connectors-d.svg');
@@ -83,9 +82,40 @@
 
 .hero__top {
     @include atDesktop {
+        // positioning
+        position: absolute;
+        left: 0;
+        top: 70px;
+        right: 0;
+
         // box model
         display: flex;
         justify-content: space-between;
+        width: 100%;
+        padding: 0 calc((100% - 1040px) / 2);
+    }
+}
+
+.hero__top--fixed {
+    @include atDesktop {
+        // positioning
+        position: fixed;
+        top: 0;
+        z-index: 99;
+
+        // box model
+
+        // visual
+        background-color: #1d1f43;
+    }
+}
+
+.hero__dummy {
+    display: none;
+
+    @include atDesktop {
+        // box model
+        display: block;
     }
 }
 

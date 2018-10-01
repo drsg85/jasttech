@@ -349,8 +349,7 @@ html {
     .hero {
       height: 100vh;
       max-height: 940px;
-      padding: 80px calc((100% - 1040px) / 2);
-      padding-bottom: 120px;
+      padding: 120px calc((100% - 1040px) / 2);
       background-image: url("./img/bgs/connectors-d.svg");
       background-size: cover;
       background-position: center right; } }
@@ -372,12 +371,31 @@ html {
 
 @media (min-width: 1200px) {
   .hero__top {
+    position: absolute;
+    left: 0;
+    top: 70px;
+    right: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
-    justify-content: space-between; } }
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 calc((100% - 1040px) / 2); } }
+
+@media (min-width: 1200px) {
+  .hero__top--fixed {
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    background-color: #1d1f43; } }
+
+.hero__dummy {
+  display: none; }
+  @media (min-width: 1200px) {
+    .hero__dummy {
+      display: block; } }
 
 .hero__nav {
   position: fixed;
