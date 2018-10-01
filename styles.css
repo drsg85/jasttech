@@ -382,7 +382,7 @@ html {
     -ms-flex-pack: justify;
     justify-content: space-between;
     width: 100%;
-    padding: 0 calc((100% - 1040px) / 2); } }
+    padding: 0 calc((100% - 1060px) / 2); } }
 
 @media (min-width: 1200px) {
   .hero__top--fixed {
@@ -1508,6 +1508,9 @@ html {
   @media (min-width: 480px) {
     .footer {
       padding: 50px; } }
+  @media (min-width: 1200px) {
+    .footer {
+      padding: 120px calc((100% - 1040px) / 2); } }
 
 .footer__header {
   margin-bottom: 80px; }
@@ -1618,6 +1621,9 @@ html {
 
 .u-want {
   padding: 40px; }
+  @media (min-width: 1200px) {
+    .u-want {
+      padding: 120px calc((100% - 1040px) / 2); } }
 
 .u-want__header {
   text-align: center; }
@@ -1642,6 +1648,9 @@ html {
 .profits {
   padding: 40px;
   background-color: #111339; }
+  @media (min-width: 1200px) {
+    .profits {
+      padding: 120px calc((100% - 1040px) / 2); } }
 
 .profits__header {
   text-align: center; }
@@ -1671,6 +1680,9 @@ html {
   background-color: #4cb8ea;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#4cb8ea), to(#8dced2));
   background-image: linear-gradient(to bottom, #4cb8ea, #8dced2); }
+  @media (min-width: 1200px) {
+    .faq {
+      padding: 120px calc((100% - 1040px) / 2); } }
   .faq--inner {
     background-color: transparent;
     background-image: none; }
