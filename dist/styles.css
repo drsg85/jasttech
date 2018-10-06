@@ -399,9 +399,9 @@ html {
 
 .hero__nav {
   position: fixed;
-  bottom: 0;
+  bottom: -20%;
   right: -110%;
-  top: 0;
+  top: -20%;
   z-index: 9;
   width: 100%;
   -webkit-transition: all 0.3s ease-out;
