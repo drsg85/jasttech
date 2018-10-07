@@ -46,8 +46,12 @@
 }
 
 .u-get__buttons {
+    // box model
+    margin-right: 20px;
+    
+    // typography
+    text-align: center;
     @include atTablet {
-        // typography
-        text-align: center;
+
     }
 }

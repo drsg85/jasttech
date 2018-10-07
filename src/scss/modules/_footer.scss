@@ -15,6 +15,9 @@
     }
 
     @include atDesktop {
+        // positioning
+        position: relative;
+
         // box model
         padding: 120px calc((100% - 1040px) / 2);
     }
@@ -23,6 +26,10 @@
 .footer__header {
     // box model
     margin-bottom: 80px;
+
+    @include atDesktop {
+        text-align: left;
+    }
 }
 
 .footer__title {
@@ -41,6 +48,13 @@
     @include atTablet {
         // typography
         font-size: 2.5em;
+    }
+}
+
+.footer__content {
+    @include atDesktop {
+        // typography
+        text-align: left;
     }
 }
 
@@ -107,7 +121,20 @@
 
 .footer__form {
     // box model
+    max-width: 460px;
+    margin: 0 auto;
     margin-bottom: 40px;
+
+    @include atDesktop {
+        // positioning
+        position: absolute;
+        top: 140px;
+        right: calc((100% - 1040px) / 2);
+
+        // box model
+        height: 600px;
+        width: 500px;
+    }
 }
 
 .footer__legals {
@@ -119,6 +146,11 @@
     @include atMobileL {
         // typography
         font-size: 1rem;
+    }
+
+    @include atDesktop {
+        // typography
+        text-align: left;
     }
 }
 
