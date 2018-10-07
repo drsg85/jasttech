@@ -1,19 +1,121 @@
 .slider {
+    @include atDesktop {
+        // positioning
+        position: relative;
 
+        // box model
+        margin: 0;
+        margin: 0 -120px;
+    }
+}
+
+.slider__prev,
+.slider__next {
+    @include atDesktop {
+        // positioning
+        position: absolute;
+        top: 50%;
+        transform: translateY(-100%);
+        
+        // box model
+        height: 80px;
+        width: 40px;
+
+        // typography
+        font-size: 0;
+        
+        // visual
+        border: none;
+        // background-color: #f00;
+        background-color: transparent;
+        cursor: pointer;
+        outline: none;
+
+        &:hover {
+            // visual
+            opacity: 0.5;
+        }
+    
+        &::before,
+        &::after {
+            content: '';
+            
+            // positioning
+            position: absolute;
+    
+            // box model
+            height: 3px;
+            width: 40px;
+    
+            // visual
+            background-color: $darkBlue;
+            border-radius: 2px;
+        }
+    }
 }
 
 .slider__prev {
+    @include atDesktop {
+        // positioning
+        left: 60px;
 
+        &::before {
+            // positioning
+            left: 2px;
+            top: 39px;
+            transform-origin: left center;
+            transform: rotate(-45deg);
+        }
+        
+        &::after {
+            // positioning
+            left: 2px;
+            top: 37px;
+            transform-origin: left center;
+            transform: rotate(45deg);
+        }
+    }
 }
 
 .slider__next {
-
+    @include atDesktop {
+        // positioning
+        right: 60px;
+        
+        &::before {
+            // positioning
+            right: 2px;
+            top: 39px;
+            transform-origin: right center;
+            transform: rotate(45deg);
+        }
+        
+        &::after {
+            // positioning
+            right: 2px;
+            top: 37px;
+            transform-origin: right center;
+            transform: rotate(-45deg);
+        }
+    }
 }
 
 .slider__slides {
+    @include atDesktop {
+        // box model
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
 
+        overflow: hidden;
+    }
 }
 
 .slider__slide {
-    
+    @include atDesktop {
+        // box model
+        flex-basis: 100%;
+        min-width: 100%;
+        padding: 0 140px;
+    }
 }
