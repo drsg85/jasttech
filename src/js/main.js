@@ -1,5 +1,7 @@
 'use strict';
 
-import Menu from './modules/MobileMenu';
+import MobileMenu from './modules/MobileMenu';
+import DesktopMenu from './modules/DesktopMenu';
 
-new Menu();
+new MobileMenu();
+new DesktopMenu();

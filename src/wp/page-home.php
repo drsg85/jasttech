@@ -32,10 +32,21 @@
             <div class="hero__nav">
                 <nav class="main-nav">
                     <ul class="main-nav__list">
-                        <li class="main-nav__item"><a class="main-nav__link" href="/business">Для Бизнеса</a></li>
-                        <li class="main-nav__item"><a class="main-nav__link" href="/about">О Нас</a></li>
-                        <li class="main-nav__item"><a class="main-nav__link" href="/faq">FAQ</a></li>
-                        <li class="main-nav__item"><a class="main-nav__link" href="/contacts">Контакты</a></li>
+                        <li class="main-nav__item">
+                            <a class="main-nav__link main-nav__link--current" href="<?php echo esc_url(home_url('/')); ?>">Франшиза</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a class="main-nav__link" href="<?php echo esc_url(home_url('/')); ?>business">Для Бизнеса</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a class="main-nav__link" href="<?php echo esc_url(home_url('/')); ?>about">О Нас</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a class="main-nav__link" href="<?php echo esc_url(home_url('/')); ?>faq">FAQ</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a class="main-nav__link" href="<?php echo esc_url(home_url('/')); ?>contacts">Контакты</a>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -548,7 +559,7 @@
         <p class="footer__legals"><a href="#">Договор оферты</a></p>
     </section>
 
-    <script src="main.js"></script>
+    <script src="<?php bloginfo('stylesheet_directory'); ?>/main.js"></script>
 </body>
 
 </html>

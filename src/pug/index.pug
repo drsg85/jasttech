@@ -22,17 +22,17 @@ html(lang="en")
                     nav.main-nav
                         ul.main-nav__list
                             li.main-nav__item
-                                a.main-nav__link(href="#") Франшиза
+                                a.main-nav__link.main-nav__link--current(href="#") Франшиза
                             li.main-nav__item
-                                a.main-nav__link(href="#") Для Бизнеса
+                                a.main-nav__link(href="business.html") Для Бизнеса
                             li.main-nav__item
-                                a.main-nav__link(href="#") О Нас
+                                a.main-nav__link(href="about.html") О Нас
                             li.main-nav__item
-                                a.main-nav__link(href="#") FAQ
-                            //- li.main-nav__item
-                            //-     a.main-nav__link(href="#") Новости
+                                a.main-nav__link(href="faq.html") FAQ
                             li.main-nav__item
-                                a.main-nav__link(href="#") Контакты
+                                a.main-nav__link(href="news.html") Новости
+                            li.main-nav__item
+                                a.main-nav__link(href="contacts.html") Контакты
             
             //- Needed for properly work of flex
             .hero__dummy
@@ -437,4 +437,4 @@ html(lang="en")
             p.footer__legals
                 a(href="#") Договор оферты
 
-        script(src="main.js")
+        script(src="./main.js")

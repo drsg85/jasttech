@@ -47,13 +47,19 @@
     padding: 15px 20px;
 
     // typography
+    color: $light;
     color: $violet;
     font-size: 1.125rem;
     text-decoration: none;
-
+    
     @include atDesktop {
         // visual
         transition: all 0.15s ease-in;
+    }
+    
+    &--current {
+        // typography
+        color: $violet;
     }
 }
 

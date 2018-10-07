@@ -16,20 +16,21 @@ html(lang="en")
                     .logo__image: img(src="./img/logo.svg", alt="")
                     .logo__text Jast&nbsp;Charger
 
-                nav.main-nav
-                    ul.main-nav__list
-                        li.main-nav__item
-                            a.main-nav__link(href="#") Франшиза
-                        li.main-nav__item
-                            a.main-nav__link(href="#") Для Бизнеса
-                        li.main-nav__item
-                            a.main-nav__link(href="#") О Нас
-                        li.main-nav__item
-                            a.main-nav__link(href="#") FAQ
-                        li.main-nav__item
-                            a.main-nav__link(href="#") Новости
-                        li.main-nav__item
-                            a.main-nav__link(href="#") Контакты
+                .hero__nav
+                    nav.main-nav
+                        ul.main-nav__list
+                            li.main-nav__item
+                                a.main-nav__link(href="index.html") Франшиза
+                            li.main-nav__item
+                                a.main-nav__link(href="business.html") Для Бизнеса
+                            li.main-nav__item
+                                a.main-nav__link(href="about.html") О Нас
+                            li.main-nav__item
+                                a.main-nav__link(href="faq.html") FAQ
+                            li.main-nav__item
+                                a.main-nav__link(href="news.html") Новости
+                            li.main-nav__item
+                                a.main-nav__link.main-nav__link--current(href="#") Контакты
 
         section.footer
             header.footer__header
