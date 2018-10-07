@@ -5,6 +5,7 @@ const dirs = {
     pug: './src/pug/**/*.pug',
     scss: './src/scss/**/*.scss',
     js: './src/js/**/*.js',
+    php: './src/wp/*.php',
     css: './dist/styles.css',
     dest: './dist'
 }
@@ -29,6 +30,9 @@ gulp.task('watch', function() {
 
     // scripts
     gulp.watch(dirs.js, ['jsChanged']);
+
+    // wordpress
+    gulp.watch(dirs.php, ['copyPHP']);
 });
 
 // pug
@@ -37,12 +41,12 @@ gulp.task('pugChanged', ['pugRender'], () => {
 });
 
 // styles
-gulp.task('stylesChanged', ['styles'], () => {
+gulp.task('stylesChanged', ['styles', 'copyCSS'], () => {
     gulp.src(dirs.css)
         .pipe(browserSync.stream());
 });
 
 // scripts
-gulp.task('jsChanged', ['scripts'], () => {
+gulp.task('jsChanged', ['scripts', 'copyJS'], () => {
     browserSync.reload();
 });
