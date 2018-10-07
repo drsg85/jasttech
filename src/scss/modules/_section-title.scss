@@ -26,6 +26,13 @@
         // typography
         color: $light;
     }
+    
+    &--inv-d {
+        @include atDesktop {
+            // typography
+            color: $light;
+        }
+    }
 }
 
 .section-title em {

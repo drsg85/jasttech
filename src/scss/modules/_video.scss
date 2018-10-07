@@ -7,7 +7,7 @@
 
     @include atMobileL {
         // box model
-        padding: 50px 0;
+        padding: 50px 20px;
     }
 
     @include atTablet {
@@ -16,8 +16,11 @@
     }
 
     @include atDesktop {
+        // positioning
+        position: relative;
+
         // box model
-        // height: 100vw;
+        padding: 0;
     }
 }
 
@@ -31,12 +34,90 @@
     @include atTablet {
         // box model
         padding: 0;
+        max-width: 600px;
         
         // typography
         text-align: left;
     }
+
+    @include atDesktop {
+        // positioning
+        position: absolute;
+        z-index: 3;
+        
+        // box model
+        height: 100%;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 70px;
+        padding-left: calc((100% - 1040px) / 2);
+
+        // visual
+        transition: opacity 0.3s ease-out;
+    }
+
+    &--hidden {
+        @include atDesktop {
+            // visual
+            opacity: 0;
+        }
+    }
 }
 
 .video__content {
+    // positioning
+    position: relative;
+}
+
+.video__content video {
+    // box model
+    width: 100%;
+}
+
+.video__trigger {
+    // positioning
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 2;
+
+    // visual
+    background-color: rgba(0, 0, 0, 0.5);
+    background-image: url('./img/video/play.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100px;
+    cursor: pointer;
+    transition: opacity 0.3s ease-out;
     
+    &--hidden {
+        // visual
+        opacity: 0;
+    }
+}
+
+.video__cover {
+    // positioning
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    
+    // visual
+    background-image: url(./img/video/video-m.jpg);
+    background-size: cover;
+    background-position: center center;
+    cursor: pointer;
+    transition: opacity 0.3s ease-out;
+    
+    &--hidden {
+        // visual
+        opacity: 0;
+    }
 }

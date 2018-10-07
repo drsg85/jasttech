@@ -736,6 +736,9 @@ html {
       font-size: 2.5rem; } }
   .section-title--inv {
     color: #ffffff; }
+  @media (min-width: 1200px) {
+    .section-title--inv-d {
+      color: #ffffff; } }
 
 .section-title em {
   color: #4cb8ea;
@@ -774,10 +777,14 @@ html {
   background-color: #f1f1f1; }
   @media (min-width: 480px) {
     .video {
-      padding: 50px 0; } }
+      padding: 50px 20px; } }
   @media (min-width: 768px) {
     .video {
       padding: 70px; } }
+  @media (min-width: 1200px) {
+    .video {
+      position: relative;
+      padding: 0; } }
 
 .video__header {
   padding: 0 20px;
@@ -785,7 +792,70 @@ html {
   @media (min-width: 768px) {
     .video__header {
       padding: 0;
+      max-width: 600px;
       text-align: left; } }
+  @media (min-width: 1200px) {
+    .video__header {
+      position: absolute;
+      z-index: 3;
+      height: 100%;
+      width: 50%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      padding-right: 70px;
+      padding-left: calc((100% - 1040px) / 2);
+      -webkit-transition: opacity 0.3s ease-out;
+      transition: opacity 0.3s ease-out; } }
+  @media (min-width: 1200px) {
+    .video__header--hidden {
+      opacity: 0; } }
+
+.video__content {
+  position: relative; }
+
+.video__content video {
+  width: 100%; }
+
+.video__trigger {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-image: url("./img/video/play.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100px;
+  cursor: pointer;
+  -webkit-transition: opacity 0.3s ease-out;
+  transition: opacity 0.3s ease-out; }
+  .video__trigger--hidden {
+    opacity: 0; }
+
+.video__cover {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  background-image: url(./img/video/video-m.jpg);
+  background-size: cover;
+  background-position: center center;
+  cursor: pointer;
+  -webkit-transition: opacity 0.3s ease-out;
+  transition: opacity 0.3s ease-out; }
+  .video__cover--hidden {
+    opacity: 0; }
 
 .why {
   padding: 40px; }
