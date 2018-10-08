@@ -1825,7 +1825,8 @@ body {
   border: 2px solid #4cb8ea; }
 
 .u-want {
-  padding: 40px; }
+  padding: 40px;
+  background-color: #111339; }
   @media (min-width: 1200px) {
     .u-want {
       padding: 120px calc((100% - 1040px) / 2); } }
@@ -1846,7 +1847,7 @@ body {
   width: 100%; }
 
 .wish__title {
-  color: #111339;
+  color: #ffffff;
   font-size: 1.125rem;
   line-height: 1.25; }
 
