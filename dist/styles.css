@@ -2036,3 +2036,49 @@ body {
   margin-top: 0;
   line-height: 1.5;
   font-weight: 700; }
+
+.advantages {
+  padding: 40px; }
+
+.advantages__header {
+  text-align: center; }
+
+.advantages__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: item; }
+
+.advantages__list-item {
+  position: relative;
+  margin-bottom: 40px;
+  color: #4cb8ea;
+  font-size: 4rem;
+  font-style: italic;
+  font-weight: 700;
+  counter-increment: item; }
+  .advantages__list-item::before {
+    content: counter(item);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    color: #4cb8ea;
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 1; }
+
+.advantage {
+  padding-left: 25px;
+  padding-top: 1px;
+  color: #111339;
+  font-style: normal; }
+
+.advantage__title {
+  margin-bottom: 0;
+  font-size: 1.125rem; }
+
+.advantage__text {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5; }

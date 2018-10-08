@@ -1,0 +1,24 @@
+.advantage {
+    // box model
+    padding-left: 25px;
+    padding-top: 1px;
+
+    // typography
+    color: $darkBlue;
+    font-style: normal;
+}
+
+.advantage__title {
+    // box model
+    margin-bottom: 0;
+
+    // typography
+    font-size: 1.125rem;
+}
+
+.advantage__text {
+    // typography
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
