@@ -369,7 +369,16 @@ body {
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end;
-    background-image: url("./img/bgs/business-m.jpg"); }
+    background-image: url("./img/bgs/business-m.jpg");
+    background-size: contain;
+    background-position: top right; }
+    @media (min-width: 768px) {
+      .hero--business {
+        background-image: url("./img/bgs/business-t.jpg");
+        background-size: contain; } }
+    @media (min-width: 1200px) {
+      .hero--business {
+        background-image: url("./img/bgs/business-d.jpg"); } }
     .hero--business .main-title {
       text-align: left; }
     .hero--business .hero__cta {
@@ -596,12 +605,12 @@ body {
   display: inline-block;
   vertical-align: top;
   padding: 15px 20px;
-  color: #ffffff;
   color: #435988;
   font-size: 1.125rem;
   text-decoration: none; }
   @media (min-width: 1200px) {
     .main-nav__link {
+      color: #ffffff;
       -webkit-transition: all 0.15s ease-in;
       transition: all 0.15s ease-in; } }
   .main-nav__link--current {

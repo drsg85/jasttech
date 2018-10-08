@@ -71,6 +71,19 @@
         
         // visual
         background-image: url('./img/bgs/business-m.jpg');
+        background-size: contain;
+        background-position: top right;
+
+        @include atTablet {
+            // visual
+            background-image: url('./img/bgs/business-t.jpg');
+            background-size: contain;
+        }
+        
+        @include atDesktop {
+            // visual
+            background-image: url('./img/bgs/business-d.jpg');
+        }
         
         .main-title {
             // typography

@@ -4,7 +4,8 @@ import webpack from 'webpack-stream';
 
 const config = {
     entry: {
-        main: './src/js/main.js'
+        main: './src/js/main.js',
+        business: './src/js/business.js'
     },
     output: {
         filename: '[name].js'
