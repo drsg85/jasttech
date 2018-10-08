@@ -17,6 +17,7 @@
 
     &--hidden {
         // positioning
+        left: -100%;
         z-index: -1;
         opacity: 0;
     }

@@ -2054,6 +2054,7 @@ body {
   -webkit-transition: opacity 0.3s ease-out;
   transition: opacity 0.3s ease-out; }
   .contact-popup--hidden {
+    left: -100%;
     z-index: -1;
     opacity: 0; }
 
