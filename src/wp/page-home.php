@@ -155,10 +155,10 @@
         <div class="packages__content">
             <div class="packages__all">
                 <article class="package">
-                    <div class="package__image"><img src="<?php bloginfo('stylesheet_directory') ?>/img/packages/begin.png" alt="Пакет Begin on Jast Charger" /></div>
+                    <div class="package__image"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/packages/begin.png" alt="Пакет Begin on Jast Charger" /></div>
                     <div class="package__container">
                         <header class="package__header">
-                            <h3 class="package__title">Пакет <strong>Begin</strong></h3>
+                            <h3 class="package__title">Пакет <strong>Begin One</strong></h3>
                             <p class="package__income">Средний месячный доход: <em>23&nbsp;000 рублей</em></p>
                         </header>
                         <div class="package__content">
@@ -175,16 +175,39 @@
                         </div>
                         <footer class="package__footer">
                             <p class="package__price">79&nbsp;000.-</p>
-                            <div class="package__buttons">
-                                <a class="ghost-button contact-button" href="#">Купить</a>
-                                <a class="ghost-button contact-button" href="#">Купить в кредит</a>
-                            </div>
-                            <a class="package__more contact-button" href="#">Подробнее</a>
+                            <div class="package__buttons"><a class="ghost-button" href="#">Купить</a><a class="ghost-button"
+                                    href="#">Купить в кредит</a></div><a class="package__more contact-button" href="#">Подробнее</a>
                         </footer>
                     </div>
                 </article>
                 <article class="package">
-                    <div class="package__image"><img src="<?php bloginfo('stylesheet_directory') ?>/img/packages/start.png" alt="Пакет Start on Jast Charger" /></div>
+                    <div class="package__image"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/packages/begin.png" alt="Пакет Begin on Jast Charger" /></div>
+                    <div class="package__container">
+                        <header class="package__header">
+                            <h3 class="package__title">Пакет <strong>Begin Two</strong></h3>
+                            <p class="package__income">Средний месячный доход: <em>35&nbsp;000 рублей</em></p>
+                        </header>
+                        <div class="package__content">
+                            <p>Пакет «BEGIN» имеет ряд преимуществ в&nbsp;сравнении с&nbsp;другими предложениями
+                                на&nbsp;франчайзинговом рынке в&nbsp;той же&nbsp;ценовой категории. Он&nbsp;был
+                                разработан специально для людей, которые хотят:</p>
+                            <ul>
+                                <li>Начать собственный бизнес </li>
+                                <li>Совмещать предпринимательскую деятельность с&nbsp;основной работой </li>
+                                <li>Начиная с&nbsp;небольших инвестиций, основать быстрорастущую компанию </li>
+                                <li>Обрести дополнительный пассивный доход от&nbsp;25&nbsp;000 до&nbsp;57&nbsp;000
+                                    рублей в месяц</li>
+                            </ul>
+                        </div>
+                        <footer class="package__footer">
+                            <p class="package__price">92&nbsp;000.-</p>
+                            <div class="package__buttons"><a class="ghost-button" href="#">Купить</a><a class="ghost-button"
+                                    href="#">Купить в кредит</a></div><a class="package__more contact-button" href="#">Подробнее</a>
+                        </footer>
+                    </div>
+                </article>
+                <article class="package">
+                    <div class="package__image"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/packages/start.png" alt="Пакет Start on Jast Charger" /></div>
                     <div class="package__container">
                         <header class="package__header">
                             <h3 class="package__title">Пакет <strong>Start</strong></h3>
@@ -204,16 +227,13 @@
                         </div>
                         <footer class="package__footer">
                             <p class="package__price">300&nbsp;000.-</p>
-                            <div class="package__buttons">
-                                <a class="ghost-button contact-button" href="#">Купить</a>
-                                <a class="ghost-button contact-button" href="#">Купить в кредит</a>
-                            </div>
-                            <a class="package__more contact-button" href="#">Подробнее</a>
+                            <div class="package__buttons"><a class="ghost-button" href="#">Купить</a><a class="ghost-button"
+                                    href="#">Купить в кредит</a></div><a class="package__more contact-button" href="#">Подробнее</a>
                         </footer>
                     </div>
                 </article>
                 <article class="package">
-                    <div class="package__image"><img src="<?php bloginfo('stylesheet_directory') ?>/img/packages/standard.png" alt="Пакет Standard on Jast Charger" /></div>
+                    <div class="package__image"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/packages/standard.png" alt="Пакет Standard on Jast Charger" /></div>
                     <div class="package__container">
                         <header class="package__header">
                             <h3 class="package__title">Пакет <strong>Standard</strong></h3>
@@ -235,16 +255,13 @@
                         </div>
                         <footer class="package__footer">
                             <p class="package__price">500&nbsp;000.-</p>
-                            <div class="package__buttons">
-                                <a class="ghost-button contact-button" href="#">Купить</a>
-                                <a class="ghost-button contact-button" href="#">Купить в кредит</a>
-                            </div>
-                            <a class="package__more contact-button" href="#">Подробнее</a>
+                            <div class="package__buttons"><a class="ghost-button" href="#">Купить</a><a class="ghost-button"
+                                    href="#">Купить в кредит</a></div><a class="package__more contact-button" href="#">Подробнее</a>
                         </footer>
                     </div>
                 </article>
                 <article class="package">
-                    <div class="package__image"><img src="<?php bloginfo('stylesheet_directory') ?>/img/packages/million.png" alt="Пакет Million on Jast Charger" /></div>
+                    <div class="package__image"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/packages/million.png" alt="Пакет Million on Jast Charger" /></div>
                     <div class="package__container">
                         <header class="package__header">
                             <h3 class="package__title">Пакет <strong>Million</strong></h3>
@@ -266,11 +283,8 @@
                         </div>
                         <footer class="package__footer">
                             <p class="package__price">998&nbsp;000.-</p>
-                            <div class="package__buttons">
-                                <a class="ghost-button contact-button" href="#">Купить</a>
-                                <a class="ghost-button contact-button" href="#">Купить в кредит</a>
-                            </div>
-                            <a class="package__more contact-button" href="#">Подробнее</a>
+                            <div class="package__buttons"><a class="ghost-button" href="#">Купить</a><a class="ghost-button"
+                                    href="#">Купить в кредит</a></div><a class="package__more contact-button" href="#">Подробнее</a>
                         </footer>
                     </div>
                 </article>
@@ -577,7 +591,7 @@
             <div class="footer__social"><a class="social social--vk contact-button" href="#">ВКонтакте</a><a class="social social--inst"
                     href="#">Инстаграм</a></div>
         </div>
-        <div class="footer__form">
+        <!-- <div class="footer__form">
             <form class="form" action="">
                 <h3 class="form__title">Заполните форму и мы свяжемся с вами как можно скорее:</h3><input class="form__input"
                     id="name" type="text" name="name" placeholder="Ваше имя" /><input class="form__input" id="email"
@@ -585,7 +599,7 @@
                     name="phone" placeholder="Ваш телефон" /><input class="form__input" id="city" type="text" name="city"
                     placeholder="Ваш город" /><input class="cta-button" type="submit" value="Отправить" />
             </form>
-        </div>
+        </div> -->
         <p class="footer__legals"><a href="#">Договор оферты</a></p>
     </section>
 
