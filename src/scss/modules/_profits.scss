@@ -5,8 +5,19 @@
     // visual
     background-color: $darkBlue;
 
+    @include atMobileL {
+        // box model
+        padding: 50px;
+    }
+
+    @include atTablet {
+        // box model
+        padding: 70px calc((100% - 500px) / 2);
+    }
+
     @include atDesktop {
         // box model
+        display: flex;
         padding: 120px calc((100% - 1040px) / 2);
     }
 }
@@ -14,8 +25,20 @@
 .profits__header {
     // typography
     text-align: center;
+
+    @include atDesktop {
+        // box model
+        flex-basis: 50%;
+        padding-right: 70px;
+
+        // typography
+        text-align: left;
+    }
 }
 
 .profits__content {
-    
+    @include atDesktop {
+        // box model
+        flex-basis: 50%;
+    }
 }

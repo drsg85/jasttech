@@ -23,6 +23,13 @@
 
     // typography
     text-align: center;
+
+    @include atTablet {
+        // box model
+        width: 600px;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
 }
 
 .faq__subtitle {

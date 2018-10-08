@@ -4,6 +4,12 @@
 
     // typography
     text-align: center;
+
+    @include atTablet {
+        // box model
+        display: flex;
+        flex-direction: row;
+    }
 }
 
 .profit__icon {
@@ -11,6 +17,11 @@
     display: inline-block;
     vertical-align: top;
     width: 90px;
+
+    @include atTablet {
+        // box model
+        flex-basis: 20%;
+    }
 }
 
 .profit__icon img {
@@ -18,9 +29,25 @@
     width: 100%;
 }
 
+.profit__content {
+    @include atTablet {
+        // box model
+        flex-basis: 80%;
+        padding-left: 50px;
+    
+        // typography
+        text-align: left;
+    }
+}
+
 .profit__title {
     // typography
     color: $light;
+
+    @include atTablet {
+        // box model
+        margin-top: 0;
+    }
 }
 
 .profit__text {
