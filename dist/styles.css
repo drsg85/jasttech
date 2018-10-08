@@ -386,6 +386,9 @@ body {
   .hero--contacts {
     height: auto;
     background-image: none; }
+    @media (min-width: 1200px) {
+      .hero--contacts {
+        padding-bottom: 0; } }
 
 .hero__top {
   position: absolute;
@@ -418,7 +421,11 @@ body {
     padding-top: 0;
     background-color: #1d1f43;
     -webkit-transition: top 0.3s ease-in-out;
-    transition: top 0.3s ease-in-out; } }
+    transition: top 0.3s ease-in-out; }
+    .hero__top--fixed .main-nav--inv .main-nav__link {
+      color: #ffffff; }
+    .hero__top--fixed .main-nav--inv .main-nav__link--current {
+      color: #435988; } }
 
 .hero__dummy {
   display: block; }

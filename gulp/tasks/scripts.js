@@ -5,7 +5,12 @@ import webpack from 'webpack-stream';
 const config = {
     entry: {
         main: './src/js/main.js',
-        business: './src/js/business.js'
+        business: './src/js/business.js',
+        about: './src/js/about.js',
+        faq: './src/js/faq.js',
+        news: './src/js/news.js',
+        newsItem: './src/js/newsItem.js',
+        contacts: './src/js/contacts.js'
     },
     output: {
         filename: '[name].js'

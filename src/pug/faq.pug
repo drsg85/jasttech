@@ -11,6 +11,8 @@ html(lang="en")
 
     body
         header.hero.hero--inner
+            button.menu-button: .menu-button__middle
+
             .hero__top
                 .logo
                     .logo__image: img(src="./img/logo.svg", alt="")
@@ -82,13 +84,16 @@ html(lang="en")
                     a.social.social--inst(href="#") Инстаграм
 
             .footer__form
-                form.form(action="")
-                    h3.form__title Заполните форму и мы свяжемся с вами как можно скорее:
-                    input#name.form__input(type="text", name="name" placeholder="Ваше имя")
-                    input#email.form__input(type="email", name="email" placeholder="Ваш e-mail")
-                    input#phone.form__input(type="text", name="phone" placeholder="Ваш телефон")
-                    input#city.form__input(type="text", name="city" placeholder="Ваш город")
-                    input.cta-button(type="submit", value="Отправить")
+                <script>var amo_forms_params = {"id":361897,"hash":"e7f3326ccdf13ebb3dcacd1535ecdd32","locale":"ru"};</script><script id="amoforms_script" async="async" charset="utf-8" src="https://forms.amocrm.ru/forms/assets/js/amoforms.js"></script>
+                //- form.form(action="")
+                //-     h3.form__title Заполните форму и мы свяжемся с вами как можно скорее:
+                //-     input#name.form__input(type="text", name="name" placeholder="Ваше имя")
+                //-     input#email.form__input(type="email", name="email" placeholder="Ваш e-mail")
+                //-     input#phone.form__input(type="text", name="phone" placeholder="Ваш телефон")
+                //-     input#city.form__input(type="text", name="city" placeholder="Ваш город")
+                //-     input.cta-button(type="submit", value="Отправить")
 
             p.footer__legals
                 a(href="#") Договор оферты
+        
+        script(src="./faq.js")

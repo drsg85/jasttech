@@ -105,6 +105,11 @@
 
         // visual
         background-image: none;
+
+        @include atDesktop {
+            // box model
+            padding-bottom: 0;
+        }
     }
 }
 
@@ -148,7 +153,18 @@
         // visual
         background-color: #1d1f43;
         transition: top 0.3s ease-in-out;
+
+        .main-nav--inv .main-nav__link {
+            // typography
+            color: $light;
+        }
+
+        .main-nav--inv .main-nav__link--current {
+            // typography
+            color: $violet;
+        }
     }
+
 }
 
 .hero__dummy {
