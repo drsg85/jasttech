@@ -361,6 +361,9 @@ body {
     color: #111339;
     background-color: #ffffff;
     background-image: none; }
+    @media (min-width: 1200px) {
+      .hero--inner {
+        padding-bottom: 0; } }
   .hero--business {
     -webkit-box-pack: end;
     -ms-flex-pack: end;
@@ -582,6 +585,12 @@ body {
   @media (min-width: 1200px) {
     .main-nav {
       background-color: transparent; } }
+  @media (min-width: 1200px) {
+    .main-nav--inv .main-nav__link {
+      color: #111339; } }
+  @media (min-width: 1200px) {
+    .main-nav--inv .main-nav__link--current {
+      color: #4cb8ea; } }
 
 .main-nav__list {
   margin: 0;

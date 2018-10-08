@@ -14,6 +14,22 @@
         // visual
         background-color: transparent;
     }
+
+    &--inv {
+        .main-nav__link {
+            @include atDesktop {
+                // typography
+                color: $darkBlue;
+            }
+        }
+
+        .main-nav__link--current {
+            @include atDesktop {
+                // typography
+                color: $blue;
+            }
+        }
+    }
 }
 
 .main-nav__list {
@@ -54,7 +70,7 @@
     @include atDesktop {
         // typography
         color: $light;
-        
+
         // visual
         transition: all 0.15s ease-in;
     }

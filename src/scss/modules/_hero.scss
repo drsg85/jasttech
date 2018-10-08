@@ -58,6 +58,11 @@
         // visual
         background-color: $light;
         background-image: none;
+
+        @include atDesktop {
+            // box model
+            padding-bottom: 0;
+        }
     }
     
     &--business {
