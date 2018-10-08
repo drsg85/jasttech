@@ -1,6 +1,11 @@
 .stat {
     // typography
     text-align: center;
+
+    @include atDesktop {
+        // typography
+        text-align: left;
+    }
 }
 
 .stat__value {
@@ -11,6 +16,11 @@
     color: $blue;
     font-size: 2.5rem;
     font-weight: 700;
+
+    @include atTablet {
+        // typography
+        font-size: 4rem;
+    }
 }
 
 .stat__desc {
@@ -18,6 +28,12 @@
     margin-top: 0;
     
     // typography
-    line-height: 1.5;
+    font-size: 1rem;
     font-weight: 700;
+    line-height: 1.5;
+
+    @include atTablet {
+        // typography
+        font-size: 1.25rem;
+    }
 }
