@@ -1,9 +1,22 @@
 .wish {
     // box model
     margin-bottom: 40px;
+    width: 360px;
 
     // typography
     text-align: center;
+
+    @include atTablet {
+        // box model
+        width: auto;
+        max-width: 360px;
+        flex-basis: 50%;
+    }
+
+    @include atDesktop {
+        // box model
+        flex-basis: 33%;
+    }
 }
 
 .wish__icon {

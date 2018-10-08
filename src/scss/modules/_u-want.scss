@@ -14,8 +14,24 @@
 .u-want__header {
     // typography
     text-align: center;
+
+    @include atTablet {
+        // box model
+        width: 540px;
+        margin: 0 auto;
+    }
 }
 
 .u-want__content {
-    
+    // box model
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include atTablet {
+        // box model
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
