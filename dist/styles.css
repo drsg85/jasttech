@@ -366,31 +366,41 @@ body {
     background-position: bottom right;
     background-size: 320px; }
   .hero--business {
-    background-image: url("./img/bgs/connectors-s.svg"), -webkit-gradient(linear, left top, left bottom, from(#4cb8ea), to(#8dced2));
-    background-image: url("./img/bgs/connectors-s.svg"), linear-gradient(to bottom, #4cb8ea, #8dced2); }
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    background-image: url("./img/bgs/business-m.jpg"); }
+    .hero--business .main-title {
+      text-align: left; }
+    .hero--business .hero__cta {
+      margin-top: 20px;
+      text-align: left; }
   .hero--contacts {
     height: auto;
     background-image: none; }
 
-@media (min-width: 1200px) {
-  .hero__top {
-    position: absolute;
-    left: 0;
-    top: -50px;
-    top: 0;
-    right: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    width: 100%;
-    padding: 0 calc((100% - 1060px) / 2);
-    padding-top: 120px;
-    padding-top: 70px;
-    -webkit-transition: top 0.3s ease-in-out;
-    transition: top 0.3s ease-in-out; } }
+.hero__top {
+  position: absolute;
+  top: 40px;
+  left: 40px; }
+  @media (min-width: 1200px) {
+    .hero__top {
+      left: 0;
+      top: -50px;
+      top: 0;
+      right: 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      width: 100%;
+      padding: 0 calc((100% - 1060px) / 2);
+      padding-top: 120px;
+      padding-top: 70px;
+      -webkit-transition: top 0.3s ease-in-out;
+      transition: top 0.3s ease-in-out; } }
 
 @media (min-width: 1200px) {
   .hero__top--fixed {
@@ -403,10 +413,7 @@ body {
     transition: top 0.3s ease-in-out; } }
 
 .hero__dummy {
-  display: none; }
-  @media (min-width: 1200px) {
-    .hero__dummy {
-      display: block; } }
+  display: block; }
 
 .hero__nav {
   position: fixed;

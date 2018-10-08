@@ -66,9 +66,24 @@
     }
     
     &--business {
+        // box model
+        justify-content: flex-end;
+        
         // visual
-        background-image: url('./img/bgs/connectors-s.svg'),
-                          linear-gradient(to bottom, $blue, $lightBlue);
+        background-image: url('./img/bgs/business-m.jpg');
+        
+        .main-title {
+            // typography
+            text-align: left;
+        }
+        
+        .hero__cta {
+            // box model
+            margin-top: 20px;
+
+            // typography
+            text-align: left;
+        }
     }
 
     &--contacts {
@@ -81,9 +96,13 @@
 }
 
 .hero__top {
+    // positioning
+    position: absolute;
+    top: 40px;
+    left: 40px;
+
     @include atDesktop {
         // positioning
-        position: absolute;
         left: 0;
         // top: 70px;
         top: -50px;
@@ -120,12 +139,8 @@
 }
 
 .hero__dummy {
-    display: none;
-
-    @include atDesktop {
-        // box model
-        display: block;
-    }
+    // box model
+    display: block;
 }
 
 .hero__nav {
