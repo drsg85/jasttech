@@ -1,0 +1,23 @@
+.stat {
+    // typography
+    text-align: center;
+}
+
+.stat__value {
+    // box model
+    margin-bottom: 0;
+
+    // typography
+    color: $blue;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.stat__desc {
+    // box model
+    margin-top: 0;
+    
+    // typography
+    line-height: 1.5;
+    font-weight: 700;
+}

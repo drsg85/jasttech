@@ -1,0 +1,39 @@
+.about-stats {
+    // box model
+    padding: 40px;
+}
+
+.about-stats__content {
+
+}
+
+.about-stats__header {
+    // box model
+    padding-bottom: 10px;
+
+    // typography
+    text-align: center;
+}
+
+.about-stats__header p {
+    // typography
+    color: $darkBlue;
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: left;
+
+    @include atTablet {
+        // typography
+        font-size: 1.125rem;
+    }
+}
+
+.about-stats__stats {
+    // box model
+    padding-bottom: 40px;
+}
+
+.about-stats__cta {
+    // typography
+    text-align: center;
+}

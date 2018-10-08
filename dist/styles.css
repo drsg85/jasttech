@@ -1999,3 +1999,39 @@ body {
   height: 100%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.75); }
+
+.about-stats {
+  padding: 40px; }
+
+.about-stats__header {
+  padding-bottom: 10px;
+  text-align: center; }
+
+.about-stats__header p {
+  color: #111339;
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: left; }
+  @media (min-width: 768px) {
+    .about-stats__header p {
+      font-size: 1.125rem; } }
+
+.about-stats__stats {
+  padding-bottom: 40px; }
+
+.about-stats__cta {
+  text-align: center; }
+
+.stat {
+  text-align: center; }
+
+.stat__value {
+  margin-bottom: 0;
+  color: #4cb8ea;
+  font-size: 2.5rem;
+  font-weight: 700; }
+
+.stat__desc {
+  margin-top: 0;
+  line-height: 1.5;
+  font-weight: 700; }
