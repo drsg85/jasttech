@@ -2,6 +2,16 @@
     /*
         Template Name: Home Page
     */
+
+    // Hero
+    $hero_motto     = get_field('hero-motto');
+
+    // About
+    $about_title    = get_field('about-title');
+    $about_text     = get_field('about-text');
+
+    // Video
+    $video_file     = get_field('video-file');
 ?>
 
 <!DOCTYPE html>
@@ -45,6 +55,9 @@
                             <a class="main-nav__link" href="<?php echo esc_url(home_url('/')); ?>faq">FAQ</a>
                         </li>
                         <li class="main-nav__item">
+                            <a class="main-nav__link" href="<?php echo esc_url(home_url('/')); ?>news">Новости</a>
+                        </li>
+                        <li class="main-nav__item">
                             <a class="main-nav__link" href="<?php echo esc_url(home_url('/')); ?>contacts">Контакты</a>
                         </li>
                     </ul>
@@ -54,38 +67,39 @@
 
         <div class="hero__dummy"></div>
 
-        <h1 class="main-title">Постройте бизнес на потребности 21&nbsp;века! Заработок от <em>80000</em> рублей
-            в&nbsp;месяц!</h1>
+        <h1 class="main-title"><?php echo $hero_motto; ?></h1>
 
         <div class="hero__cta">
-            <a class="cta-button" href="#">Подробнее</a>
+            <a class="cta-button contact-button" href="#">Подробнее</a>
         </div>
     </header>
 
     <!-- About -->
     <section class="about">
         <header class="about__header">
-            <h2 class="section-title">Пассивный доход <strong>при&nbsp;минимуме усилий</strong></h2>
+            <h2 class="section-title">
+                <?php echo $about_title; ?>
+            </h2>
         </header>
         <div class="about__content">
-            <p class="about__text">Знаете ли Вы хоть одного человека, которому НЕ нужно заряжать свой сотовый или
-                планшет? Едва ли. Ведь каждый современный человек нуждается в подзарядке своих электронных устройств,
-                будь то смартфон, планшет, электронная книга или другое электронное устройство. Наша компания рада
-                предложить Вам проект, который позволяет заработать на зарядке мобильных устройств. Всё, что Вам
-                необходимо – это франшиза от компании Just Charger. Благодаря ей Вы сможете получать ежемесячный
-                пассивный доход, поставляя в аренду зарядные станции заведениям своего города. Наши устройства
-                максимально удобны и прости в эксплуатации, с ними Вы сможете обеспечить сервис практически в любом
-                бизнесе.</p>
-            <div class="about__buttons"><a class="ghost-button" href="#">Скачать презентацию</a></div>
+            <p class="about__text">
+                <?php echo $about_text; ?>
+            </p>
+            <div class="about__buttons">
+                <a class="ghost-button contact-button" href="#">Скачать презентацию</a>
+            </div>
         </div>
     </section>
 
     <!-- Video -->
     <section class="video">
         <header class="video__header">
-            <h2 class="section-title">Франшиза на <strong>универсальные зарядные устройства</strong></h2>
+            <h2 class="section-title section-title--inv-d">Франшиза на&nbsp;<strong>универсальные зарядные устройства</strong></h2>
         </header>
-        <div class="video__content"><video src=""></video></div>
+        <div class="video__content">
+            <div class="video__trigger"></div>
+            <div class="video__cover"></div><video id="promo-vid" src="<?php echo $video_file; ?>"></video>
+        </div>
     </section>
 
     <!-- Why -->
@@ -161,8 +175,11 @@
                         </div>
                         <footer class="package__footer">
                             <p class="package__price">79&nbsp;000.-</p>
-                            <div class="package__buttons"><a class="ghost-button" href="#">Купить</a><a class="ghost-button"
-                                    href="#">Купить в кредит</a></div><a class="package__more" href="#">Подробнее</a>
+                            <div class="package__buttons">
+                                <a class="ghost-button contact-button" href="#">Купить</a>
+                                <a class="ghost-button contact-button" href="#">Купить в кредит</a>
+                            </div>
+                            <a class="package__more contact-button" href="#">Подробнее</a>
                         </footer>
                     </div>
                 </article>
@@ -187,8 +204,11 @@
                         </div>
                         <footer class="package__footer">
                             <p class="package__price">300&nbsp;000.-</p>
-                            <div class="package__buttons"><a class="ghost-button" href="#">Купить</a><a class="ghost-button"
-                                    href="#">Купить в кредит</a></div><a class="package__more" href="#">Подробнее</a>
+                            <div class="package__buttons">
+                                <a class="ghost-button contact-button" href="#">Купить</a>
+                                <a class="ghost-button contact-button" href="#">Купить в кредит</a>
+                            </div>
+                            <a class="package__more contact-button" href="#">Подробнее</a>
                         </footer>
                     </div>
                 </article>
@@ -215,8 +235,11 @@
                         </div>
                         <footer class="package__footer">
                             <p class="package__price">500&nbsp;000.-</p>
-                            <div class="package__buttons"><a class="ghost-button" href="#">Купить</a><a class="ghost-button"
-                                    href="#">Купить в кредит</a></div><a class="package__more" href="#">Подробнее</a>
+                            <div class="package__buttons">
+                                <a class="ghost-button contact-button" href="#">Купить</a>
+                                <a class="ghost-button contact-button" href="#">Купить в кредит</a>
+                            </div>
+                            <a class="package__more contact-button" href="#">Подробнее</a>
                         </footer>
                     </div>
                 </article>
@@ -243,8 +266,11 @@
                         </div>
                         <footer class="package__footer">
                             <p class="package__price">998&nbsp;000.-</p>
-                            <div class="package__buttons"><a class="ghost-button" href="#">Купить</a><a class="ghost-button"
-                                    href="#">Купить в кредит</a></div><a class="package__more" href="#">Подробнее</a>
+                            <div class="package__buttons">
+                                <a class="ghost-button contact-button" href="#">Купить</a>
+                                <a class="ghost-button contact-button" href="#">Купить в кредит</a>
+                            </div>
+                            <a class="package__more contact-button" href="#">Подробнее</a>
                         </footer>
                     </div>
                 </article>
@@ -260,6 +286,8 @@
         </header>
         <div class="devices__content">
             <div class="slider">
+                <button class="slider__prev">&larr;</button>
+                <button class="slider__next">&rarr;</button>
                 <div class="slider__slides">
                     <div class="slider__slide">
                         <article class="device">
@@ -461,7 +489,9 @@
                 <h3 class="item__title">Маркетинговая поддержка</h3>
             </article>
         </div>
-        <div class="u-get__buttons"><a class="cta-button" href="#">Подробнее</a></div>
+        <div class="u-get__buttons">
+            <a class="cta-button contact-button" href="#">Подробнее</a>
+        </div>
     </section>
 
     <!-- Monetization Models -->
@@ -544,7 +574,7 @@
             <h3 class="footer__subtitle">Отдел продаж:</h3>
             <div class="footer__contacts"><a class="footer__phone" href="tel:+79097782086">+7 909 778-20-86 </a><a
                     class="footer__mail" href="mailto:manager@jast.tech">manager@jast.tech</a></div>
-            <div class="footer__social"><a class="social social--vk" href="#">ВКонтакте</a><a class="social social--inst"
+            <div class="footer__social"><a class="social social--vk contact-button" href="#">ВКонтакте</a><a class="social social--inst"
                     href="#">Инстаграм</a></div>
         </div>
         <div class="footer__form">
@@ -558,6 +588,21 @@
         </div>
         <p class="footer__legals"><a href="#">Договор оферты</a></p>
     </section>
+
+    <!-- Popup -->
+    <div class="contact-popup contact-popup--hidden"><button class="contact-popup__close"></button>
+        <div class="contact-popup__cover"></div>
+        <div class="contact-popup__form">
+            <script>
+                var amo_forms_params = {
+                    "id": 361897,
+                    "hash": "e7f3326ccdf13ebb3dcacd1535ecdd32",
+                    "locale": "ru"
+                };
+            </script>
+            <script id="amoforms_script" async="async" charset="utf-8" src="https://forms.amocrm.ru/forms/assets/js/amoforms.js"></script>
+        </div>
+    </div>
 
     <script src="<?php bloginfo('stylesheet_directory'); ?>/main.js"></script>
 </body>

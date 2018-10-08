@@ -3,6 +3,7 @@ class ContactPopup {
         this.popup = document.querySelector('.contact-popup');
         this.closeButton = document.querySelector('.contact-popup__close');
         this.popupCover = document.querySelector('.contact-popup__cover');
+
         this.events();
     }
 
@@ -10,6 +11,7 @@ class ContactPopup {
         document.addEventListener('click', (event) => {
             if (event.target.classList.contains('contact-button')) {
                 event.preventDefault();
+                // alert('hello');
                 this.popup.classList.remove('contact-popup--hidden');
             }
         });

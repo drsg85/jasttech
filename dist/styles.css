@@ -1922,7 +1922,6 @@ body {
   left: 0;
   right: 0;
   z-index: 999;
-  border: 1px solid red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
