@@ -425,7 +425,9 @@ body {
     .hero__top--fixed .main-nav--inv .main-nav__link {
       color: #ffffff; }
     .hero__top--fixed .main-nav--inv .main-nav__link--current {
-      color: #435988; } }
+      color: #435988; }
+    .hero__top--fixed .logo__text {
+      color: #ffffff; } }
 
 .hero__dummy {
   display: block; }

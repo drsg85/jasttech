@@ -603,7 +603,8 @@
     </footer>
 
     <!-- Popup -->
-    <div class="contact-popup contact-popup--hidden"><button class="contact-popup__close"></button>
+    <div class="contact-popup contact-popup--hidden">
+        <button class="contact-popup__close"></button>
         <div class="contact-popup__cover"></div>
         <div class="contact-popup__form">
             <script>

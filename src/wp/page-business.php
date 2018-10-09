@@ -298,7 +298,7 @@
         </div>
     </section>
 
-
+    <!-- Footer -->
     <footer class="footer">
         <header class="footer__header">
             <h2 class="footer__title">Контакты</h2>
