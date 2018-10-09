@@ -70,8 +70,10 @@
             <p class="footer__address">Россия, г. Калининград <br>ул. Театральная, 35, офис 616 <br>(Морской Бизнес
                 Центр)</p>
             <h3 class="footer__subtitle">Отдел продаж:</h3>
-            <div class="footer__contacts"><a class="footer__phone" href="tel:+79097782086">+7 909 778-20-86 </a><a
-                    class="footer__mail" href="mailto:manager@jast.tech">manager@jast.tech</a></div>
+            <div class="footer__contacts">
+                <a class="footer__phone" href="tel:+79097782086">+7 909 778-20-86 </a><br>
+                <a class="footer__mail" href="mailto:manager@jast.tech">manager@jast.tech</a>
+            </div>
             <div class="footer__social"><a class="social social--vk" href="#">ВКонтакте</a><a class="social social--inst"
                     href="#">Инстаграм</a></div>
         </header>

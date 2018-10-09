@@ -889,6 +889,9 @@ body {
   cursor: pointer;
   -webkit-transition: opacity 0.3s ease-out;
   transition: opacity 0.3s ease-out; }
+  @media (min-width: 768px) {
+    .video__cover {
+      background-image: url(./img/video/video.jpg); } }
   .video__cover--hidden {
     opacity: 0; }
 
@@ -1719,7 +1722,11 @@ body {
   @media (min-width: 1200px) {
     .footer {
       position: relative;
-      padding: 120px calc((100% - 1040px) / 2); } }
+      padding: 120px calc((100% - 1040px) / 2);
+      background-image: url("./img/bgs/connector-footer.svg");
+      background-repeat: no-repeat;
+      background-position: bottom 0 left calc((100% - 1040px) / 2 + 340px);
+      background-size: 800px; } }
 
 .footer__header {
   margin-bottom: 80px; }

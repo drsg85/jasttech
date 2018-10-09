@@ -116,6 +116,11 @@
     cursor: pointer;
     transition: opacity 0.3s ease-out;
     
+    @include atTablet {
+        // visual
+        background-image: url(./img/video/video.jpg);
+    }
+    
     &--hidden {
         // visual
         opacity: 0;
