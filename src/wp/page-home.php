@@ -30,10 +30,9 @@
 <body>
     <!-- Header -->
     <header class="hero">
-
         <button class="menu-button"><div class="menu-button__middle"></div></button>
 
-        <div class="hero__top hero__top--fixed">
+        <div class="hero__top">
             <div class="logo">
                 <div class="logo__image"><img src="<?php bloginfo('stylesheet_directory') ?>/img/logo.svg" alt="" /></div>
                 <div class="logo__text">Jast&nbsp;Charger</div>
@@ -54,9 +53,9 @@
                         <li class="main-nav__item">
                             <a class="main-nav__link" href="<?php echo esc_url(home_url('/')); ?>faq">FAQ</a>
                         </li>
-                        <li class="main-nav__item">
+                        <!-- <li class="main-nav__item">
                             <a class="main-nav__link" href="<?php echo esc_url(home_url('/')); ?>news">Новости</a>
-                        </li>
+                        </li> -->
                         <li class="main-nav__item">
                             <a class="main-nav__link" href="<?php echo esc_url(home_url('/')); ?>contacts">Контакты</a>
                         </li>
@@ -578,7 +577,7 @@
     </section>
 
     <!-- Footer -->
-    <section class="footer">
+    <footer class="footer">
         <header class="footer__header">
             <h2 class="footer__title">Контакты</h2>
         </header>
@@ -601,7 +600,7 @@
             </form>
         </div> -->
         <p class="footer__legals"><a href="#">Договор оферты</a></p>
-    </section>
+    </footer>
 
     <!-- Popup -->
     <div class="contact-popup contact-popup--hidden"><button class="contact-popup__close"></button>
