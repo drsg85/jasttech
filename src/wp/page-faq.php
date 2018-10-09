@@ -13,7 +13,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
         <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory') ?>/style.css" />
-    <title>Для Бизнеса — Jast Charger</title>
+    <title>FAQ — Jast Charger</title>
 </head>
 
 <body>
