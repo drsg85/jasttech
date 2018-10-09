@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+
+        link(rel="stylesheet", href="styles.css")
+
+        title Франшиза — Jast Charger
+
+    body
+        header.hero.hero--advert
+            button.menu-button: .menu-button__middle
+
+            .hero__top
+                .logo
+                    .logo__image: img(src="./img/logo.svg", alt="")
+                    .logo__text Jast&nbsp;Charger
+
+                .hero__nav
+                    nav.main-nav
+                        ul.main-nav__list
+                            li.main-nav__item
+                                a.main-nav__link(href="index.html") Франшиза
+                            li.main-nav__item
+                                a.main-nav__link(href="business.html") Для Бизнеса
+                            li.main-nav__item
+                                a.main-nav__link.main-nav__link--current(href="#") Реклама
+                            li.main-nav__item
+                                a.main-nav__link(href="about.html") О Нас
+                            li.main-nav__item
+                                a.main-nav__link(href="faq.html") FAQ
+                            li.main-nav__item
+                                a.main-nav__link(href="news.html") Новости
+                            li.main-nav__item
+                                a.main-nav__link(href="contacts.html") Контакты
+
+            .hero__dummy
+            
+            h1.main-title Эффективная <br><strong>рекламная&nbsp;площадка</strong>
+
+            .hero__cta
+                a.cta-button.contact-button(href="#") Подробнее
+
+        section.advantages
+            header.advantages__header
+                h2.section-title <strong>Почему вашим клиентам </strong> нужна эта рекламная площадка?
+
+            .advantages__content
+                ol.advantages__list
+                    li.advantages__list-item
+                        article.advantage
+                            h3.advantage__title Почему они это делают
+                            p.advantage__text Рекламная поверхность расположена на зарядном оборудовании
+
+                    li.advantages__list-item
+                        article.advantage
+                            h3.advantage__title Что это значит
+                            p.advantage__text Предоставить человеку возможность зарядить своё устройство, отличный способ сфокусировать его внимание на рекламной продукции, расположенной на поверхности.
+
+                    li.advantages__list-item
+                        article.advantage
+                            h3.advantage__title Ваша выгода
+                            p.advantage__text Мы размещаем Ваши рекламные материалы на наших зарядных устройствах. Каждое устройство делает от&nbsp;5 до&nbsp;20 касаний с&nbsp;клиентом в день.
+                            
+                    li.advantages__list-item
+                        article.advantage
+                            h3.advantage__title Кому мы рекламируем Ваш продукт
+                            p.advantage__text Мы понимаем, что когда клиент открывает рекламную кампанию, он хочет получить максимальную выгоду от показа своих объявлений. Благодаря уникальным возможностям сегментирования аудитории, наш клиент может быть уверен, что его объявление увидит именно тот человек, который максимально настроен к бренду.
+
+        section.places
+            header.places__header
+                h2.section-title <strong>Где можно размещать вашу рекламу </strong>
+            
+            .places__content
+                article.place
+                    .place__icon: img(src="./img/icons/cafe.svg", alt="Рестораны и кафе")
+                    h2.place__title Рестораны и кафе
+
+                article.place
+                    .place__icon: img(src="./img/icons/movie.svg", alt="Кинотеатры")
+                    h2.place__title Кинотеатры
+
+                article.place
+                    .place__icon: img(src="./img/icons/beauty.svg", alt="Салоны красоты")
+                    h2.place__title Салоны красоты
+
+                article.place
+                    .place__icon: img(src="./img/icons/business.svg", alt="Бизнес-центры")
+                    h2.place__title Бизнес-центры
+
+                article.place
+                    .place__icon: img(src="./img/icons/mall.svg", alt="Торговые центры")
+                    h2.place__title Торговые центры
+
+                article.place
+                    .place__icon: img(src="./img/icons/bawling.svg", alt="Боулинг-клубы")
+                    h2.place__title Боулинг-клубы
+
+            .places__cta
+                a.ghost-button.contact-button(href="#") Получить презентацию
+        section.footer
+            header.footer__header
+                h2.footer__title Контакты
+
+                p.footer__address Россия, г. Калининград <br>ул. Театральная, 35, офис 616 <br>(Морской Бизнес Центр)
+
+                h3.footer__subtitle Отдел продаж:
+
+                .footer__contacts
+                    a.footer__phone(href="tel:+79097782086") +7 909 778-20-86 
+                    a.footer__mail(href="mailto:manager@jast.tech") manager@jast.tech
+
+                .footer__social
+                    a.social.social--vk(href="#") ВКонтакте
+                    a.social.social--inst(href="#") Инстаграм
+
+            //- .footer__form
+                //- <script>var amo_forms_params = {"id":361897,"hash":"e7f3326ccdf13ebb3dcacd1535ecdd32","locale":"ru"};</script><script id="amoforms_script" async="async" charset="utf-8" src="https://forms.amocrm.ru/forms/assets/js/amoforms.js"></script>
+
+            p.footer__legals
+                a(href="#") Договор оферты
+
+        .contact-popup.contact-popup--hidden
+            button.contact-popup__close
+            .contact-popup__cover
+            .contact-popup__form
+                <script>var amo_forms_params = {"id":361897,"hash":"e7f3326ccdf13ebb3dcacd1535ecdd32","locale":"ru"};</script><script id="amoforms_script" async="async" charset="utf-8" src="https://forms.amocrm.ru/forms/assets/js/amoforms.js"></script>
+
+        script(src="./business.js")

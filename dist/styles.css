@@ -377,7 +377,8 @@ body {
         background-size: contain; } }
     @media (min-width: 1200px) {
       .hero--business {
-        background-image: url("./img/bgs/business-d.jpg"); } }
+        background-image: url("./img/bgs/business-d.jpg");
+        background-position: top right 50%; } }
     .hero--business .main-title {
       text-align: left; }
     .hero--business .hero__cta {
@@ -389,6 +390,18 @@ body {
     @media (min-width: 1200px) {
       .hero--contacts {
         padding-bottom: 0; } }
+  .hero--advert {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    background-image: url("./img/bgs/ade-m.jpg");
+    background-size: contain;
+    background-position: top right; }
+    .hero--advert .main-title {
+      text-align: left; }
+    .hero--advert .hero__cta {
+      margin-top: 20px;
+      text-align: left; }
 
 .hero__top {
   position: absolute;

@@ -83,6 +83,7 @@
         @include atDesktop {
             // visual
             background-image: url('./img/bgs/business-d.jpg');
+            background-position: top right 50%;
         }
         
         .main-title {
@@ -93,22 +94,45 @@
         .hero__cta {
             // box model
             margin-top: 20px;
-
+            
             // typography
             text-align: left;
         }
     }
-
+    
     &--contacts {
         // box model
         height: auto;
-
+        
         // visual
         background-image: none;
-
+        
         @include atDesktop {
             // box model
             padding-bottom: 0;
+        }
+    }
+    
+    &--advert {
+        // box model
+        justify-content: flex-end;
+
+        // visual
+        background-image: url('./img/bgs/ade-m.jpg');
+        background-size: contain;
+        background-position: top right;
+
+        .main-title {
+            // typography
+            text-align: left;
+        }
+        
+        .hero__cta {
+            // box model
+            margin-top: 20px;
+            
+            // typography
+            text-align: left;
         }
     }
 }
