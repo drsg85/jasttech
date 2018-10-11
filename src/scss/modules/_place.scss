@@ -1,0 +1,34 @@
+.place {
+    // box model
+    padding-bottom: 30px;
+
+    @include atMobileL {
+        // box model
+        flex-basis: 50%;
+    }
+}
+
+.place__icon {
+    // box model
+    width: 90px;
+    height: 90px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+
+    @include atMobileL {
+        // box model
+        width: 95px;
+    }
+}
+
+.place__icon img {
+    // box model
+    width: 100%;
+}
+
+.place__title {
+    // typography
+    color: $light;
+    font-size: 1.125rem;
+    text-align: center;
+}

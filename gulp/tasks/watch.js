@@ -1,5 +1,7 @@
 import gulp from 'gulp';
-import browserSync from 'browser-sync';
+import wait from 'gulp-wait';
+// import browserSync from 'browser-sync';
+const browserSync = require('browser-sync').create();
 
 const dirs = {
     pug: './src/pug/**/*.pug',
@@ -41,10 +43,12 @@ gulp.task('pugChanged', ['pugRender'], () => {
 });
 
 // styles
-gulp.task('stylesChanged', ['styles', 'copyCSS'], () => {
+gulp.task('stylesChanged', ['styles', 'copyCSS', 'reloadBrowser']);
+
+gulp.task('reloadBrowser', () => {
     gulp.src(dirs.css)
         .pipe(browserSync.stream());
-});
+})
 
 // scripts
 gulp.task('jsChanged', ['scripts', 'copyJS'], () => {

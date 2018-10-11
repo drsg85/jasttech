@@ -2298,3 +2298,47 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5; }
+
+.places {
+  padding: 40px;
+  background-color: #111339; }
+
+.places__header {
+  text-align: center; }
+
+.places__content {
+  padding-bottom: 40px; }
+  @media (min-width: 480px) {
+    .places__content {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; } }
+
+.places__cta {
+  text-align: center; }
+
+.place {
+  padding-bottom: 30px; }
+  @media (min-width: 480px) {
+    .place {
+      -ms-flex-preferred-size: 50%;
+      flex-basis: 50%; } }
+
+.place__icon {
+  width: 90px;
+  height: 90px;
+  margin: 0 auto;
+  margin-bottom: 20px; }
+  @media (min-width: 480px) {
+    .place__icon {
+      width: 95px; } }
+
+.place__icon img {
+  width: 100%; }
+
+.place__title {
+  color: #ffffff;
+  font-size: 1.125rem;
+  text-align: center; }

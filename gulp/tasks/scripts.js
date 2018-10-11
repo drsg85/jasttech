@@ -15,7 +15,7 @@ const config = {
     output: {
         filename: '[name].js'
     },
-    mode: 'production'
+    // mode: 'production'
 };
 
 const dirs = {

@@ -1,0 +1,28 @@
+.places {
+    // box model
+    padding: 40px;
+    
+    // visual
+    background-color: $darkBlue;
+}
+
+.places__header {
+    // typography
+    text-align: center;
+}
+
+.places__content {
+    // box model
+    padding-bottom: 40px;
+
+    @include atMobileL {
+        // box model
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.places__cta {
+    // typography
+    text-align: center;
+}
