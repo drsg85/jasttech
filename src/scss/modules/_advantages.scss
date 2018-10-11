@@ -26,14 +26,52 @@
         background-position: bottom -300px right;
         background-size: 1100px;
     }
+
+    &--advert {
+        @include atTablet {
+            // visual
+            background-image: none;
+        }
+
+        @include atDesktop {
+            // box model
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+
+            .advantages__header {
+                // box model
+                flex-basis: 33%;
+                padding-right: 30px;
+
+                // typography
+                text-align: left;
+
+                .section-title {
+                    // box model
+                    margin-top: 0;
+                }
+            }
+            
+            .advantages__content {
+                // box model
+                flex-basis: 66%;
+                margin-bottom: -50px;
+                margin-right: -40px;
+                padding-left: 30px;
+            }
+
+            .advantages__list-item {
+                // box model
+                flex-basis: 50%;
+            }
+        }
+    }
 }
 
 .advantages__header {
     // typography
     text-align: center;
-}
-
-.advantages__content {
 }
 
 .advantages__list {

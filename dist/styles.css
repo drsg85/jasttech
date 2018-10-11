@@ -2227,6 +2227,36 @@ body {
       padding: 120px calc((100% - 1040px) / 2);
       background-position: bottom -300px right;
       background-size: 1100px; } }
+  @media (min-width: 768px) {
+    .advantages--advert {
+      background-image: none; } }
+  @media (min-width: 1200px) {
+    .advantages--advert {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -webkit-box-align: start;
+      -ms-flex-align: start;
+      align-items: flex-start; }
+      .advantages--advert .advantages__header {
+        -ms-flex-preferred-size: 33%;
+        flex-basis: 33%;
+        padding-right: 30px;
+        text-align: left; }
+        .advantages--advert .advantages__header .section-title {
+          margin-top: 0; }
+      .advantages--advert .advantages__content {
+        -ms-flex-preferred-size: 66%;
+        flex-basis: 66%;
+        margin-bottom: -50px;
+        margin-right: -40px;
+        padding-left: 30px; }
+      .advantages--advert .advantages__list-item {
+        -ms-flex-preferred-size: 50%;
+        flex-basis: 50%; } }
 
 .advantages__header {
   text-align: center; }
@@ -2304,6 +2334,8 @@ body {
   background-color: #111339; }
 
 .places__header {
+  margin: 0 auto;
+  max-width: 500px;
   text-align: center; }
 
 .places__content {
@@ -2349,12 +2381,16 @@ body {
 .price-plans__header {
   text-align: center; }
 
+.price-plans__content {
+  margin: 0 auto;
+  max-width: 430px; }
+
 .plan {
   text-align: center;
   border-radius: 10px; }
   .plan--mini {
-    margin: 0 20px;
-    margin-bottom: -1px;
+    margin: 0 25px;
+    margin-bottom: -2px;
     border: 2px solid #4cb8ea;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0; }
