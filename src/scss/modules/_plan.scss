@@ -1,0 +1,90 @@
+.plan {
+    // typography
+    text-align: center;
+
+    // visual
+    border-radius: 10px;
+
+    &--mini {
+        // box model
+        margin: 0 20px;
+        margin-bottom: -1px;
+
+        // visual
+        border: 2px solid $blue;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    
+    &--standard {
+        // typography
+        color: $light;
+        
+        // visual
+        background-color: $blue;
+
+        .plan__desc {
+            // visual
+            border-color: $darkBlue;
+        }
+
+        .plan__desc p {
+            // typography
+            font-size: 1rem;
+        }
+
+        .plan__price {
+            // typography
+            color: $darkBlue;
+        }
+    }
+    
+    &--premium {
+        // box model
+        margin: 0 20px;
+        margin-top: -1px;
+
+        // typography
+        color: $light;
+        
+        // visual
+        background-color: $darkBlue;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+}
+
+.plan__title {
+    // box model
+    margin: 0;
+    padding-top: 40px;
+
+    // typography
+    font-size: 2rem;
+}
+
+.plan__desc {
+    // box model
+    margin: 0;
+    padding: 40px;
+
+    // visual
+    border-bottom: 1px solid $blue;
+}
+
+.plan__desc p {
+    // typography
+    font-size: 0.85rem;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.plan__price {
+    // box model
+    margin: 0;
+    padding: 20px 0;
+
+    // typography
+    font-size: 2rem;
+    font-weight: 700;
+}

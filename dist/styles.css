@@ -2342,3 +2342,56 @@ body {
   color: #ffffff;
   font-size: 1.125rem;
   text-align: center; }
+
+.price-plans {
+  padding: 40px; }
+
+.price-plans__header {
+  text-align: center; }
+
+.plan {
+  text-align: center;
+  border-radius: 10px; }
+  .plan--mini {
+    margin: 0 20px;
+    margin-bottom: -1px;
+    border: 2px solid #4cb8ea;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0; }
+  .plan--standard {
+    color: #ffffff;
+    background-color: #4cb8ea; }
+    .plan--standard .plan__desc {
+      border-color: #111339; }
+    .plan--standard .plan__desc p {
+      font-size: 1rem; }
+    .plan--standard .plan__price {
+      color: #111339; }
+  .plan--premium {
+    margin: 0 20px;
+    margin-top: -1px;
+    color: #ffffff;
+    background-color: #111339;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0; }
+
+.plan__title {
+  margin: 0;
+  padding-top: 40px;
+  font-size: 2rem; }
+
+.plan__desc {
+  margin: 0;
+  padding: 40px;
+  border-bottom: 1px solid #4cb8ea; }
+
+.plan__desc p {
+  font-size: 0.85rem;
+  font-weight: 700;
+  line-height: 1.5; }
+
+.plan__price {
+  margin: 0;
+  padding: 20px 0;
+  font-size: 2rem;
+  font-weight: 700; }
