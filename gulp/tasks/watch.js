@@ -42,8 +42,8 @@ gulp.task('pugChanged', ['pugRender'], () => {
 });
 
 // styles
-// gulp.task('stylesChanged', ['styles', 'copyCSS'], () => {
-gulp.task('stylesChanged', ['styles'], () => {
+gulp.task('stylesChanged', ['styles', 'copyCSS'], () => {
+// gulp.task('stylesChanged', ['styles'], () => {
     // gulp.src(dirs.css)
         // .pipe(browserSync.stream());
         // .pipe(browserSync.reload());
@@ -51,7 +51,7 @@ gulp.task('stylesChanged', ['styles'], () => {
 });
 
 // scripts
-// gulp.task('jsChanged', ['scripts', 'copyJS'], () => {
-gulp.task('jsChanged', ['scripts'], () => {
+gulp.task('jsChanged', ['scripts', 'copyJS'], () => {
+// gulp.task('jsChanged', ['scripts'], () => {
     browserSync.reload();
 });

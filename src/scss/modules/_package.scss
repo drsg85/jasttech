@@ -1,6 +1,6 @@
 .package {
     // box model
-    margin-bottom: 40px;
+    margin-bottom: 80px;
 
     @include atMobileL {
         // box model
@@ -24,7 +24,7 @@
         .package__image {
             // box model
             order: 2;
-            padding-right: calc((100% - 1040px) / 2);
+            padding-right: calc((100% - 1200px) / 2);
             padding-left: 0;
         }
 
@@ -38,6 +38,9 @@
 }
 
 .package__image {
+    // box model
+    max-width: 400px;
+
     @include atTablet {
         // box model
         margin: 0 auto;
@@ -46,16 +49,18 @@
 
     @include atDesktop {
         // box model
-        flex-basis: 40%;
-        padding-top: 120px;
+        flex-basis: 45%;
+        padding-top: 140px;
         padding-left: calc((100% - 1040px) / 2);
+        width: auto;
+        max-width: inherit;
     }
 }
 
 .package__container {
     @include atDesktop {
         // box model
-        flex-basis: 60%;
+        flex-basis: 55%;
         padding: 70px;
         padding-right: calc((100% - 1040px) / 2);
 
