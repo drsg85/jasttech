@@ -1,0 +1,48 @@
+.device-item {
+    // box model
+    margin-bottom: 80px;
+
+    @include atMobileL {
+        // box model
+        flex-basis: 50%;
+        margin-bottom: 60px;
+    }
+
+    @include atTablet {
+        // box model
+        flex-basis: 33%;
+    }
+
+    @include atDesktop {
+        // box model
+        flex-basis: 25%;
+        margin-bottom: 40px;
+    }
+}
+
+.device-item__image {
+    // box model
+    margin: 0 auto;
+    max-width: 300px;
+}
+
+.device-item__image img {
+    // box model
+    width: 100%;
+}
+
+.device-item__header {
+    // typography
+    text-align: center;
+}
+
+.device-item__title {
+
+}
+
+.device-item__more {
+    // typography
+    color: $blue;
+    text-transform: uppercase;
+    text-decoration: none;
+}
