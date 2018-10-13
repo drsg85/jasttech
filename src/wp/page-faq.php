@@ -12,8 +12,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-        <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory') ?>/style.css" />
+    <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory') ?>/style.css" />
+
     <title>FAQ — Jast Charger</title>
+
+    <?php
+        wp_head();
+    ?>
 </head>
 
 <body>
@@ -41,14 +46,17 @@
                             <a class="main-nav__link" href="<?php echo esc_url(home_url('/')); ?>business">Для Бизнеса</a>
                         </li>
                         <li class="main-nav__item">
+                            <a class="main-nav__link" href="<?php echo esc_url(home_url('/')); ?>advert">Реклама</a>
+                        </li>
+                        <li class="main-nav__item">
                             <a class="main-nav__link" href="<?php echo esc_url(home_url('/')); ?>about">О Нас</a>
                         </li>
                         <li class="main-nav__item">
                             <a class="main-nav__link main-nav__link--current" href="<?php echo esc_url(home_url('/')); ?>faq">FAQ</a>
                         </li>
-                        <!-- <li class="main-nav__item">
+                        <li class="main-nav__item">
                             <a class="main-nav__link" href="<?php echo esc_url(home_url('/')); ?>news">Новости</a>
-                        </li> -->
+                        </li>
                         <li class="main-nav__item">
                             <a class="main-nav__link" href="<?php echo esc_url(home_url('/')); ?>contacts">Контакты</a>
                         </li>
@@ -134,31 +142,9 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
-        <header class="footer__header">
-            <h2 class="footer__title">Контакты</h2>
-            <p class="footer__address">Россия, г. Калининград <br>ул. Театральная, 35, офис 616 <br>(Морской Бизнес
-                Центр)</p>
-            <h3 class="footer__subtitle">Отдел продаж:</h3>
-            <div class="footer__contacts">
-                <a class="footer__phone" href="tel:+79097782086">+7 909 778-20-86 </a><br>
-                <a class="footer__mail" href="mailto:manager@jast.tech">manager@jast.tech</a>
-            </div>
-            <div class="footer__social"><a class="social social--vk" href="#">ВКонтакте</a><a class="social social--inst"
-                    href="#">Инстаграм</a></div>
-        </header>
-        <div class="footer__form">
-            <script>
-                var amo_forms_params = {
-                    "id": 361897,
-                    "hash": "e7f3326ccdf13ebb3dcacd1535ecdd32",
-                    "locale": "ru"
-                };
-            </script>
-            <script id="amoforms_script" async="async" charset="utf-8" src="https://forms.amocrm.ru/forms/assets/js/amoforms.js"></script>
-        </div>
-        <p class="footer__legals"><a href="#">Договор оферты</a></p>
-    </footer>
+    <?php
+        get_footer();
+    ?>
 
     <!-- Popup -->
     <!-- <div class="contact-popup contact-popup--hidden"><button class="contact-popup__close"></button>
@@ -176,6 +162,10 @@
     </div> -->
 
     <script src="<?php bloginfo('stylesheet_directory'); ?>/faq.js"></script>
+
+    <?php
+        wp_footer();
+    ?>
 </body>
 
 </html>
