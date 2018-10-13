@@ -419,7 +419,7 @@ html(lang="en")
                     h3.item__title Маркетинговая поддержка
 
             .u-get__buttons
-                a.cta-button(href="#") Подробнее
+                a.cta-button.contact-button(href="#") Подробнее
 
         section.models
             header.models__header
@@ -493,25 +493,21 @@ html(lang="en")
                 h2.footer__title Контакты
 
             .footer__content
-                p.footer__address Россия, г. Калининград <br>ул. Театральная, 35, офис 616 <br>(Морской Бизнес Центр)
+                .footer__a-n-c
+                    p.footer__address Россия, г. Калининград <br>ул. Театральная, 35, офис 616 <br>(Морской Бизнес Центр)
 
-                h3.footer__subtitle Отдел продаж:
-
-                .footer__contacts
-                    a.footer__phone(href="tel:+79097782086") +7 909 778-20-86 
-                    a.footer__mail(href="mailto:manager@jast.tech") manager@jast.tech
+                    .footer__contacts
+                        h3.footer__subtitle Отдел продаж:
+                        a.footer__phone(href="tel:+79097782086") +7 909 778-20-86<br>
+                        a.footer__mail(href="mailto:manager@jast.tech") manager@jast.tech
 
                 .footer__social
                     a.social.social--vk(href="#") ВКонтакте
                     a.social.social--inst(href="#") Инстаграм
 
-            //- .footer__form
-                //- <script>var amo_forms_params = {"id":388498,"hash":"cfa9f9a87997348d97dbba5013349163","locale":"ru"};</script><script id="amoforms_script" async="async" charset="utf-8" src="https://forms.amocrm.ru/forms/assets/js/amoforms.js"></script>
+                    p.footer__legals
+                        a(href="#") Договор оферты
 
-                //- <script>var amo_forms_params = {"id":361897,"hash":"e7f3326ccdf13ebb3dcacd1535ecdd32","locale":"ru"};</script><script id="amoforms_script" async="async" charset="utf-8" src="https://forms.amocrm.ru/forms/assets/js/amoforms.js"></script>
-
-            p.footer__legals
-                a(href="#") Договор оферты
 
         .contact-popup.contact-popup--hidden
             button.contact-popup__close

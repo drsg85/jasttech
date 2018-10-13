@@ -36,15 +36,35 @@ html(lang="en")
                             li.main-nav__item
                                 a.main-nav__link.main-nav__link--current(href="#") Контакты
 
-        section.footer
+        //- section.footer
+            header.footer__header
+                h2.footer__title Контакты
+
+            .footer__content
+                .footer__a-n-c
+                    p.footer__address Россия, г. Калининград <br>ул. Театральная, 35, офис 616 <br>(Морской Бизнес Центр)
+
+                    .footer__contacts
+                        h3.footer__subtitle Отдел продаж:
+                        a.footer__phone(href="tel:+79097782086") +7 909 778-20-86<br>
+                        a.footer__mail(href="mailto:manager@jast.tech") manager@jast.tech
+
+                .footer__social
+                    a.social.social--vk(href="#") ВКонтакте
+                    a.social.social--inst(href="#") Инстаграм
+
+                    p.footer__legals
+                        p ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ «ВИР&nbsp;ХОЛДИНГ» <br>ИНН 3906359034 <br>КПП 390601001 <br>ОГРН 1173926025228 <br>Расчетный счет 40702810210000210440 <br>Банк АО «ТИНЬКОФФ БАНК» <br>Юридический адрес банка Москва, 123060, 1-й Волоколамский проезд, д. 10, стр. 1 <br>Корр.счет банка 30101810145250000974 <br>ИНН банка 7710140679 <br>БИК банка 044525974
+                        a(href="#") Договор оферты
+
+        section.footer.footer--contacts
             header.footer__header
                 h2.footer__title Контакты
 
                 p.footer__address Россия, г. Калининград <br>ул. Театральная, 35, офис 616 <br>(Морской Бизнес Центр)
 
-                h3.footer__subtitle Отдел продаж:
-
                 .footer__contacts
+                    h3.footer__subtitle Отдел продаж:
                     a.footer__phone(href="tel:+79097782086") +7 909 778-20-86 
                     a.footer__mail(href="mailto:manager@jast.tech") manager@jast.tech
 

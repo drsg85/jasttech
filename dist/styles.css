@@ -1796,10 +1796,10 @@ body {
   @media (min-width: 1200px) {
     .footer {
       position: relative;
-      padding: 120px calc((100% - 1040px) / 2);
+      padding: 70px calc((100% - 1040px) / 2);
       background-image: url("./img/bgs/connector-footer.svg");
       background-repeat: no-repeat;
-      background-position: bottom 0 left calc((100% - 1040px) / 2 + 340px);
+      background-position: bottom -100px center;
       background-size: 800px; } }
 
 .footer__header {
@@ -1821,7 +1821,25 @@ body {
 
 @media (min-width: 1200px) {
   .footer__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
     text-align: left; } }
+
+@media (min-width: 1200px) {
+  .footer__a-n-c {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end; } }
 
 .footer__address {
   margin-bottom: 40px;
@@ -1831,15 +1849,25 @@ body {
   @media (min-width: 480px) {
     .footer__address {
       font-size: 1rem; } }
+  @media (min-width: 1200px) {
+    .footer__address {
+      margin: 0;
+      margin-right: 80px; } }
 
 .footer__subtitle {
   font-size: 1.125rem; }
   @media (min-width: 480px) {
     .footer__subtitle {
       font-size: 1.5rem; } }
+  @media (min-width: 1200px) {
+    .footer__subtitle {
+      margin-top: 0; } }
 
 .footer__contacts {
   margin-bottom: 20px; }
+  @media (min-width: 1200px) {
+    .footer__contacts {
+      margin: 0; } }
 
 .footer__phone {
   color: #ffffff;
@@ -1861,6 +1889,9 @@ body {
 
 .footer__social {
   margin-bottom: 40px; }
+  @media (min-width: 1200px) {
+    .footer__social {
+      margin: 0; } }
 
 .footer__form {
   max-width: 460px;
@@ -1883,7 +1914,8 @@ body {
       font-size: 1rem; } }
   @media (min-width: 1200px) {
     .footer__legals {
-      text-align: left; } }
+      margin-bottom: 0;
+      text-align: right; } }
 
 .footer__legals a {
   display: inline-block;

@@ -33,7 +33,7 @@ html(lang="en")
                                 a.main-nav__link(href="news.html") Новости
                             li.main-nav__item
                                 a.main-nav__link(href="contacts.html") Контакты
-
+                    
         section.about
             header.about__header
                 h2.section-title Мы сможем <em>зарядить!</em>
@@ -46,6 +46,9 @@ html(lang="en")
                 ul
                     li На данный момент мы представлены в более чем 2 500 заведениях в регионах России и стран СНГ
                     li Имеем более 80 действующих партнеров
+
+                .about__buttons
+                    a.ghost-button.contact-button(href="#") Получить презентацию
 
         section.video
             header.video__header
@@ -61,29 +64,20 @@ html(lang="en")
             header.footer__header
                 h2.footer__title Контакты
 
-                p.footer__address Россия, г. Калининград <br>ул. Театральная, 35, офис 616 <br>(Морской Бизнес Центр)
+            .footer__content
+                .footer__a-n-c
+                    p.footer__address Россия, г. Калининград <br>ул. Театральная, 35, офис 616 <br>(Морской Бизнес Центр)
 
-                h3.footer__subtitle Отдел продаж:
-
-                .footer__contacts
-                    a.footer__phone(href="tel:+79097782086") +7 909 778-20-86 
-                    a.footer__mail(href="mailto:manager@jast.tech") manager@jast.tech
+                    .footer__contacts
+                        h3.footer__subtitle Отдел продаж:
+                        a.footer__phone(href="tel:+79097782086") +7 909 778-20-86<br>
+                        a.footer__mail(href="mailto:manager@jast.tech") manager@jast.tech
 
                 .footer__social
                     a.social.social--vk(href="#") ВКонтакте
                     a.social.social--inst(href="#") Инстаграм
 
-            .footer__form
-                <script>var amo_forms_params = {"id":361897,"hash":"e7f3326ccdf13ebb3dcacd1535ecdd32","locale":"ru"};</script><script id="amoforms_script" async="async" charset="utf-8" src="https://forms.amocrm.ru/forms/assets/js/amoforms.js"></script>
-                //- form.form(action="")
-                //-     h3.form__title Заполните форму и мы свяжемся с вами как можно скорее:
-                //-     input#name.form__input(type="text", name="name" placeholder="Ваше имя")
-                //-     input#email.form__input(type="email", name="email" placeholder="Ваш e-mail")
-                //-     input#phone.form__input(type="text", name="phone" placeholder="Ваш телефон")
-                //-     input#city.form__input(type="text", name="city" placeholder="Ваш город")
-                //-     input.cta-button(type="submit", value="Отправить")
-
-            p.footer__legals
-                a(href="#") Договор оферты
+                    p.footer__legals
+                        a(href="#") Договор оферты
 
         script(src="./about.js")

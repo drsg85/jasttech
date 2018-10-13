@@ -19,12 +19,13 @@
         position: relative;
 
         // box model
-        padding: 120px calc((100% - 1040px) / 2);
+        padding: 70px calc((100% - 1040px) / 2);
 
         // visual
         background-image: url('./img/bgs/connector-footer.svg');
         background-repeat: no-repeat;
-        background-position: bottom 0 left calc((100% - 1040px) / 2 + 340px);
+        // background-position: bottom 0 left calc((100% - 1040px) / 2 + 340px);
+        background-position: bottom -100px center;
         background-size: 800px;
     }
 }
@@ -59,8 +60,21 @@
 
 .footer__content {
     @include atDesktop {
+        // box model
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+
         // typography
         text-align: left;
+    }
+}
+
+.footer__a-n-c {
+    @include atDesktop {
+        // box model
+        display: flex;
+        align-items: flex-end;
     }
 }
 
@@ -77,6 +91,12 @@
         // typography
         font-size: 1rem;
     }
+
+    @include atDesktop {
+        // box model
+        margin: 0;
+        margin-right: 80px;
+    }
 }
 
 .footer__subtitle {
@@ -87,11 +107,21 @@
         // typography
         font-size: 1.5rem;
     }
+
+    @include atDesktop {
+        // box model
+        margin-top: 0;
+    }
 }
 
 .footer__contacts {
     // box model
     margin-bottom: 20px;
+
+    @include atDesktop {
+        // box model
+        margin: 0;
+    }
 }
 
 .footer__phone {
@@ -123,6 +153,11 @@
 .footer__social {
     // box model
     margin-bottom: 40px;
+
+    @include atDesktop {
+        // box model
+        margin: 0;
+    }
 }
 
 .footer__form {
@@ -155,8 +190,11 @@
     }
 
     @include atDesktop {
+        // box model
+        margin-bottom: 0;
+
         // typography
-        text-align: left;
+        text-align: right;
     }
 }
 
