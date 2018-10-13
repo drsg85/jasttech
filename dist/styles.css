@@ -397,6 +397,9 @@ body {
     background-image: url("./img/bgs/ade-m.jpg");
     background-size: contain;
     background-position: top right; }
+    @media (min-width: 768px) {
+      .hero--advert {
+        background-image: url("./img/bgs/ade.jpg"); } }
     .hero--advert .main-title {
       text-align: left; }
     .hero--advert .hero__cta {

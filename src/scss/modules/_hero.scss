@@ -122,6 +122,11 @@
         background-size: contain;
         background-position: top right;
 
+        @include atTablet {
+            // visual
+            background-image: url('./img/bgs/ade.jpg');
+        }
+
         .main-title {
             // typography
             text-align: left;
