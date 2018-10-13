@@ -1301,6 +1301,8 @@ body {
     .package__more {
       font-size: 1rem;
       text-align: center; } }
+  .package__more:hover {
+    color: #4cb8ea; }
 
 .package__more::before {
   content: "i";
@@ -1543,8 +1545,11 @@ body {
 
 .device-item__more {
   color: #4cb8ea;
+  font-weight: 700;
   text-transform: uppercase;
   text-decoration: none; }
+  .device-item__more:hover {
+    opacity: 0.5; }
 
 .u-get {
   padding: 40px;

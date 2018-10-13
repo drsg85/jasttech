@@ -43,6 +43,12 @@
 .device-item__more {
     // typography
     color: $blue;
+    font-weight: 700;
     text-transform: uppercase;
     text-decoration: none;
+
+    &:hover {
+        // visual
+        opacity: 0.5;
+    }
 }
