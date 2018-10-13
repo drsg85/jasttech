@@ -160,162 +160,53 @@
 
         <div class="packages__content">
 
-<?php
-    $args = array(
-        'category_name' => 'package'
-    );
+        <?php
+            $args = array(
+                'category_name' => 'package'
+            );
 
-    query_posts($args);
+            query_posts($args);
 
-    if (have_posts()) {
-        while(have_posts()) {
-            the_post();
+            if (have_posts()) {
+                while(have_posts()) {
+                    the_post();
 
-            // vars
-            $pack_name      = get_field('pack-name');
-            $pack_image     = get_field('pack-image');
-            $pack_desc      = get_field('pack-desc');
-            $pack_price     = get_field('pack-price');
-?>
+                    // vars
+                    $pack_name      = get_field('pack-name');
+                    $pack_image     = get_field('pack-image');
+                    $pack_desc      = get_field('pack-desc');
+                    $pack_price     = get_field('pack-price');
+        ?>
 
-    <article class="package">
-        <div class="package__image">
-            <img src="<?php echo $pack_image; ?>" alt="Пакет <?php echo $pack_name; ?> от Jast Charger" />
-        </div>
-
-        <div class="package__container">
-            <header class="package__header">
-                <h3 class="package__title">Пакет <strong><?php echo $pack_name; ?></strong></h3>
-                <p class="package__income">Средний месячный доход: <em>23&nbsp;000 рублей</em></p>
-            </header>
-            <div class="package__content">
-                <?php echo $pack_desc; ?>
-            </div>
-            <footer class="package__footer">
-                <p class="package__price"><?php echo $pack_price; ?>.-</p>
-                <div class="package__buttons">
-                    <a class="ghost-button contact-button" href="#">Купить</a>
-                    <a class="ghost-button" href="#">Купить в кредит</a>
+            <article class="package">
+                <div class="package__image">
+                    <img src="<?php echo $pack_image; ?>" alt="Пакет <?php echo $pack_name; ?> от Jast Charger" />
                 </div>
-                <a class="package__more contact-button" href="#">Подробнее</a>
-            </footer>
-        </div>
-    </article>
 
-<?php
-        }
-    }
-?>
-            <!-- <div class="packages__all">
-                <article class="package">
-                    <div class="package__image"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/packages/begin.png" alt="Пакет Begin on Jast Charger" /></div>
-                    <div class="package__container">
-                        <header class="package__header">
-                            <h3 class="package__title">Пакет <strong>Begin Two</strong></h3>
-                            <p class="package__income">Средний месячный доход: <em>35&nbsp;000 рублей</em></p>
-                        </header>
-                        <div class="package__content">
-                            <p>Пакет «BEGIN» имеет ряд преимуществ в&nbsp;сравнении с&nbsp;другими предложениями
-                                на&nbsp;франчайзинговом рынке в&nbsp;той же&nbsp;ценовой категории. Он&nbsp;был
-                                разработан специально для людей, которые хотят:</p>
-                            <ul>
-                                <li>Начать собственный бизнес </li>
-                                <li>Совмещать предпринимательскую деятельность с&nbsp;основной работой </li>
-                                <li>Начиная с&nbsp;небольших инвестиций, основать быстрорастущую компанию </li>
-                                <li>Обрести дополнительный пассивный доход от&nbsp;25&nbsp;000 до&nbsp;57&nbsp;000
-                                    рублей в месяц</li>
-                            </ul>
-                        </div>
-                        <footer class="package__footer">
-                            <p class="package__price">92&nbsp;000.-</p>
-                            <div class="package__buttons"><a class="ghost-button" href="#">Купить</a><a class="ghost-button"
-                                    href="#">Купить в кредит</a></div><a class="package__more contact-button" href="#">Подробнее</a>
-                        </footer>
+                <div class="package__container">
+                    <header class="package__header">
+                        <h3 class="package__title">Пакет <strong><?php echo $pack_name; ?></strong></h3>
+                        <p class="package__income">Средний месячный доход: <em>23&nbsp;000 рублей</em></p>
+                    </header>
+                    <div class="package__content">
+                        <?php echo $pack_desc; ?>
                     </div>
-                </article>
-                <article class="package">
-                    <div class="package__image"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/packages/start.png" alt="Пакет Start on Jast Charger" /></div>
-                    <div class="package__container">
-                        <header class="package__header">
-                            <h3 class="package__title">Пакет <strong>Start</strong></h3>
-                            <p class="package__income">Средний месячный доход: <em>110&nbsp;000 рублей</em></p>
-                        </header>
-                        <div class="package__content">
-                            <p>Нашей компанией было разработано пакетное предложение «START», которое стало
-                                не&nbsp;только достойным конкурентом франшизам в&nbsp;среднем ценовом сегменте
-                                на&nbsp;рынке франчайзинга, но и&nbsp;позволило людям:</p>
-                            <ul>
-                                <li>Начать собственный бизнес с&nbsp;экономией более, чем в&nbsp;200&nbsp;000 рублей</li>
-                                <li>Совместить предпринимательскую деятельность со&nbsp;своим любимым занятием либо
-                                    хобби</li>
-                                <li>Создать крупную компанию с&nbsp;возможностью регионального роста</li>
-                                <li>Обрести дополнительный доход от&nbsp;127&nbsp;000 рублей</li>
-                            </ul>
+                    <footer class="package__footer">
+                        <p class="package__price"><?php echo $pack_price; ?>.-</p>
+                        <div class="package__buttons">
+                            <a class="ghost-button contact-button" href="#">Купить</a>
+                            <a class="ghost-button" href="#">Купить в кредит</a>
                         </div>
-                        <footer class="package__footer">
-                            <p class="package__price">300&nbsp;000.-</p>
-                            <div class="package__buttons"><a class="ghost-button" href="#">Купить</a><a class="ghost-button"
-                                    href="#">Купить в кредит</a></div><a class="package__more contact-button" href="#">Подробнее</a>
-                        </footer>
-                    </div>
-                </article>
-                <article class="package">
-                    <div class="package__image"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/packages/standard.png" alt="Пакет Standard on Jast Charger" /></div>
-                    <div class="package__container">
-                        <header class="package__header">
-                            <h3 class="package__title">Пакет <strong>Standard</strong></h3>
-                            <p class="package__income">Средний месячный доход: <em>70&nbsp;000 рублей</em></p>
-                        </header>
-                        <div class="package__content">
-                            <p>Пакет «STANDART» − это универсальное предложение, подходящее для городов
-                                с&nbsp;населением от&nbsp;300&nbsp;000 человек. Благодаря объему оборудования,
-                                предоставляемого в&nbsp;данном пакете в&nbsp;совокупности с&nbsp;комплексной поддержкой
-                                головного офиса, люди получили:</p>
-                            <ul>
-                                <li>Престижный социальный статус</li>
-                                <li>Совмещение предпринимательской деятельности со&nbsp;своим любимым занятием
-                                    и&nbsp;хобби</li>
-                                <li>Экономию более чем в&nbsp;400&nbsp;000 рублей на&nbsp;старте</li>
-                                <li>Крупный бизнес с&nbsp;возможностью регионального роста</li>
-                                <li>Доход от&nbsp;232&nbsp;000 рублей</li>
-                            </ul>
-                        </div>
-                        <footer class="package__footer">
-                            <p class="package__price">500&nbsp;000.-</p>
-                            <div class="package__buttons"><a class="ghost-button" href="#">Купить</a><a class="ghost-button"
-                                    href="#">Купить в кредит</a></div><a class="package__more contact-button" href="#">Подробнее</a>
-                        </footer>
-                    </div>
-                </article>
-                <article class="package">
-                    <div class="package__image"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/packages/million.png" alt="Пакет Million on Jast Charger" /></div>
-                    <div class="package__container">
-                        <header class="package__header">
-                            <h3 class="package__title">Пакет <strong>Million</strong></h3>
-                            <p class="package__income">Средний месячный доход: <em>415&nbsp;000 рублей</em></p>
-                        </header>
-                        <div class="package__content">
-                            <p>«MILLION» – это самое крупное предложение для&nbsp;наших будующих партнеров, включающее
-                                в&nbsp;себя максимальную скидку на линейку зарядных устройств. Данный пакет был
-                                разработан для&nbsp;людей, которые хотят охватить города с&nbsp;населением
-                                от&nbsp;500&nbsp;000 человек в&nbsp;максимально сжатые сроки, а&nbsp;также осуществить
-                                быстрый старт в&nbsp;городах-миллиониках. Люди, которые открыли бизнес благодаря
-                                данному пакету, смогли получить:</p>
-                            <ul>
-                                <li>Финансовую независимость, делегировав управление компанией третьему лицу</li>
-                                <li>Экономию более чем в&nbsp;850&nbsp;000 рублей на&nbsp;старте</li>
-                                <li>Крупный региональный бизнес</li>
-                                <li>Доход от&nbsp;546&nbsp;000 рублей</li>
-                            </ul>
-                        </div>
-                        <footer class="package__footer">
-                            <p class="package__price">998&nbsp;000.-</p>
-                            <div class="package__buttons"><a class="ghost-button" href="#">Купить</a><a class="ghost-button"
-                                    href="#">Купить в кредит</a></div><a class="package__more contact-button" href="#">Подробнее</a>
-                        </footer>
-                    </div>
-                </article>
-            </div> -->
+                        <a class="package__more contact-button" href="#">Подробнее</a>
+                    </footer>
+                </div>
+            </article>
+
+        <?php
+                }
+            }
+        ?>
+
         </div>
     </section>
 
@@ -325,8 +216,39 @@
             <h2 class="section-title">Устройства, благодаря которым вы&nbsp;можете обеспечить себе <strong>стабильный
                     пассивный доход</strong></h2>
         </header>
+
         <div class="devices__content">
-            <div class="slider">
+            <?php
+                $args = array(
+                    'category_name' => 'device'
+                );
+
+                query_posts($args);
+
+                if (have_posts()) {
+                    while (have_posts()) {
+                        the_post();
+
+                        // vars
+                        $device_name    = get_field('device-name');
+                        $device_thumb   = get_field('device-thumb');
+            ?>
+
+                <article class="device-item">
+                    <div class="device-item__image">
+                        <img src="<?php echo $device_thumb; ?>" alt="Устройство <?php echo $device_name; ?>" />
+                    </div>
+                    <header class="device-item__header">
+                        <h3 class="device-item__title"><?php echo $device_name; ?></h3>
+                        <a class="device-item__more" href="#">Подробнее</a>
+                    </header>
+                </article>
+
+            <?php
+                    }
+                }
+            ?>
+            <!-- <div class="slider">
                 <button class="slider__prev">&larr;</button>
                 <button class="slider__next">&rarr;</button>
                 <div class="slider__slides">
@@ -483,7 +405,7 @@
                         </article>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </section>
 
@@ -609,27 +531,21 @@
         <header class="footer__header">
             <h2 class="footer__title">Контакты</h2>
         </header>
+
         <div class="footer__content">
-            <p class="footer__address">Россия, г. Калининград <br>ул. Театральная, 35, офис 616 <br>(Морской Бизнес
-                Центр)</p>
-            <h3 class="footer__subtitle">Отдел продаж:</h3>
-            <div class="footer__contacts">
-                <a class="footer__phone" href="tel:+79097782086">+7 909 778-20-86 </a><br>
-                <a class="footer__mail" href="mailto:manager@jast.tech">manager@jast.tech</a>
+            <div class="footer__a-n-c">
+                <p class="footer__address">Россия, г. Калининград <br>ул. Театральная, 35, офис 616 <br>(Морской Бизнес
+                    Центр)</p>
+                <div class="footer__contacts">
+                    <h3 class="footer__subtitle">Отдел продаж:</h3><a class="footer__phone" href="tel:+79097782086">+7
+                        909 778-20-86<br></a><a class="footer__mail" href="mailto:manager@jast.tech">manager@jast.tech</a>
+                </div>
             </div>
-            <div class="footer__social"><a class="social social--vk contact-button" href="#">ВКонтакте</a><a class="social social--inst"
-                    href="#">Инстаграм</a></div>
+            <div class="footer__social"><a class="social social--vk" href="#">ВКонтакте</a><a class="social social--inst"
+                    href="#">Инстаграм</a>
+                <p class="footer__legals"><a href="#">Договор оферты</a></p>
+            </div>
         </div>
-        <!-- <div class="footer__form">
-            <form class="form" action="">
-                <h3 class="form__title">Заполните форму и мы свяжемся с вами как можно скорее:</h3><input class="form__input"
-                    id="name" type="text" name="name" placeholder="Ваше имя" /><input class="form__input" id="email"
-                    type="email" name="email" placeholder="Ваш e-mail" /><input class="form__input" id="phone" type="text"
-                    name="phone" placeholder="Ваш телефон" /><input class="form__input" id="city" type="text" name="city"
-                    placeholder="Ваш город" /><input class="cta-button" type="submit" value="Отправить" />
-            </form>
-        </div> -->
-        <p class="footer__legals"><a href="#">Договор оферты</a></p>
     </footer>
 
     <!-- Popup -->
