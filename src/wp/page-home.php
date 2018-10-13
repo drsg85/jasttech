@@ -24,7 +24,10 @@
     <meta name="description" content="<?php echo $meta_description; ?>" />
 
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory') ?>/style.css" />
+
     <title>Франшиза — Jast Charger</title>
+
+    <!-- <script type="text/javascript" src="https://v-credit.su/services/easycredit/inc.js"></script> -->
 </head>
 
 <body>
@@ -48,14 +51,17 @@
                             <a class="main-nav__link" href="<?php echo esc_url(home_url('/')); ?>business">Для Бизнеса</a>
                         </li>
                         <li class="main-nav__item">
+                            <a class="main-nav__link" href="<?php echo esc_url(home_url('/')); ?>advert">Реклама</a>
+                        </li>
+                        <li class="main-nav__item">
                             <a class="main-nav__link" href="<?php echo esc_url(home_url('/')); ?>about">О Нас</a>
                         </li>
                         <li class="main-nav__item">
                             <a class="main-nav__link" href="<?php echo esc_url(home_url('/')); ?>faq">FAQ</a>
                         </li>
-                        <!-- <li class="main-nav__item">
+                        <li class="main-nav__item">
                             <a class="main-nav__link" href="<?php echo esc_url(home_url('/')); ?>news">Новости</a>
-                        </li> -->
+                        </li>
                         <li class="main-nav__item">
                             <a class="main-nav__link" href="<?php echo esc_url(home_url('/')); ?>contacts">Контакты</a>
                         </li>
@@ -151,34 +157,56 @@
         <header class="packages__header">
             <h2 class="section-title">Пакеты франшиз</h2>
         </header>
+
         <div class="packages__content">
-            <div class="packages__all">
-                <article class="package">
-                    <div class="package__image"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/packages/begin.png" alt="Пакет Begin on Jast Charger" /></div>
-                    <div class="package__container">
-                        <header class="package__header">
-                            <h3 class="package__title">Пакет <strong>Begin One</strong></h3>
-                            <p class="package__income">Средний месячный доход: <em>23&nbsp;000 рублей</em></p>
-                        </header>
-                        <div class="package__content">
-                            <p>Пакет «BEGIN» имеет ряд преимуществ в&nbsp;сравнении с&nbsp;другими предложениями
-                                на&nbsp;франчайзинговом рынке в&nbsp;той же&nbsp;ценовой категории. Он&nbsp;был
-                                разработан специально для людей, которые хотят:</p>
-                            <ul>
-                                <li>Начать собственный бизнес </li>
-                                <li>Совмещать предпринимательскую деятельность с&nbsp;основной работой </li>
-                                <li>Начиная с&nbsp;небольших инвестиций, основать быстрорастущую компанию </li>
-                                <li>Обрести дополнительный пассивный доход от&nbsp;13&nbsp;000 до&nbsp;40&nbsp;000
-                                    рублей в месяц</li>
-                            </ul>
-                        </div>
-                        <footer class="package__footer">
-                            <p class="package__price">79&nbsp;000.-</p>
-                            <div class="package__buttons"><a class="ghost-button" href="#">Купить</a><a class="ghost-button"
-                                    href="#">Купить в кредит</a></div><a class="package__more contact-button" href="#">Подробнее</a>
-                        </footer>
-                    </div>
-                </article>
+
+<?php
+    $args = array(
+        'category_name' => 'package'
+    );
+
+    query_posts($args);
+
+    if (have_posts()) {
+        while(have_posts()) {
+            the_post();
+
+            // vars
+            $pack_name      = get_field('pack-name');
+            $pack_image     = get_field('pack-image');
+            $pack_desc      = get_field('pack-desc');
+            $pack_price     = get_field('pack-price');
+?>
+
+    <article class="package">
+        <div class="package__image">
+            <img src="<?php echo $pack_image; ?>" alt="Пакет <?php echo $pack_name; ?> от Jast Charger" />
+        </div>
+
+        <div class="package__container">
+            <header class="package__header">
+                <h3 class="package__title">Пакет <strong><?php echo $pack_name; ?></strong></h3>
+                <p class="package__income">Средний месячный доход: <em>23&nbsp;000 рублей</em></p>
+            </header>
+            <div class="package__content">
+                <?php echo $pack_desc; ?>
+            </div>
+            <footer class="package__footer">
+                <p class="package__price"><?php echo $pack_price; ?>.-</p>
+                <div class="package__buttons">
+                    <a class="ghost-button contact-button" href="#">Купить</a>
+                    <a class="ghost-button" href="#">Купить в кредит</a>
+                </div>
+                <a class="package__more contact-button" href="#">Подробнее</a>
+            </footer>
+        </div>
+    </article>
+
+<?php
+        }
+    }
+?>
+            <!-- <div class="packages__all">
                 <article class="package">
                     <div class="package__image"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/packages/begin.png" alt="Пакет Begin on Jast Charger" /></div>
                     <div class="package__container">
@@ -287,7 +315,7 @@
                         </footer>
                     </div>
                 </article>
-            </div>
+            </div> -->
         </div>
     </section>
 

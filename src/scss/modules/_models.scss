@@ -28,6 +28,11 @@
         // box model
         display: flex;
     }
+
+    @include atDesktop {
+        // box model
+        justify-content: space-between;
+    }
 }
 
 .models__set {
@@ -62,6 +67,9 @@
     }
 
     @include atTablet {
+        // box model
+        padding-top: 2rem;
+        
         // typography
         font-size: 1.75rem;
     }
