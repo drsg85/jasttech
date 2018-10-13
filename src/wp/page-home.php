@@ -28,6 +28,7 @@
     <title>Франшиза — Jast Charger</title>
 
     <!-- <script type="text/javascript" src="https://v-credit.su/services/easycredit/inc.js"></script> -->
+    <?php wp_head(); ?>
 </head>
 
 <body>
@@ -240,7 +241,7 @@
                     </div>
                     <header class="device-item__header">
                         <h3 class="device-item__title"><?php echo $device_name; ?></h3>
-                        <a class="device-item__more" href="#">Подробнее</a>
+                        <a class="device-item__more" href="<?php the_permalink(); ?>">Подробнее</a>
                     </header>
                 </article>
 
@@ -527,26 +528,9 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
-        <header class="footer__header">
-            <h2 class="footer__title">Контакты</h2>
-        </header>
-
-        <div class="footer__content">
-            <div class="footer__a-n-c">
-                <p class="footer__address">Россия, г. Калининград <br>ул. Театральная, 35, офис 616 <br>(Морской Бизнес
-                    Центр)</p>
-                <div class="footer__contacts">
-                    <h3 class="footer__subtitle">Отдел продаж:</h3><a class="footer__phone" href="tel:+79097782086">+7
-                        909 778-20-86<br></a><a class="footer__mail" href="mailto:manager@jast.tech">manager@jast.tech</a>
-                </div>
-            </div>
-            <div class="footer__social"><a class="social social--vk" href="#">ВКонтакте</a><a class="social social--inst"
-                    href="#">Инстаграм</a>
-                <p class="footer__legals"><a href="#">Договор оферты</a></p>
-            </div>
-        </div>
-    </footer>
+    <?php
+        get_footer();
+    ?>
 
     <!-- Popup -->
     <div class="contact-popup contact-popup--hidden">
@@ -563,6 +547,8 @@
             <script id="amoforms_script" async="async" charset="utf-8" src="https://forms.amocrm.ru/forms/assets/js/amoforms.js"></script>
         </div>
     </div>
+
+    <?php wp_footer(); ?>
 
     <script src="<?php bloginfo('stylesheet_directory'); ?>/main.js"></script>
 </body>

@@ -12,8 +12,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-        <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory') ?>/style.css" />
+    <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory') ?>/style.css" />
+
     <title>Для Бизнеса — Jast Charger</title>
+
+    <?php
+        wp_head();
+    ?>
 </head>
 
 <body>
@@ -41,14 +46,17 @@
                             <a class="main-nav__link main-nav__link--current" href="<?php echo esc_url(home_url('/')); ?>business">Для Бизнеса</a>
                         </li>
                         <li class="main-nav__item">
+                            <a class="main-nav__link" href="<?php echo esc_url(home_url('/')); ?>advert">Реклама</a>
+                        </li>
+                        <li class="main-nav__item">
                             <a class="main-nav__link" href="<?php echo esc_url(home_url('/')); ?>about">О Нас</a>
                         </li>
                         <li class="main-nav__item">
                             <a class="main-nav__link" href="<?php echo esc_url(home_url('/')); ?>faq">FAQ</a>
                         </li>
-                        <!-- <li class="main-nav__item">
+                        <li class="main-nav__item">
                             <a class="main-nav__link" href="<?php echo esc_url(home_url('/')); ?>news">Новости</a>
-                        </li> -->
+                        </li>
                         <li class="main-nav__item">
                             <a class="main-nav__link" href="<?php echo esc_url(home_url('/')); ?>contacts">Контакты</a>
                         </li>
@@ -219,6 +227,46 @@
         </div>
     </section>
 
+    <!-- Devices -->
+    <section class="devices">
+        <header class="devices__header">
+            <h2 class="section-title"><strong>Линейка</strong> устройств</h2>
+        </header>
+
+        <div class="devices__content">
+            <?php
+                $args = array(
+                    'category_name' => 'device'
+                );
+
+                query_posts($args);
+
+                if (have_posts()) {
+                    while (have_posts()) {
+                        the_post();
+
+                        // vars
+                        $device_name    = get_field('device-name');
+                        $device_thumb   = get_field('device-thumb');
+            ?>
+
+                <article class="device-item">
+                    <div class="device-item__image">
+                        <img src="<?php echo $device_thumb; ?>" alt="Устройство <?php echo $device_name; ?>" />
+                    </div>
+                    <header class="device-item__header">
+                        <h3 class="device-item__title"><?php echo $device_name; ?></h3>
+                        <a class="device-item__more" href="<?php the_permalink(); ?>">Подробнее</a>
+                    </header>
+                </article>
+
+            <?php
+                    }
+                }
+            ?>
+        </div>
+    </section>
+
     <!-- FAQ -->
     <section class="faq">
         <header class="faq__header">
@@ -299,30 +347,9 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
-        <header class="footer__header">
-            <h2 class="footer__title">Контакты</h2>
-            <p class="footer__address">Россия, г. Калининград <br>ул. Театральная, 35, офис 616 <br>(Морской Бизнес
-                Центр)</p>
-            <h3 class="footer__subtitle">Отдел продаж:</h3>
-            <div class="footer__contacts">
-                <a class="footer__phone" href="tel:+79097782086">+7 909 778-20-86 </a><br>
-                <a class="footer__mail" href="mailto:manager@jast.tech">manager@jast.tech</a>
-            </div>
-            <div class="footer__social"><a class="social social--vk" href="#">ВКонтакте</a><a class="social social--inst"
-                    href="#">Инстаграм</a></div>
-        </header>
-        <!-- <div class="footer__form">
-            <form class="form" action="">
-                <h3 class="form__title">Заполните форму и мы свяжемся с вами как можно скорее:</h3><input class="form__input"
-                    id="name" type="text" name="name" placeholder="Ваше имя" /><input class="form__input" id="email"
-                    type="email" name="email" placeholder="Ваш e-mail" /><input class="form__input" id="phone" type="text"
-                    name="phone" placeholder="Ваш телефон" /><input class="form__input" id="city" type="text" name="city"
-                    placeholder="Ваш город" /><input class="cta-button" type="submit" value="Отправить" />
-            </form>
-        </div> -->
-        <p class="footer__legals"><a href="#">Договор оферты</a></p>
-    </footer>
+    <?php
+        get_footer();
+    ?>
 
     <!-- Popup -->
     <div class="contact-popup contact-popup--hidden"><button class="contact-popup__close"></button>
@@ -340,6 +367,10 @@
     </div>
 
     <script src="<?php bloginfo('stylesheet_directory'); ?>/business.js"></script>
+
+    <?php
+        wp_footer();
+    ?>
 </body>
 
 </html>
