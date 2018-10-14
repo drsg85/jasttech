@@ -1445,18 +1445,19 @@ body {
     flex-wrap: wrap; } }
 
 .device {
-  margin-bottom: 40px; }
+  padding: 40px; }
   @media (min-width: 480px) {
     .device {
-      margin-bottom: 60px; } }
+      padding: 50px; } }
   @media (min-width: 768px) {
     .device {
-      margin-bottom: 100px; } }
+      padding: 70px; } }
   @media (min-width: 1200px) {
     .device {
       display: -webkit-box;
       display: -ms-flexbox;
-      display: flex; } }
+      display: flex;
+      padding: 120px calc((100% - 1040px) / 2); } }
 
 @media (min-width: 480px) {
   .device__image {

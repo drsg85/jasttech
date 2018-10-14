@@ -68,28 +68,12 @@
         </div>
     </header>
 
-    <!-- About -->
-    <section class="about">
-        <article class="device">
-            <div class="device__image"><img src="<?php bloginfo('stylesheet_directory') ?>/img/devices/pandora.png" alt="Зарядная станция Pandora" /></div>
-            <div class="device__header-n-content">
-                <header class="device__header">
-                    <h3 class="device__title">Pandora</h3>
-                    <p class="device__subtitle">Зарядная станция из&nbsp;10 зарядных устройств. Ёмкость
-                        аккумулятора 3200&nbsp;mAh</p>
-                </header>
-                <div class="device__content">
-                    <p>Зарядная станция PANDORA представляет собой 10 зарядных дисков, которые
-                        установлены на платформе. Каждый диск оснащен двумя съемными проводами Apple
-                        Lightning и Micro USB. Диски заряжаются на платформе благодаря электромагнитной
-                        индукции - на каждом диске есть световой индикатор, показывающий состояние
-                        аккумулятора. Данная зарядная станция идеально подходит для работы с общепитом,
-                        кальянными, lounge-барами. Один диск одновременно заряжает два мобильных
-                        устройства. Поверхность дисков можно использовать для размещения рекламы.</p>
-                </div>
-            </div>
-        </article>
-    </section>
+    <?php
+        $cat_slug = get_the_category()[0]->slug;
+        if ($cat_slug == 'device') {
+            include(locate_template('chunk-about.php'));
+        }
+    ?>
 
     <!-- Footer -->
     <?php
