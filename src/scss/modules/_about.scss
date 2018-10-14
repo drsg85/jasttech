@@ -87,8 +87,13 @@
     padding-bottom: 1em;
 
     // typography
+    font-size: 1rem;
     line-height: 1.5;
-    // text-indent: 1em;
+
+    @include atTablet {
+        // typography
+        font-size: 1.125rem;
+    }
 
     &::before {
         content: '• ';

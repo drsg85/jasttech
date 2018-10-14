@@ -86,6 +86,9 @@
                 <li>На данный момент мы представлены в более чем 2 500 заведениях в регионах России и стран СНГ</li>
                 <li>Имеем более 80 действующих партнеров</li>
             </ul>
+            <div class="about__buttons">
+                <a class="ghost-button contact-button" href="#">Получить презентацию</a>
+            </div>
         </div>
     </section>
 
@@ -105,7 +108,23 @@
         get_footer();
     ?>
 
+    <!-- Popup -->
+    <div class="contact-popup contact-popup--hidden"><button class="contact-popup__close"></button>
+        <div class="contact-popup__cover"></div>
+        <div class="contact-popup__form">
+            <script>
+                var amo_forms_params = {
+                    "id": 361897,
+                    "hash": "e7f3326ccdf13ebb3dcacd1535ecdd32",
+                    "locale": "ru"
+                };
+            </script>
+            <script id="amoforms_script" async="async" charset="utf-8" src="https://forms.amocrm.ru/forms/assets/js/amoforms.js"></script>
+        </div>
+    </div>
+
     <script src="<?php bloginfo('stylesheet_directory'); ?>/about.js"></script>
+    
     <?php
         wp_footer();
     ?>

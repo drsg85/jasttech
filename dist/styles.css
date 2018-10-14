@@ -766,7 +766,11 @@ body {
   margin: 0;
   padding: 0;
   padding-bottom: 1em;
+  font-size: 1rem;
   line-height: 1.5; }
+  @media (min-width: 768px) {
+    .about__content li {
+      font-size: 1.125rem; } }
   .about__content li::before {
     content: '• ';
     vertical-align: bottom;
