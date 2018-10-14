@@ -2693,6 +2693,47 @@ body {
   font-size: 2rem;
   font-weight: 700; }
 
+.news {
+  padding: 40px 0; }
+  @media (min-width: 480px) {
+    .news {
+      padding: 50px; } }
+  @media (min-width: 768px) {
+    .news {
+      padding: 70px; } }
+  @media (min-width: 1200px) {
+    .news {
+      padding: 120px calc((100% - 1040px) / 2); } }
+
+.news__header {
+  padding: 0 40px;
+  text-align: center; }
+
+.news-item {
+  display: block;
+  margin-bottom: 40px;
+  text-decoration: none; }
+  .news-item:hover .news-item__image {
+    border: 2px solid #4cb8ea; }
+  .news-item:hover .news-item__title {
+    color: #4cb8ea; }
+
+.news-item__image {
+  font-size: 0;
+  border: 2px solid transparent; }
+
+.news-item__image img {
+  width: 100%; }
+
+.news-item__title {
+  padding: 0 20px;
+  color: #111339;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase; }
+
 /*! Flickity v2.1.2
 https://flickity.metafizzy.co
 ---------------------------------------------- */

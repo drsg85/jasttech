@@ -1,0 +1,46 @@
+.news-item {
+    // box model
+    display: block;
+    margin-bottom: 40px;
+
+    // typography
+    text-decoration: none;
+    
+    &:hover {
+        .news-item__image {
+            // visual
+            border: 2px solid $blue;
+        }
+
+        .news-item__title {
+            // typography
+            color: $blue;
+        }
+    }
+}
+
+.news-item__image {
+    // typography
+    font-size: 0;
+
+    // visual
+    border: 2px solid transparent;
+}
+
+.news-item__image img {
+    // box model
+    width: 100%;
+}
+
+.news-item__title {
+    // box model
+    padding: 0 20px;
+
+    // typography
+    color: $darkBlue;
+    font-size: 0.85rem;
+    line-height: 1.5;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}

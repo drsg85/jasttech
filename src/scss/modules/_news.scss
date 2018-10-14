@@ -1,0 +1,31 @@
+.news {
+    // box model
+    padding: 40px 0;
+
+    @include atMobileL {
+        // box model
+        padding: 50px;
+    }
+
+    @include atTablet {
+        // box model
+        padding: 70px;
+    }
+
+    @include atDesktop {
+        // box model
+        padding: 120px calc((100% - 1040px) / 2);
+    }
+}
+
+.news__header {
+    // box model
+    padding: 0 40px;
+    
+    // typography
+    text-align: center;
+}
+
+.news__content {
+
+}
