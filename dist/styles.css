@@ -1844,8 +1844,19 @@ body {
   .testimonials {
     padding: 50px; } }
 
+@media (min-width: 768px) {
+  .testimonials {
+    padding: 70px; } }
+
+@media (min-width: 1200px) {
+  .testimonials {
+    padding: 120px calc((100% - 1040px) / 2); } }
+
 .testimonials__header {
   text-align: center; }
+  @media (min-width: 1200px) {
+    .testimonials__header {
+      padding-right: 70px; } }
 
 .testimonials__content {
   margin-bottom: 40px; }
@@ -1853,20 +1864,62 @@ body {
 .testimonials__cta {
   padding-top: 10px;
   text-align: center; }
+  @media (min-width: 768px) {
+    .testimonials__cta {
+      margin-top: -120px;
+      text-align: right; } }
+  @media (min-width: 1200px) {
+    .testimonials__cta {
+      position: relative;
+      z-index: 10;
+      margin-top: -20px;
+      text-align: left; } }
 
 .comment {
   position: relative;
   width: 100%; }
+  @media (min-width: 1200px) {
+    .comment {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      padding-right: 40px; } }
 
 .comment__header {
   display: none; }
+  @media (min-width: 768px) {
+    .comment__header {
+      display: block;
+      width: 50%;
+      padding-bottom: 40px; } }
+  @media (min-width: 1200px) {
+    .comment__header {
+      -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+      order: 1; } }
+
+.comment__title {
+  color: rgba(67, 89, 136, 0.5);
+  text-transform: uppercase; }
+
+.comment__text {
+  color: #111339;
+  font-size: 1rem;
+  line-height: 1.5; }
 
 .comment__content {
-  width: 100%; }
+  position: relative;
+  width: 100%;
+  padding-bottom: 20px; }
+  @media (min-width: 1200px) {
+    .comment__content {
+      margin-left: 40px;
+      -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+      order: 2; } }
 
 .comment__content video {
-  width: 100%;
-  margin-bottom: 20px; }
+  width: 100%; }
 
 .comment__trigger {
   position: absolute;
@@ -2750,6 +2803,9 @@ https://flickity.metafizzy.co
   list-style: none;
   text-align: center;
   line-height: 1; }
+  @media (min-width: 1200px) {
+    .flickity-page-dots {
+      bottom: -70px; } }
 
 .flickity-rtl .flickity-page-dots {
   direction: rtl; }

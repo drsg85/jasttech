@@ -4,23 +4,62 @@
 
     // box model
     width: 100%;
+
+    @include atDesktop {
+        // box model
+        display: flex;
+        padding-right: 40px;
+    }
 }
 
 .comment__header {
     // box model
     display: none;
+
+    @include atTablet {
+        // box model
+        display: block;
+        width: 50%;
+        padding-bottom: 40px;
+    }
+
+    @include atDesktop {
+        // box model
+        order: 1;
+    }
+}
+
+.comment__title {
+    // typography
+    color: rgba($violet, 0.5);
+    text-transform: uppercase;
+}
+
+.comment__text {
+    // typography
+    color: $darkBlue;
+    font-size: 1rem;
+    line-height: 1.5;
 }
 
 .comment__content {
+    // positioning
+    position: relative;
+
     // box model
     width: 100%;
+    padding-bottom: 20px;
+
+    @include atDesktop {
+        // box model
+        margin-left: 40px;
+        order: 2;
+    }
 }
 
 .comment__content video {
     // box model
     width: 100%;
-    // padding-bottom: 3%;
-    margin-bottom: 20px;
 }
 
 .comment__trigger {

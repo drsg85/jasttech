@@ -3,11 +3,26 @@
         // box model
         padding: 50px;
     }
+
+    @include atTablet {
+        // box model
+        padding: 70px;
+    }
+
+    @include atDesktop {
+        // box model
+        padding: 120px calc((100% - 1040px) / 2);
+    }
 }
 
 .testimonials__header {
     // typography
     text-align: center;
+
+    @include atDesktop {
+        // box model
+        padding-right: 70px;
+    }
 }
 
 .testimonials__content {
@@ -22,4 +37,24 @@
 
     // typography
     text-align: center;
+
+    @include atTablet {
+        // box model
+        margin-top: -120px;
+
+        // typography
+        text-align: right;
+    }
+
+    @include atDesktop {
+        // positioning
+        position: relative;
+        z-index: 10;
+
+        // box model
+        margin-top: -20px;
+
+        // typography
+        text-align: left;
+    }
 }

@@ -132,6 +132,10 @@ https://flickity.metafizzy.co
     list-style: none;
     text-align: center;
     line-height: 1;
+
+    @include atDesktop {
+        bottom: -70px;
+    }
 }
 
 .flickity-rtl .flickity-page-dots {

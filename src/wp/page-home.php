@@ -530,6 +530,54 @@
         </div>
     </section>
 
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <header class="testimonials__header">
+            <h2 class="section-title">Отзывы</h2>
+        </header>
+
+        <div class="testimonials__content" id="comments">
+            <?php
+                $args = array(
+                    'category_name' => 'testimonial'
+                );
+
+                query_posts($args);
+
+                if (have_posts()) {
+                    while(have_posts()) {
+                        the_post();
+
+                        // vars
+                        $comment_title      = get_field('comment-title');
+                        $comment_text       = get_field('comment-text');
+                        $comment_video      = get_field('comment-video');
+                        $comment_image      = get_field('comment-image');
+            ?>
+            
+                <article class="comment">
+                    <div class="comment__content">
+                        <video src="<?php echo $comment_video; ?>"></video>
+                        <div class="comment__trigger"></div>
+                        <div class="comment__cover"></div>
+                    </div>
+                    <header class="comment__header">
+                        <h3 class="comment__title">
+                            <?php echo $comment_title; ?>
+                        </h3>
+                        <p class="comment__text"><?php echo $comment_text; ?></p>
+                    </header>
+                </article>
+
+            <?php
+
+                    }
+                }
+            ?>
+        </div>
+        <div class="testimonials__cta"><a class="ghost-button contact-button" href="#">Присоединиться</a></div>
+    </section>
+
     <!-- Footer -->
     <?php
         get_footer();
