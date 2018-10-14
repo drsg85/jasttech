@@ -1,11 +1,25 @@
 .testimonials {
-
+    @include atMobileL {
+        // box model
+        padding: 50px;
+    }
 }
 
 .testimonials__header {
-
+    // typography
+    text-align: center;
 }
 
 .testimonials__content {
-    
+    // box model
+    // width: 100%;
+    margin-bottom: 40px;
+}
+
+.testimonials__cta {
+    // box model
+    padding-top: 10px;
+
+    // typography
+    text-align: center;
 }

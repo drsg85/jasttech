@@ -464,18 +464,34 @@ html(lang="en")
                     .clients__image.clients__image--mb40: img(src="./img/clients/topfranchise.png", alt="TopFranchise.ru")
                     .clients__image.clients__image--mb40: img(src="./img/clients/beboss.png", alt="БиБосс")
 
-        //- section.testimonials
+        section.testimonials
             header.testimonials__header
                 h2.section-title Отзывы
 
-            .testimonials__content
-                .slider
-                    button.slider__prev <
-                        button.slider__next >
-                        .slider__slides
-                            .slider__slide
+            .testimonials__content#comments
+                article.comment
+                    header.comment__header
+                        h3.comment__title Игорь, Псков
+
+                    .comment__content
+                        video(src="./video/Franshiza-Jast-Charger-zaryadnye-stantsii-kommercheskogo-ispolzovaniya.mp4")
+                    .comment__trigger
+                    .comment__cover
+
+                article.comment
+                    header.comment__header
+                        h3.comment__title Андрей, Норильск
+
+                    .comment__content
+                        video(src="./video/Franshiza-Jast-Charger-zaryadnye-stantsii-kommercheskogo-ispolzovaniya.mp4")
+                    .comment__trigger
+                    .comment__cover
         
-        //- section.gallery
+            .testimonials__cta
+                a.ghost-button.contact-button(href="#") Присоединиться
+
+        section.gallery
+            
         
         footer.footer
             header.footer__header

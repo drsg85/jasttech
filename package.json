@@ -31,6 +31,7 @@
     "webpack-stream": "^5.1.1"
   },
   "dependencies": {
+    "flickity": "^2.1.2",
     "normalize.css": "^8.0.0",
     "sass-module-importer": "^1.4.0"
   }

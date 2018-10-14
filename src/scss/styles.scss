@@ -45,6 +45,9 @@
 
 @import 'modules/clients';
 
+@import 'modules/testimonials';
+@import 'modules/comment';
+
 @import 'modules/footer';
 @import 'modules/social';
 @import 'modules/form';
@@ -69,3 +72,6 @@
 
 @import 'modules/price-plans';
 @import 'modules/plan';
+
+// slider module
+@import 'modules/flickity';
