@@ -27,7 +27,7 @@
 
     <title>Франшиза — Jast Charger</title>
 
-    <!-- <script type="text/javascript" src="https://v-credit.su/services/easycredit/inc.js"></script> -->
+    <script type="text/javascript" src="https://v-credit.su/services/easycredit/inc.js"></script>
     <?php wp_head(); ?>
 </head>
 
@@ -186,17 +186,18 @@
 
                 <div class="package__container">
                     <header class="package__header">
-                        <h3 class="package__title">Пакет <strong><?php echo $pack_name; ?></strong></h3>
+                        <h3 class="package__title creditgoods">Пакет <strong><?php echo $pack_name; ?></strong></h3>
                         <p class="package__income">Средний месячный доход: <em>23&nbsp;000 рублей</em></p>
                     </header>
                     <div class="package__content">
                         <?php echo $pack_desc; ?>
                     </div>
                     <footer class="package__footer">
-                        <p class="package__price"><?php echo $pack_price; ?>.-</p>
+                        <p class="package__price creditprice"><?php echo $pack_price; ?>.-</p>
                         <div class="package__buttons">
                             <a class="ghost-button contact-button" href="#">Купить</a>
                             <a class="ghost-button" href="#">Купить в кредит</a>
+                            <br><a href="javascript:void(0);" class="gocredit show_rate"data-tpl="В кредит от руб/мес"><span>Купить вкредит</span></a>
                         </div>
                         <a class="package__more contact-button" href="#">Подробнее</a>
                     </footer>
