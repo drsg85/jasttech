@@ -27,7 +27,9 @@
 
     <title>Франшиза — Jast Charger</title>
 
-    <script type="text/javascript" src="https://v-credit.su/services/easycredit/inc.js"></script>
+    <!-- v-credit.su -->
+    <!-- <script type="text/javascript" src="https://v-credit.su/services/easycredit/inc.js"></script> -->
+
     <?php wp_head(); ?>
 </head>
 
