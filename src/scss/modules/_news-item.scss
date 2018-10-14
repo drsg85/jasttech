@@ -5,6 +5,12 @@
 
     // typography
     text-decoration: none;
+
+    @include atTablet {
+        // box model
+        padding: 10px;
+        flex-basis: 50%;
+    }
     
     &:hover {
         .news-item__image {

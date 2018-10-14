@@ -71,14 +71,16 @@
     <?php
         $cat_slug = get_the_category()[0]->slug;
         if ($cat_slug == 'device') {
-            include(locate_template('chunk-about.php'));
+            include(locate_template('chunk-device.php'));
+        } else if ($cat_slug == 'news') {
+            include(locate_template('chunk-news.php'));
         }
     ?>
 
     <!-- Footer -->
-    <?php
+    <!-- <?php
         get_footer();
-    ?>
+    ?> -->
 
     <!-- Popup -->
     <!-- <div class="contact-popup contact-popup--hidden"><button class="contact-popup__close"></button>

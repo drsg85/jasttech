@@ -14,6 +14,7 @@
 
     @include atDesktop {
         // box model
+        display: flex;
         padding: 120px calc((100% - 1040px) / 2);
     }
 }
@@ -24,8 +25,26 @@
     
     // typography
     text-align: center;
+
+    @include atDesktop {
+        // box model
+        flex-basis: 33%;
+
+        // typography
+        text-align: left;
+    }
 }
 
 .news__content {
+    @include atTablet {
+        // box model
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
 
+    @include atDesktop {
+        // box model
+        flex-basis: 66%;
+    }
 }

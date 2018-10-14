@@ -70,7 +70,7 @@
     
     <section class="news">
         <header class="news__header">
-            <h2 class="section-title">Новости о самом <em>главном</em></h2>
+            <h2 class="section-title">Новости о&nbsp;самом <em>главном</em></h2>
         </header>
 
         <div class="news__content">
