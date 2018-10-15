@@ -2733,6 +2733,27 @@ body {
     -ms-flex-preferred-size: 66%;
     flex-basis: 66%; } }
 
+.news-article {
+  padding: 40px; }
+  @media (min-width: 480px) {
+    .news-article {
+      padding: 50px; } }
+  @media (min-width: 768px) {
+    .news-article {
+      padding: 70px; } }
+  @media (min-width: 1200px) {
+    .news-article {
+      padding: 120px calc((100% - 1040px) / 2); } }
+
+.news-article__title {
+  margin: 0 auto;
+  margin-bottom: 3em;
+  max-width: 700px;
+  text-align: center; }
+
+.news-article__text {
+  line-height: 1.5; }
+
 .news-item {
   display: block;
   margin-bottom: 40px;

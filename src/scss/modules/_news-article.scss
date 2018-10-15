@@ -1,0 +1,34 @@
+.news-article {
+    // box model
+    padding: 40px;
+
+    @include atMobileL {
+        // box model
+        padding: 50px;
+    }
+
+    @include atTablet {
+        // box model
+        padding: 70px;
+    }
+
+    @include atDesktop {
+        // box model
+        padding: 120px calc((100% - 1040px) / 2);
+    }
+}
+
+.news-article__title {
+    // box model
+    margin: 0 auto;
+    margin-bottom: 3em;
+    max-width: 700px;
+
+    // typography
+    text-align: center;
+}
+
+.news-article__text {
+    // typography
+    line-height: 1.5;
+}
