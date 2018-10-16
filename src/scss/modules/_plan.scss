@@ -5,6 +5,11 @@
     // visual
     border-radius: 10px;
 
+    @include atDesktop {
+        // box model
+        flex-basis: 33%;
+    }
+
     &--mini {
         // box model
         margin: 0 25px;
@@ -14,6 +19,16 @@
         border: 2px solid $blue;
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
+        
+        @include atDesktop {
+            // box model
+            margin: 20px 0;
+            margin-right: -2px;
+            
+            // visual
+            border-bottom-left-radius: 10px;
+            border-top-right-radius: 0;
+        }
     }
     
     &--standard {
@@ -41,7 +56,7 @@
     
     &--premium {
         // box model
-        margin: 0 20px;
+        margin: 0 25px;
         margin-top: -1px;
 
         // typography
@@ -50,7 +65,15 @@
         // visual
         background-color: $darkBlue;
         border-top-left-radius: 0;
-        border-top-right-radius: 0;
+        
+        @include atDesktop {
+            // box model
+            margin: 20px 0;
+            
+            // visual
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 0;
+        }
     }
 }
 

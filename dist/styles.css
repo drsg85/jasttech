@@ -2593,6 +2593,15 @@ body {
 .places {
   padding: 40px;
   background-color: #111339; }
+  @media (min-width: 480px) {
+    .places {
+      padding: 50px; } }
+  @media (min-width: 768px) {
+    .places {
+      padding: 70px; } }
+  @media (min-width: 1200px) {
+    .places {
+      padding: 120px calc((100% - 1040px) / 2); } }
 
 .places__header {
   margin: 0 auto;
@@ -2618,6 +2627,10 @@ body {
     .place {
       -ms-flex-preferred-size: 50%;
       flex-basis: 50%; } }
+  @media (min-width: 1200px) {
+    .place {
+      -ms-flex-preferred-size: 33%;
+      flex-basis: 33%; } }
 
 .place__icon {
   width: 90px;
@@ -2638,6 +2651,15 @@ body {
 
 .price-plans {
   padding: 40px; }
+  @media (min-width: 480px) {
+    .price-plans {
+      padding: 50px; } }
+  @media (min-width: 768px) {
+    .price-plans {
+      padding: 70px; } }
+  @media (min-width: 1200px) {
+    .price-plans {
+      padding: 120px calc((100% - 1040px) / 2); } }
 
 .price-plans__header {
   text-align: center; }
@@ -2645,16 +2667,35 @@ body {
 .price-plans__content {
   margin: 0 auto;
   max-width: 430px; }
+  @media (min-width: 1200px) {
+    .price-plans__content {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      max-width: inherit; } }
 
 .plan {
   text-align: center;
   border-radius: 10px; }
+  @media (min-width: 1200px) {
+    .plan {
+      -ms-flex-preferred-size: 33%;
+      flex-basis: 33%; } }
   .plan--mini {
     margin: 0 25px;
     margin-bottom: -2px;
     border: 2px solid #4cb8ea;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0; }
+    @media (min-width: 1200px) {
+      .plan--mini {
+        margin: 20px 0;
+        margin-right: -2px;
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 0; } }
   .plan--standard {
     color: #ffffff;
     background-color: #4cb8ea; }
@@ -2665,12 +2706,16 @@ body {
     .plan--standard .plan__price {
       color: #111339; }
   .plan--premium {
-    margin: 0 20px;
+    margin: 0 25px;
     margin-top: -1px;
     color: #ffffff;
     background-color: #111339;
-    border-top-left-radius: 0;
-    border-top-right-radius: 0; }
+    border-top-left-radius: 0; }
+    @media (min-width: 1200px) {
+      .plan--premium {
+        margin: 20px 0;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0; } }
 
 .plan__title {
   margin: 0;

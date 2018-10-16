@@ -1,9 +1,24 @@
 .places {
     // box model
     padding: 40px;
-    
+
     // visual
     background-color: $darkBlue;
+
+    @include atMobileL {
+        // box model
+        padding: 50px;
+    }
+
+    @include atTablet {
+        // box model
+        padding: 70px;
+    }
+
+    @include atDesktop {
+        // box model
+        padding: 120px calc((100% - 1040px) / 2);
+    }
 }
 
 .places__header {

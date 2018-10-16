@@ -6,6 +6,11 @@
         // box model
         flex-basis: 50%;
     }
+
+    @include atDesktop {
+        // box model
+        flex-basis: 33%;
+    }
 }
 
 .place__icon {

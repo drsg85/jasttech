@@ -2,8 +2,19 @@
     // box model
     padding: 40px;
 
-    @include atTablet {
+    @include atMobileL {
+        // box model
+        padding: 50px;
+    }
 
+    @include atTablet {
+        // box model
+        padding: 70px;
+    }
+
+    @include atDesktop {
+        // box model
+        padding: 120px calc((100% - 1040px) / 2);
     }
 }
 
@@ -16,4 +27,11 @@
     // box model
     margin: 0 auto;
     max-width: 430px;
+
+    @include atDesktop {
+        // box model
+        display: flex;
+        justify-content: center;
+        max-width: inherit;
+    }
 }
