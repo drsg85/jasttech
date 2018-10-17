@@ -112,6 +112,13 @@
         // box model
         margin-top: 0;
     }
+
+    &--contacts {
+        @include atDesktop {
+            // box model
+            margin-top: 40px;
+        }
+    }
 }
 
 .footer__contacts {
@@ -157,6 +164,7 @@
     @include atDesktop {
         // box model
         margin: 0;
+        margin-top: 40px;
     }
 }
 
@@ -194,7 +202,7 @@
         margin-bottom: 0;
 
         // typography
-        text-align: right;
+        text-align: left;
     }
 }
 

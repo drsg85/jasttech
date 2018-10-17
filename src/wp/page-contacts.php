@@ -30,7 +30,11 @@
 
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory') ?>/style.css?v=2" />
     
-    <title>FAQ — Jast Charger</title>
+    <title>Контакты — Jast Charger</title>
+
+    <?php
+        wp_head();
+    ?>
 </head>
 
 <body>
@@ -51,11 +55,14 @@
             <div class="hero__nav">
                 <nav class="main-nav">
                     <ul class="main-nav__list">
-                        <li class="main-nav__item">
+                    <li class="main-nav__item">
                             <a class="main-nav__link" href="<?php echo esc_url(home_url('/')); ?>">Франшиза</a>
                         </li>
                         <li class="main-nav__item">
                             <a class="main-nav__link" href="<?php echo esc_url(home_url('/')); ?>business">Для Бизнеса</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a class="main-nav__link" href="<?php echo esc_url(home_url('/')); ?>advert">Реклама</a>
                         </li>
                         <li class="main-nav__item">
                             <a class="main-nav__link" href="<?php echo esc_url(home_url('/')); ?>about">О Нас</a>
@@ -63,9 +70,9 @@
                         <li class="main-nav__item">
                             <a class="main-nav__link" href="<?php echo esc_url(home_url('/')); ?>faq">FAQ</a>
                         </li>
-                        <!-- <li class="main-nav__item">
+                        <li class="main-nav__item">
                             <a class="main-nav__link" href="<?php echo esc_url(home_url('/')); ?>news">Новости</a>
-                        </li> -->
+                        </li>
                         <li class="main-nav__item">
                             <a class="main-nav__link main-nav__link--current" href="<?php echo esc_url(home_url('/')); ?>contacts">Контакты</a>
                         </li>
@@ -79,16 +86,19 @@
     <footer class="footer">
         <header class="footer__header">
             <h2 class="footer__title">Контакты</h2>
-            <p class="footer__address">Россия, г. Калининград <br>ул. Театральная, 35, офис 616 <br>(Морской Бизнес
-                Центр)</p>
-            <h3 class="footer__subtitle">Отдел продаж:</h3>
+            <p class="footer__address"><?php echo get_field('c-address'); ?></p>
+
+            <h3 class="footer__subtitle footer__subtitle--contacts">Отдел продаж:</h3>
             <div class="footer__contacts">
-                <a class="footer__phone" href="tel:+79097782086">+7 909 778-20-86 </a><br>
-                <a class="footer__mail" href="mailto:manager@jast.tech">manager@jast.tech</a>
+                <a class="footer__phone" href="tel:<?php echo get_field('c-phone-link'); ?>"><?php echo get_field('c-phone'); ?></a><br>
+                <a class="footer__mail" href="mailto:<?php echo get_field('c-email'); ?>"><?php echo get_field('c-email'); ?></a>
             </div>
-            <div class="footer__social"><a class="social social--vk" href="#">ВКонтакте</a><a class="social social--inst"
-                    href="#">Инстаграм</a></div>
+            <div class="footer__social">
+                <a class="social social--vk" href="<?php echo get_field('c-vk'); ?>">ВКонтакте</a>
+                <a class="social social--inst" href="<?php echo get_field('c-instagram'); ?>">Инстаграм</a>
+            </div>
         </header>
+
         <div class="footer__form">
             <script>
                 var amo_forms_params = {
@@ -101,14 +111,16 @@
         </div>
 
         <div class="footer__legals">
-            <p>ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ «ВИР&nbsp;ХОЛДИНГ» <br>ИНН 3906359034 <br>КПП 390601001 <br>ОГРН
-                1173926025228 <br>Расчетный счет 40702810210000210440 <br>Банк АО «ТИНЬКОФФ БАНК» <br>Юридический адрес
-                банка Москва, 123060, 1-й Волоколамский проезд, д. 10, стр. 1 <br>Корр.счет банка 30101810145250000974
-                <br>ИНН банка 7710140679 <br>БИК банка 044525974</p><a href="#">Договор оферты</a>
+            <p><?php echo get_field('c-info'); ?></p>
+            <a href="#">Договор оферты</a>
         </div>
     </footer>
 
     <script src="<?php bloginfo('stylesheet_directory'); ?>/contacts.js"></script>
+
+    <?php
+        wp_footer();
+    ?>
 </body>
 
 </html>

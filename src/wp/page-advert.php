@@ -132,27 +132,27 @@
         </header>
         <div class="places__content">
             <article class="place">
-                <div class="place__icon"><img src="<?php bloginfo('stylesheet_directory'); ?>/icons/cafe.svg" alt="Рестораны и кафе" /></div>
+                <div class="place__icon"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/icons/cafe.svg" alt="Рестораны и кафе" /></div>
                 <h2 class="place__title">Рестораны и кафе</h2>
             </article>
             <article class="place">
-                <div class="place__icon"><img src="<?php bloginfo('stylesheet_directory'); ?>/icons/movie.svg" alt="Кинотеатры" /></div>
+                <div class="place__icon"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/icons/movie.svg" alt="Кинотеатры" /></div>
                 <h2 class="place__title">Кинотеатры</h2>
             </article>
             <article class="place">
-                <div class="place__icon"><img src="<?php bloginfo('stylesheet_directory'); ?>/icons/beauty.svg" alt="Салоны красоты" /></div>
+                <div class="place__icon"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/icons/beauty.svg" alt="Салоны красоты" /></div>
                 <h2 class="place__title">Салоны красоты</h2>
             </article>
             <article class="place">
-                <div class="place__icon"><img src="<?php bloginfo('stylesheet_directory'); ?>/icons/business.svg" alt="Бизнес-центры" /></div>
+                <div class="place__icon"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/icons/business.svg" alt="Бизнес-центры" /></div>
                 <h2 class="place__title">Бизнес-центры</h2>
             </article>
             <article class="place">
-                <div class="place__icon"><img src="<?php bloginfo('stylesheet_directory'); ?>/icons/mall.svg" alt="Торговые центры" /></div>
+                <div class="place__icon"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/icons/mall.svg" alt="Торговые центры" /></div>
                 <h2 class="place__title">Торговые центры</h2>
             </article>
             <article class="place">
-                <div class="place__icon"><img src="<?php bloginfo('stylesheet_directory'); ?>/icons/bawling.svg" alt="Боулинг-клубы" /></div>
+                <div class="place__icon"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/icons/bawling.svg" alt="Боулинг-клубы" /></div>
                 <h2 class="place__title">Боулинг-клубы</h2>
             </article>
         </div>
