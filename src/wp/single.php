@@ -25,7 +25,7 @@
     <meta name="theme-color" content="#ffffff">
     <meta name="description" content="<?php echo $meta_description; ?>" />
 
-    <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory') ?>/style.css?v=2" />
+    <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory') ?>/style.css?v=3" />
 
     <title><?php echo $device_name; ?> — Jast Charger</title>
 

@@ -15,7 +15,7 @@
         <div class="footer__social">
             <a class="social social--vk" href="<?php echo the_field('c-vk', 14); ?>">ВКонтакте</a>
             <a class="social social--inst" href="<?php echo the_field('c-instagram', 14); ?>">Инстаграм</a>
-            <p class="footer__legals"><a href="#">Договор оферты</a></p>
+            <p class="footer__legals"><a href="<?php bloginfo('stylesheet_directory'); ?>/oferta.pdf">Договор оферты</a></p>
         </div>
     </div>
 </footer>

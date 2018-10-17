@@ -28,7 +28,7 @@
     <meta name="theme-color" content="#ffffff">
     <meta name="description" content="<?php echo $meta_description; ?>" />
 
-    <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory') ?>/style.css?v=2" />
+    <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory') ?>/style.css?v=3" />
     
     <title>Контакты — Jast Charger</title>
 
@@ -112,7 +112,7 @@
 
         <div class="footer__legals">
             <p><?php echo get_field('c-info'); ?></p>
-            <a href="#">Договор оферты</a>
+            <a href="<?php bloginfo('stylesheet_directory'); ?>/oferta.pdf">Договор оферты</a>
         </div>
     </footer>
 
