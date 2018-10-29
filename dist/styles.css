@@ -2111,11 +2111,30 @@ body {
   background-image: url("./img/icons/instagram.svg"); }
 
 .form {
-  width: 100%; }
+  width: 100%;
+  padding: 25px;
+  text-align: center;
+  background-color: #111339; }
 
 .form__title {
   margin-bottom: 20px;
-  font-size: 1.125rem; }
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: center; }
+
+.form__input-grp {
+  position: relative; }
+  .form__input-grp::after {
+    content: "*";
+    position: absolute;
+    top: 0;
+    right: 0;
+    vertical-align: middle;
+    width: 46px;
+    color: #4cb8ea;
+    font-size: 1.5rem;
+    line-height: 50px; }
 
 .form__input {
   display: block;
@@ -2128,6 +2147,21 @@ body {
   border-radius: 25px;
   background-color: transparent;
   outline: none; }
+
+.form__input::-webkit-input-placeholder {
+  color: #4cb8ea;
+  font-size: 1.125rem;
+  font-weight: 500; }
+
+.form__input::-ms-input-placeholder {
+  color: #4cb8ea;
+  font-size: 1.125rem;
+  font-weight: 500; }
+
+.form__input::placeholder {
+  color: #4cb8ea;
+  font-size: 1.125rem;
+  font-weight: 500; }
 
 .form__input:focus {
   border: 2px solid #4cb8ea; }
@@ -2389,8 +2423,7 @@ body {
   align-items: center;
   padding: 20px;
   width: 100%;
-  max-width: 600px;
-  margin-bottom: -240px; }
+  max-width: 600px; }
 
 .contact-popup__cover {
   position: absolute;

@@ -1,6 +1,13 @@
 .form {
     // box model
     width: 100%;
+    padding: 25px;
+
+    // typography
+    text-align: center;
+
+    // visual
+    background-color: $darkBlue;
 }
 
 .form__title {
@@ -8,7 +15,36 @@
     margin-bottom: 20px;
 
     // typography
-    font-size: 1.125rem;
+    color: $light;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.form__input-grp {
+    position: relative;
+
+    &::after {
+        content: "*";
+
+        // positioning
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        // box model
+        vertical-align: middle;
+        width: 46px;
+        // border: 1px solid red;
+
+        // typography
+        color: $blue;
+        font-size: 1.5rem;
+        line-height: 50px;
+    }
+
+    // box model
+    // border: 1px solid red;
 }
 
 .form__input {
@@ -29,6 +65,17 @@
     outline: none;
 }
 
+.form__input::placeholder {
+    // typography
+    color: $blue;
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
 .form__input:focus {
     border: 2px solid $blue;
+}
+
+.form__submit {
+
 }
