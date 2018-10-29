@@ -1,10 +1,22 @@
 <?php
     /*
-        Template Name: About Page
+        Template Name: Order Page
     */
 
-    $video_file     = get_field('video-file');
+    $c_name         = $_POST["contact_name"];
+    $c_city         = $_POST["contact_city"];
+    $c_email        = $_POST["contact_email"];
+    $c_phone        = $_POST["contact_phone"];
+
+    $to = 'lid@jast.tech';
+    // $to = 'mr.kurenkov@gmail.com';
+    $subject = 'Заявка с сайта jast.tech';
+    $headers = array('Content-Type: text/html; charset=UTF-8');
+    $content = "Имя: " . $c_name . "<br>Город: " . $c_city . "<br>Email: " . $c_email . "<br>Телефон: " .$c_phone;
+    
+    $success = wp_mail( $to, $subject, $content, $headers );
 ?>
+
 
 <!DOCTYPE html>
 <html lang="ru">
@@ -27,7 +39,7 @@
 
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory') ?>/style.css?v=4" />
 
-    <title>О Нас — Jast Charger</title>
+    <title>Заявка — Jast Charger</title>
 
     <?php
         wp_head();
@@ -62,7 +74,7 @@
                             <a class="main-nav__link" href="<?php echo esc_url(home_url('/')); ?>advert">Реклама</a>
                         </li>
                         <li class="main-nav__item">
-                            <a class="main-nav__link main-nav__link--current" href="<?php echo esc_url(home_url('/')); ?>about">О Нас</a>
+                            <a class="main-nav__link" href="<?php echo esc_url(home_url('/')); ?>about">О Нас</a>
                         </li>
                         <li class="main-nav__item">
                             <a class="main-nav__link" href="<?php echo esc_url(home_url('/')); ?>faq">FAQ</a>
@@ -79,51 +91,49 @@
         </div>
     </header>
 
-    <!-- About -->
-    <section class="about">
-        <header class="about__header">
-            <h2 class="section-title">Мы сможем <em>зарядить!</em></h2>
-        </header>
-        <div class="about__content">
-            <p>JAST CHARGER – одна из лидирующий компаний в сфере HORECA (услуги индустрии гостеприимства с
-                непосредственным потреблением продукции в месте продажи). Наша бизнес модель построена на реализации
-                зарядных станций заведениям, которые желают улучшить сервис на своем предприятии либо увеличить средний
-                чек. Именно поэтому мы разработали не только различные модели сотрудничества, но и сформировали свою
-                линейку зарядных станций таким образом, чтобы удовлетворить потребности каждого из заведений.</p>
-            <p>Наша компания была основана в 2014 году. После успешного подтверждения действующей бизнес модели на
-                региональном рынке, было получено крупное финансирование, благодаря которому стало возможно
-                масштабирование на мировой рынок за счет франчайзинговой модели.</p>
-            <ul>
-                <li>На данный момент мы представлены в более чем 2 500 заведениях в регионах России и стран СНГ</li>
-                <li>Имеем более 80 действующих партнеров</li>
-            </ul>
-            <div class="about__buttons">
-                <a class="ghost-button contact-button" href="#">Получить презентацию</a>
-            </div>
-        </div>
+
+    <section class="feedback">
+        <?php if ($success == 1) { ?>
+
+            <h1 class="feedback__title">Заявка отправлена</h1>
+
+            <div class="feedback__content">
+                <p>Здравствуйте, <?php echo $c_name; ?>!<br> Ваша заявка успешно отправлена.</p>
+                <p>Благодарим Вас за интерес к нашей франшизе. Наши менеджеры в скором времени отправят на Ваш почтовый адрес подробную презентацию и чуть позже свяжутся с Вами.</p>
+                <p>C уважением, команда Jast Tech.</p>
+            <div>
+            
+            <?php } else {?>
+
+            <h1 class="feedback__title">Ошибка отправки</h1>
+
+            <div class="feedback__content">
+                <p>Здравствуйте, <?php echo $c_name; ?>!<br> Что-то пошло не так и ваша заявка не может быть отправлена.</p>
+                <p>Пожалуйста попробуйте позже или свяжитесь с нашими менеджерами по телефону <a href="tel:<?php echo the_field('c-phone-link', 14); ?>"><?php echo the_field('c-phone', 14); ?></a> или напишите нам на <a href="mailto:<?php echo the_field('c-email', 14); ?>"><?php echo the_field('c-email', 14); ?></a></p>
+                <p>C уважением, команда Jast Tech.</p>
+            <div>
+                
+        <?php } ?>
     </section>
 
-    <!-- Video -->
-    <section class="video">
-        <header class="video__header">
-            <h2 class="section-title section-title--inv-d">Франшиза на&nbsp;<strong>универсальные зарядные устройства</strong></h2>
-        </header>
-        <div class="video__content">
-            <div class="video__trigger"></div>
-            <div class="video__cover"></div><video id="promo-vid" src="<?php echo $video_file; ?>"></video>
-        </div>
-    </section>
+    <?php
+        // echo $content;
+        // echo "<br>";
+        // echo $success;
+    ?>
 
     <!-- Footer -->
     <?php
         get_footer();
-    ?>
+    ?> 
 
-    <script src="<?php bloginfo('stylesheet_directory'); ?>/about.js"></script>
+    <script src="<?php bloginfo('stylesheet_directory'); ?>/device.js"></script>
     
     <?php
         wp_footer();
     ?>
+
+    <script src="<?php bloginfo('stylesheet_directory'); ?>/faq.js"></script>
 </body>
 
 </html>

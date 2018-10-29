@@ -172,12 +172,11 @@
     // box model
     max-width: 460px;
     margin: 0 auto;
-    margin-bottom: -140px;
 
     @include atDesktop {
         // positioning
         position: absolute;
-        top: 140px;
+        top: 100px;
         right: calc((100% - 1040px) / 2);
 
         // box model

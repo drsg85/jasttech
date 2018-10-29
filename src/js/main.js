@@ -7,6 +7,7 @@ import ContactPopup from './modules/ContactPopup';
 import Comment from './modules/Comment';
 // import Slider from './modules/Slider';
 import Flickity from '../../node_modules/flickity';
+// import FormSender from './modules/FormSender';
 
 new MobileMenu();
 new DesktopMenu();
@@ -19,3 +20,5 @@ let slides = document.querySelector("#comments");
 var flkty = new Flickity(slides, {
 
 });
+
+// new FormSender();

@@ -1,3 +1,4 @@
+<!-- Footer -->
 <footer class="footer">
     <header class="footer__header">
         <h2 class="footer__title">Контакты</h2>
@@ -19,3 +20,19 @@
         </div>
     </div>
 </footer>
+
+<!-- Popup -->
+<div class="contact-popup contact-popup--hidden">
+    <button class="contact-popup__close"></button>
+    <div class="contact-popup__cover"></div>
+    <div class="contact-popup__form">
+        <form class="form" action="<?php echo esc_url(home_url('/')); ?>order/" method="post">
+            <h2 class="form__title">Оставьте заявку</h2>
+            <div class="form__input-grp"><input class="form__input" type="text" name="contact_name" placeholder="Имя" required="required" /></div>
+            <div class="form__input-grp"><input class="form__input" type="text" name="contact_city" placeholder="Ваш город" required="required" /></div>
+            <div class="form__input-grp"><input class="form__input" type="email" name="contact_email" placeholder="Email" required="required" /></div>
+            <div class="form__input-grp"><input class="form__input" type="tel" name="contact_phone" placeholder="Телефон" required="required" /></div><input
+                class="form__submit cta-button" type="submit" value="Отправить" />
+        </form>
+    </div>
+</div>

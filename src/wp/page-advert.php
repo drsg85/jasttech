@@ -23,7 +23,7 @@
     <meta name="theme-color" content="#ffffff">
     <meta name="description" content="<?php echo $meta_description; ?>" />
 
-    <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory') ?>/style.css?v=3" />
+    <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory') ?>/style.css?v=4" />
 
     <title>Реклама — Jast Charger</title>
 
@@ -243,21 +243,6 @@
     <?php
         get_footer();
     ?>
-
-    <!-- Popup -->
-    <div class="contact-popup contact-popup--hidden"><button class="contact-popup__close"></button>
-        <div class="contact-popup__cover"></div>
-        <div class="contact-popup__form">
-            <script>
-                var amo_forms_params = {
-                    "id": 361897,
-                    "hash": "e7f3326ccdf13ebb3dcacd1535ecdd32",
-                    "locale": "ru"
-                };
-            </script>
-            <script id="amoforms_script" async="async" charset="utf-8" src="https://forms.amocrm.ru/forms/assets/js/amoforms.js"></script>
-        </div>
-    </div>
 
     <script src="<?php bloginfo('stylesheet_directory'); ?>/business.js"></script>
 

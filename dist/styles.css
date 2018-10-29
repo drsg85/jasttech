@@ -2067,12 +2067,11 @@ body {
 
 .footer__form {
   max-width: 460px;
-  margin: 0 auto;
-  margin-bottom: -140px; }
+  margin: 0 auto; }
   @media (min-width: 1200px) {
     .footer__form {
       position: absolute;
-      top: 140px;
+      top: 100px;
       right: calc((100% - 1040px) / 2);
       height: 600px;
       width: 500px; } }
@@ -2865,6 +2864,25 @@ body {
   text-align: center;
   text-decoration: none;
   text-transform: uppercase; }
+
+.feedback {
+  padding: 40px; }
+  @media (min-width: 480px) {
+    .feedback {
+      padding: 50px; } }
+  @media (min-width: 768px) {
+    .feedback {
+      padding: 70px; } }
+  @media (min-width: 1200px) {
+    .feedback {
+      padding: 120px calc((100% - 1040px) / 2); } }
+
+.feedback__title {
+  color: #4cb8ea; }
+
+.feedback__content {
+  max-width: 500px;
+  line-height: 1.5; }
 
 /*! Flickity v2.1.2
 https://flickity.metafizzy.co

@@ -28,7 +28,7 @@
     <meta name="theme-color" content="#ffffff">
     <meta name="description" content="<?php echo $meta_description; ?>" />
 
-    <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory') ?>/style.css?v=3" />
+    <link rel="stylesheet" href="<?php bloginfo('stylesheet_directory') ?>/style.css?v=4" />
     
     <title>Контакты — Jast Charger</title>
 
@@ -100,14 +100,14 @@
         </header>
 
         <div class="footer__form">
-            <script>
-                var amo_forms_params = {
-                    "id": 361897,
-                    "hash": "e7f3326ccdf13ebb3dcacd1535ecdd32",
-                    "locale": "ru"
-                };
-            </script>
-            <script id="amoforms_script" async="async" charset="utf-8" src="https://forms.amocrm.ru/forms/assets/js/amoforms.js"></script>
+            <form class="form" action="<?php echo esc_url(home_url('/')); ?>order/" method="post">
+                <h2 class="form__title">Оставьте заявку</h2>
+                <div class="form__input-grp"><input class="form__input" type="text" name="contact_name" placeholder="Имя" required="required" /></div>
+                <div class="form__input-grp"><input class="form__input" type="text" name="contact_city" placeholder="Ваш город" required="required" /></div>
+                <div class="form__input-grp"><input class="form__input" type="email" name="contact_email" placeholder="Email" required="required" /></div>
+                <div class="form__input-grp"><input class="form__input" type="tel" name="contact_phone" placeholder="Телефон" required="required" /></div><input
+                    class="form__submit cta-button" type="submit" value="Отправить" />
+            </form>
         </div>
 
         <div class="footer__legals">
